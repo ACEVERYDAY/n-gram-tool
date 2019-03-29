@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center|top" android:orientation="vertical" android:background="@drawable/bg_image03" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:textColor="#ffc73838" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="简简单单又挨锁了" />
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="17.0sp" android:textColor="#ffffffff" android:id="@id/tv" android:layout_width="300.0dip" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="10.0dip" />
+        <EditText android:textColor="#ffffffff" android:id="@id/ed" android:paddingLeft="8.0dip" android:layout_width="200.0dip" android:layout_height="45.0dip" android:layout_marginBottom="8.0dip" android:ems="10" />
+        <Button android:textColor="#ffe21515" android:textColorHighlight="#ff00e6c5" android:id="@id/bt" android:layout_width="250.0dip" android:layout_height="48.0dip" android:text="亲一口就能解锁哦！" />
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:textColor="#ff4b87ff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="走别人的路" />
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:textColor="#ff4b87ff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="让别人无路可走" />
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:textColor="#ff00cd54" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="想制作自己的锁机软件吗" />
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:textColor="#ff00cd54" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="修改傻逼" />
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:textColor="#ff15d945" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:textColor="#ffd21111" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="♢夜晚先生制作♢" />
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:textColor="#ffcf0e2f" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="不想说了" />
+    </LinearLayout>
+</LinearLayout>

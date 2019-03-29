@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/d_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/d_show" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:textAppearance="?android:textAppearanceLarge" android:textColor="@android:color/black" android:id="@id/d_timer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="10" />
+</FrameLayout>

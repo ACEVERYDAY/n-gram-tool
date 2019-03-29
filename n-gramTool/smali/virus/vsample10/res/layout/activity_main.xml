@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:id="@id/wp_fee" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="充值金额(分)" android:inputType="number" />
+    <Button android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="无通道选择" android:onClick="on_UnChannelSelect" />
+    <Button android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="退出" android:onClick="on_Exit" />
+</LinearLayout>

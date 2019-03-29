@@ -1,0 +1,482 @@
+Signature-Version: 1.0
+SHA1-Digest-Manifest-Main-Attributes: /xAfVY0ykCvis2ByMajT1OYdUX8=
+Created-By: 1.7.0_71 (Oracle Corporation)
+SHA1-Digest-Manifest: fyLX8soCVEzY/CVFSyKPJs0fjtY=
+
+Name: res/drawable-hdpi-v4/wp_p0.png
+SHA1-Digest: xft7N20wPo+kDZXyxLra87/PSfs=
+
+Name: res/drawable-hdpi-v4/wp_i_c1.png
+SHA1-Digest: JyYbH1ASAxRXfjVjNcIx8e8y4PI=
+
+Name: res/drawable-hdpi-v4/service.png
+SHA1-Digest: Th58o3dfr6ZsReV1GTWpTRLFh5c=
+
+Name: res/anim/large_progressbar_animator.xml
+SHA1-Digest: nwY0z7pE2BoCOJOrLEN0U2sr0pM=
+
+Name: res/layout/wp_v_item.xml
+SHA1-Digest: Uut5Mhoj1786WUiTihtJWV6TIcY=
+
+Name: res/drawable-hdpi-v4/hfb_top_bg.9.png
+SHA1-Digest: vCe2U+DwFseZqNXI0P6Mhkf6lVM=
+
+Name: res/drawable-hdpi-v4/wp_p7.png
+SHA1-Digest: 2JzQ+3FRZkp88MxMs8GSTREq0iI=
+
+Name: res/drawable-hdpi-v4/upay_card_value.png
+SHA1-Digest: d3x/GYq1Y9rsG/uZ0PNEDGFp+NM=
+
+Name: res/drawable-hdpi-v4/hfb_succ.png
+SHA1-Digest: 76S7YIAM0jeTyd7bNL8ldXfnahk=
+
+Name: res/layout/wp_v_pitem.xml
+SHA1-Digest: we6bcPEEiExj56uzCkQONHcQX9o=
+
+Name: res/drawable-hdpi-v4/bt_i0.png
+SHA1-Digest: 9tlZU/QGGuHBXwi5EZOhqV1gzYc=
+
+Name: res/drawable-hdpi-v4/wp_p2.png
+SHA1-Digest: WEsHMhcQF7CD4XMRWVDf0LN1Hf8=
+
+Name: res/drawable-hdpi-v4/bt_i1.png
+SHA1-Digest: jT08awvpbzymhl8ucJuau15lxko=
+
+Name: assets/textfield_default_holo_light.9.png
+SHA1-Digest: sC8aPSa80ZUV2LWkxIxYuVnlWfs=
+
+Name: res/drawable-hdpi-v4/hfb_fail.png
+SHA1-Digest: tnzjKMMjQMOwNl4FFwpu/oMRqjI=
+
+Name: res/drawable-hdpi-v4/image5.jpg
+SHA1-Digest: swd0eYUp9Q6G26f2AQvfFb/GWyk=
+
+Name: res/drawable-hdpi-v4/upay_yl.png
+SHA1-Digest: qwOoEkeSRcqgy9bZfBalSMrXRr8=
+
+Name: res/drawable-hdpi-v4/upay_ali.png
+SHA1-Digest: Dg6a15BXeVyEeE/ZbiyYaYyY1u0=
+
+Name: res/layout/fragment_account.xml
+SHA1-Digest: 5rde6pxGCgEWBl3sB1l3+NXltWg=
+
+Name: res/drawable-hdpi-v4/image3.jpg
+SHA1-Digest: /dpkC35oN9OkvynYyJXzlOS7NWs=
+
+Name: res/layout/wp_d_cover.xml
+SHA1-Digest: CQ3RTs9Kf1GoLmHvyEE6NTSFkDo=
+
+Name: res/drawable-hdpi-v4/upay_download.png
+SHA1-Digest: X5jvjNMS1l0DQBK45zRngTkQgqA=
+
+Name: assets/upay_confirm_ui.json
+SHA1-Digest: FNnKhgelPdhajNyeC06R3MYuKLI=
+
+Name: res/layout/activity_kf.xml
+SHA1-Digest: 8c3Kiz+jb5oYO+RC0Q54/Nr+HwA=
+
+Name: res/drawable-hdpi-v4/account.png
+SHA1-Digest: racXuSwADezaO5UvuKAAIB0cjhw=
+
+Name: res/drawable-hdpi-v4/upay_shape_description.xml
+SHA1-Digest: zXbmaOm2Bt1RmyYv8MsWz6JceWc=
+
+Name: assets/upay_progress_ui.json
+SHA1-Digest: xyyrQ9OIHlZ8T3Uar3jnpyZZsgA=
+
+Name: res/drawable-hdpi-v4/upay_edit_bg.xml
+SHA1-Digest: ru+8Q7tSGu42+HZEPm2jhOdGgGs=
+
+Name: res/drawable-hdpi-v4/upay_cft.png
+SHA1-Digest: zLPUvtDcfZT9ezvSnH2afRWvJKs=
+
+Name: assets/ipaynow_data.bin
+SHA1-Digest: 3fWjqjtLnt9p0fq0PhGjXBUqAvI=
+
+Name: res/layout/activity_agreement.xml
+SHA1-Digest: /mpja471KVptxnaulEvUDylhLLA=
+
+Name: res/drawable-hdpi-v4/upay_commodity.png
+SHA1-Digest: bdPGMzGSkz+cVvZFtGma2GL7Zl0=
+
+Name: res/drawable-hdpi-v4/upay_description.png
+SHA1-Digest: OxKBZ1vRPPb12SeZb9Q8k34Zn24=
+
+Name: res/drawable-hdpi-v4/wp_i_m0.png
+SHA1-Digest: hcG282owCz53B51H4rPSjXo6vPQ=
+
+Name: res/drawable-hdpi-v4/upay_backout.xml
+SHA1-Digest: TH4PHXX5ekNwOvnWkOPhS3rKmeo=
+
+Name: res/drawable-hdpi-v4/wp_p3.png
+SHA1-Digest: RwyxMVA/SXANAuR99m7lNrtZQas=
+
+Name: res/layout/activity_account.xml
+SHA1-Digest: XK3CLMQw/bncW4XptOIbMv0lfV4=
+
+Name: res/drawable-hdpi-v4/wp_p8.png
+SHA1-Digest: oSYZV681sYwC9qsJ8yocaLQ4khg=
+
+Name: assets/upay_app_info.txt
+SHA1-Digest: aN7l1WOYNkmjaqd5V8KuZHTgI1U=
+
+Name: assets/upay_ck_ui.json
+SHA1-Digest: EyFOuRt3OesUvvbQf9X7IAfEDEs=
+
+Name: res/drawable-hdpi-v4/upay_pay_success.png
+SHA1-Digest: ly7ImPGycJonlyemU4OKead8jVk=
+
+Name: res/drawable-hdpi-v4/upay_backout_n.png
+SHA1-Digest: TzJJb1gjIebtqc0v3TqcR9CvcFg=
+
+Name: res/drawable-hdpi-v4/upay_sure.png
+SHA1-Digest: HQs+WHp/o2pALvHpkdcnfTyZZMY=
+
+Name: res/drawable-hdpi-v4/upay_window_bg.xml
+SHA1-Digest: KEdWM6QZuizZlPTywGlzlWXq+ow=
+
+Name: res/drawable-hdpi-v4/wp_pt.png
+SHA1-Digest: SlQELXvCqTwA+YhN1cPhYx3l+jU=
+
+Name: res/drawable-hdpi-v4/money.png
+SHA1-Digest: NNXsgnCSZjs+PnkcXJgB7XiKUPQ=
+
+Name: res/layout/wp_v_titlebar.xml
+SHA1-Digest: Cmtebzd2mPyiBYa7itZFWT6guds=
+
+Name: res/drawable-hdpi-v4/hfb_btn_pressed2.9.png
+SHA1-Digest: MK1nVnFAJuOBEzdrL+3f7XQ/gCw=
+
+Name: res/drawable-hdpi-v4/upay_pay_ok.xml
+SHA1-Digest: nIN7YZUS17LvH7iURW9pWthJBfk=
+
+Name: res/drawable-hdpi-v4/tab3_on.png
+SHA1-Digest: 1bhHtgpGHYUr6S6b/AJvfLWkynA=
+
+Name: resources.arsc
+SHA1-Digest: V+jJ4xyiL7z7B1SXUTc1nbqfQjI=
+
+Name: res/drawable-hdpi-v4/shikan_2.jpg
+SHA1-Digest: x+4npvOr9NY+4iYE717cDmdgCws=
+
+Name: res/drawable-hdpi-v4/image1.jpg
+SHA1-Digest: crxGdFaFaU/P6dGLCe4rLgOz9VI=
+
+Name: AndroidManifest.xml
+SHA1-Digest: wepMa9swUbsqErLLK5c+obMPYFs=
+
+Name: res/drawable-hdpi-v4/upay_bottom_bg_all.9.png
+SHA1-Digest: 92JmSCAJzARzCOIXeHb30CieXyU=
+
+Name: res/drawable-hdpi-v4/wp_p6.png
+SHA1-Digest: BT20oWHx3L5U4tp5CyPsKLLbwc0=
+
+Name: res/drawable-hdpi-v4/hfb_top_logo.9.png
+SHA1-Digest: h/6IeEd6zXANxZD5X19AJ9jC+hc=
+
+Name: res/drawable-hdpi-v4/hfb_btn_pressed.9.png
+SHA1-Digest: 4dMX/vIt9BBV8a1X8NSTVqmFX4c=
+
+Name: res/drawable-hdpi-v4/image2.jpg
+SHA1-Digest: RjAIi9jUjTmOhjFn5qPEm0lEYkI=
+
+Name: res/drawable-hdpi-v4/wp_i_l0.png
+SHA1-Digest: yjckj7yPdAj4318sThl2kAWzrVI=
+
+Name: res/drawable-hdpi-v4/upay_card.png
+SHA1-Digest: S2sui1S1RxqBpElYAZyE/4jBCyY=
+
+Name: res/drawable-hdpi-v4/weixin.png
+SHA1-Digest: JloPfBT9pHecZsGa/vl+g0Gbx90=
+
+Name: res/drawable-hdpi-v4/hot.png
+SHA1-Digest: 92+YNumGBFF2lssqZrqHmXACLdo=
+
+Name: res/layout/activity_key.xml
+SHA1-Digest: v11Mg6OzkiSo3oM/bGMiDbQWNZM=
+
+Name: assets/channel.cfg
+SHA1-Digest: a45liPxn9uMe1wgi8bUibwItCCA=
+
+Name: res/layout/bt_v_titlebar.xml
+SHA1-Digest: 2GagQVWTRcV83SrMnQPfZqI3bqU=
+
+Name: res/drawable-hdpi-v4/upay_no_network.png
+SHA1-Digest: wSFCMI5SBmhKitMAvsn6xoVOtTc=
+
+Name: assets/upay_v_ui.json
+SHA1-Digest: 0MIR1IxrWsOt++lLxuLEf8c1SFM=
+
+Name: res/layout/wp_v_error.xml
+SHA1-Digest: +wzuQVOChvsiBR8s8o0wGV7F5s0=
+
+Name: res/drawable-hdpi-v4/upay_top_bg_all.9.png
+SHA1-Digest: r2WFgBtOKbm/057Nquk30Grxhxc=
+
+Name: res/drawable-hdpi-v4/upay_shape_bottom_corner_no_center_line.xml
+SHA1-Digest: NcHk+4zD4xa455kanGHPDOOgIWI=
+
+Name: lib/armeabi/libhfswpay.so
+SHA1-Digest: BiEmjPYaZY5QZPilr9dMaq+Ymes=
+
+Name: res/layout/activity_detail.xml
+SHA1-Digest: f7dedWrTzKVxTTnaQthJcjLvzfM=
+
+Name: res/drawable-hdpi-v4/wp_i_bc.xml
+SHA1-Digest: OUsyaVUgmYwqjZSjp8NGvyNRY80=
+
+Name: res/drawable-hdpi-v4/wp_i_m1.png
+SHA1-Digest: CVKg3n7u3K4YfeWN9J2URHXv264=
+
+Name: res/layout/bt_v_protocol.xml
+SHA1-Digest: Q/qMwBuvPNLKMjMYNlbXOaP2mQk=
+
+Name: res/layout/item_detail.xml
+SHA1-Digest: JcDogvNqUbGhmL9CerZUXFlF1g8=
+
+Name: classes.dex
+SHA1-Digest: p6DUwU0hnws+8mphFZhEvcwMMg0=
+
+Name: res/layout/upay_pay_card.xml
+SHA1-Digest: cEs5qErYbIBILxXNq7eZktPiPe8=
+
+Name: res/drawable-hdpi-v4/upay_arrow_bg.png
+SHA1-Digest: ZX9/+mGLndJCi9ZyVn81mRjUWdM=
+
+Name: res/drawable-hdpi-v4/wp_i_l2.png
+SHA1-Digest: fPdTbVk2znBEORe8fb9vnPvWd6w=
+
+Name: res/drawable-hdpi-v4/upay_card_type.png
+SHA1-Digest: gjTHgq0aza56CZJm5Mhu/+vjLtE=
+
+Name: res/drawable-hdpi-v4/upay_md_bg.png
+SHA1-Digest: mqDjmW6UD3nquzc+BrisDT+zRY4=
+
+Name: res/drawable-hdpi-v4/upay_logo_bottom.png
+SHA1-Digest: JhMf0odk3X9npI0+EpLfNKmiirg=
+
+Name: res/drawable-hdpi-v4/wp_p1.png
+SHA1-Digest: mlssWqyk/psF3CFHB0BfVAydwrc=
+
+Name: res/layout/activity_main.xml
+SHA1-Digest: k1V5Rdpuoaxeh1Tb6E8SHtDjPuM=
+
+Name: assets/upay_hint_ui.json
+SHA1-Digest: kGx+mWswpYOQrWn/EmIURMVFoL0=
+
+Name: res/drawable-hdpi-v4/wp_i_c0.png
+SHA1-Digest: VFXFsy3pUU8ppBrQDTjaLu9BwM4=
+
+Name: res/drawable-hdpi-v4/upay_top_.png
+SHA1-Digest: FT+/DG+DZfyJ7X8Tmm1q1tWLRok=
+
+Name: res/drawable-hdpi-v4/icon_largeloading.png
+SHA1-Digest: 1qykXERf3f99JgqnFFNdyCNAzks=
+
+Name: res/drawable-hdpi-v4/hd.png
+SHA1-Digest: e8w6upX8laBfLI3ox5PWRu+lvKY=
+
+Name: assets/upay_properties.json
+SHA1-Digest: 5UvDnDe6nn4afknXQX0k+YOn7GY=
+
+Name: res/drawable-hdpi-v4/upay_payment.png
+SHA1-Digest: zMyp9N8XEsV+viu63J94Uz9bBF8=
+
+Name: res/drawable-hdpi-v4/wp_p4.png
+SHA1-Digest: LHVKOzQZNQHuJzuPMUPVJ22rUJE=
+
+Name: res/drawable-hdpi-v4/new1.png
+SHA1-Digest: 6bFw7gBZSTyUCnKnJLNvepLX9jQ=
+
+Name: res/drawable-hdpi-v4/upay_amount.png
+SHA1-Digest: EpgzE4Hs1XR7Dv7RJdZ3yL3qzKs=
+
+Name: res/drawable-hdpi-v4/ali.png
+SHA1-Digest: 4bXnomHgPSaBb8E/iY9K7V7IC8w=
+
+Name: lib/armeabi/libplugin_phone.so
+SHA1-Digest: YCIOMSQMWcj8MRFLPjxN5ektOwM=
+
+Name: lib/armeabi/libybzf.so
+SHA1-Digest: usZK+90sPEmBdyT9SgetJVEvRzo=
+
+Name: res/drawable-hdpi-v4/wp_bir.xml
+SHA1-Digest: NJ+d43FV2QtM/H40tThkSO24MAQ=
+
+Name: res/drawable-hdpi-v4/tab3_off.png
+SHA1-Digest: jg28cKLoS//AOouNciV/c/NOV6Y=
+
+Name: assets/upay_check_ui.json
+SHA1-Digest: cf/ToATPgccikqwMRDfswXvf1EE=
+
+Name: res/layout/v_item.xml
+SHA1-Digest: CFUCkHOhD2EXPlHguiYDd5NZ/3k=
+
+Name: res/drawable-hdpi-v4/upay_back_s.png
+SHA1-Digest: ZiOvODX+iNA6Nb0Nd4R342EtYyY=
+
+Name: res/drawable-hdpi-v4/tab1_on.png
+SHA1-Digest: /IbMXPw55hzMc/q6vW7t+tQ6QlI=
+
+Name: res/drawable-hdpi-v4/hfb_btn_normal.9.png
+SHA1-Digest: u5nDT1FYc3ok1PmGpQmggek+PEQ=
+
+Name: res/drawable-hdpi-v4/upay_pay_ok_s.9.png
+SHA1-Digest: sKNPaOyrpNXQ5Mkedp4aNV/zsLU=
+
+Name: res/layout/activity_player.xml
+SHA1-Digest: ATXBA36cDW5MuNYIGaJsNPjWktc=
+
+Name: assets/upay_wx_ui.json
+SHA1-Digest: Hs9fjc/DEjX4x01uQuCGGRwbHws=
+
+Name: res/drawable-hdpi-v4/upay_pay_fail.png
+SHA1-Digest: 3X8F/CkLhrbfpN0xwLbaigF3T2s=
+
+Name: res/drawable-hdpi-v4/right.png
+SHA1-Digest: k2CBkRdRFe8+agjnHILnDIH14Ic=
+
+Name: res/layout/wp_v_pay.xml
+SHA1-Digest: tcvIMdtUpi4jbMcg9bP0I0cWY54=
+
+Name: res/drawable-hdpi-v4/upay_backout_s.png
+SHA1-Digest: lRN3RL50ldaDeH+aU2R2caCS+58=
+
+Name: assets/upay_third_pay_ui.json
+SHA1-Digest: 4ywn5JYfXEcgqJqOZ6wuCbJv4ug=
+
+Name: assets/shadow_window.9.png
+SHA1-Digest: 6R9P5oZpkMkv13Qg8FxU9GpJ8DA=
+
+Name: res/drawable-hdpi-v4/upay_secretary.png
+SHA1-Digest: ksZTfR+/0btp34Dq2SNj4Q8+9dk=
+
+Name: res/layout/item_zhubo.xml
+SHA1-Digest: iDTWiKl6mGahgGq8q485J0fQBLA=
+
+Name: res/drawable-hdpi-v4/kf.png
+SHA1-Digest: /+IXL6NULqItMJDnmFDSepikIFc=
+
+Name: res/drawable-hdpi-v4/upay_loading_logo.png
+SHA1-Digest: QV8Rh/VdLxQOoSzdeb0CYwcXTBU=
+
+Name: res/drawable-hdpi-v4/wp_i_bm.xml
+SHA1-Digest: zwoNdEw2rH3+T8j6eOHtnUD6+Yg=
+
+Name: res/drawable-hdpi-v4/test_round_corner.xml
+SHA1-Digest: VflsUEd8zeYY3KhvsvRMwUpX9E0=
+
+Name: res/drawable-hdpi-v4/editor_text_bg.xml
+SHA1-Digest: FWp7bXFkbMWroAy2QS2uy89Xb9Q=
+
+Name: res/drawable-hdpi-v4/wp_i_l1.png
+SHA1-Digest: 75EQeSDDHd97942sJRjdDiAtnY8=
+
+Name: res/drawable-hdpi-v4/upay_back_n.png
+SHA1-Digest: 9/bo/+O+mP5zqkxvHFrHL8+do04=
+
+Name: assets/video.mp4
+SHA1-Digest: nvaZy1gvx5Tx2n7g9CCl3fsKiZQ=
+
+Name: assets/textfield_activated_holo_dark.9.png
+SHA1-Digest: 1Kq5heCtuOhmkW4VmCSlQ8/w8B0=
+
+Name: res/drawable-hdpi-v4/tab2_off.png
+SHA1-Digest: buDS1rqW/vTrAqXUiZL7z7kO0LY=
+
+Name: res/drawable-hdpi-v4/bt_i2.png
+SHA1-Digest: BPgTZS9BiBR/UOE2ogQ7DsX9sBs=
+
+Name: res/drawable-hdpi-v4/image4.jpg
+SHA1-Digest: JTUPlo867dE7AvSCrhxtzq6nxho=
+
+Name: res/layout/wp_v_progress.xml
+SHA1-Digest: alV7p0xvTOw0NFbXSlV3cngym/w=
+
+Name: res/drawable-hdpi-v4/upay_logo.png
+SHA1-Digest: Vv37vLLsgHv3OGU21mibA26BbOM=
+
+Name: res/layout/activity_autokey.xml
+SHA1-Digest: ohoLjlW5g9JfNYYgCwwivkXawBM=
+
+Name: res/drawable-hdpi-v4/top_bg.png
+SHA1-Digest: pntfvz1ho7HpvbMGuFLwwP6SjkA=
+
+Name: res/layout/fragment_homepage.xml
+SHA1-Digest: peUwNFirYvpxYYQKJlFzczy/1rM=
+
+Name: res/drawable-hdpi-v4/upay_shape_bottom_corner_no_top_line.xml
+SHA1-Digest: 8XhQgwSUVmEVQ1wxra8Wl1tVJNE=
+
+Name: res/drawable-hdpi-v4/ic_launcher.png
+SHA1-Digest: Ay5lzHX1E8IJPTqhObAHz1C8NM4=
+
+Name: res/drawable-hdpi-v4/tab1_off.png
+SHA1-Digest: 1KH6F8OX7dlG5WRq6KwMO1BXwiA=
+
+Name: assets/shadow_bg.9.png
+SHA1-Digest: lHICOkK9MYT5EYuVOHCzI+wglM0=
+
+Name: res/drawable-hdpi-v4/upay_back.xml
+SHA1-Digest: KQiCbKUNSqfruj5MvQVOlGtYkaM=
+
+Name: res/drawable-hdpi-v4/tab2_on.png
+SHA1-Digest: b4IXrx7DQi9CQ6B2KW/WuiDuU68=
+
+Name: res/menu-v11/main.xml
+SHA1-Digest: JidZX7glxOqYh9ry6syO/gujnac=
+
+Name: res/drawable-hdpi-v4/hfb_application.png
+SHA1-Digest: T1bUFgQ95TOHfE08l4z6LIdd7kg=
+
+Name: res/layout/activity_mmain.xml
+SHA1-Digest: Rc49qvbXqAI1oQKYdY2JbvYZbjQ=
+
+Name: res/drawable-hdpi-v4/shikan_1.jpg
+SHA1-Digest: tbRaYihu3iRSuOHVLhfwHAVVKD4=
+
+Name: res/drawable-hdpi-v4/opinion.png
+SHA1-Digest: 1RS8+g3Lfz8bujtP1gqrO+3jXZc=
+
+Name: res/drawable-hdpi-v4/agreement.png
+SHA1-Digest: rH4vcWbEfZf1v0zRZttRrqp5MKA=
+
+Name: res/drawable-hdpi-v4/tab_bg.png
+SHA1-Digest: SuJCOSGD7euHTdDjP21eADOliRc=
+
+Name: res/drawable-hdpi-v4/upay_loading_circle.png
+SHA1-Digest: D+DJvMNnntU7X4JCHZgSqKV3pOI=
+
+Name: res/drawable-hdpi-v4/hfb_btn_normal2.9.png
+SHA1-Digest: 9kEJUVd9zTgvsv+R6MN6sDOKNLA=
+
+Name: res/drawable-hdpi-v4/upay_shape_top_corner_no_bottom_line.xml
+SHA1-Digest: oDUvEYN7R02TyX8g9/ZzwoCl8As=
+
+Name: res/drawable-hdpi-v4/upay_dialog_icon.xml
+SHA1-Digest: oADUoBi0o32Zm3hh7JfcoRxOAR0=
+
+Name: assets/upay_toast_ui.json
+SHA1-Digest: ce8o/H3IHN6WxmvkjUhmHD4g9AQ=
+
+Name: res/menu/main.xml
+SHA1-Digest: Db0d8rmcZTS1rXvwtsqc9l86nmc=
+
+Name: res/drawable-hdpi-v4/upay_pay_ok_n.9.png
+SHA1-Digest: 1qhh4+r0OJUlkVW5lpfnV4Inq4I=
+
+Name: res/drawable-hdpi-v4/wp_p5.png
+SHA1-Digest: iGkEMsD5Fq9UActNmQk1gZLR7Dc=
+
+Name: res/layout/activity_boot_player.xml
+SHA1-Digest: t3fzPfk0y/3rF+V084emHWpOYok=
+
+Name: res/layout/fragment_zhubo.xml
+SHA1-Digest: oWNHLtYfV9uminD/PXBwroxEJ8s=
+
+Name: res/layout/bt_v_open.xml
+SHA1-Digest: EFNGsxIEhIHWpMQUTaw2VDqrrY0=
+
+Name: res/layout/wp_v_plist.xml
+SHA1-Digest: J/o1TTa+gbzCrHuniLYyH0adrkk=
+

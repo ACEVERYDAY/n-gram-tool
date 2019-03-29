@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/pref_sounds_storage_title" android:key="pref_key_storage_settings">
+        <Preference android:layout="?android:preferenceLayoutChild" android:title="@string/pref_title_notification_ringtone" android:key="pref_sms_ringtone" android:summary="@string/pref_summary_notification_ringtone" android:ringtoneType="notification" />
+        <Preference android:layout="?android:preferenceLayoutChild" android:title="@string/pref_title_phone_ringtone" android:key="pref_phone_ringtone" android:summary="@string/pref_summary_phone_ringtone" android:ringtoneType="notification" />
+        <Preference android:layout="?android:preferenceLayoutChild" android:title="@string/pref_title_alarm_ringtone" android:key="pref_alarm_ringtone" android:summary="@string/pref_summary_alarm_ringtone" android:ringtoneType="notification" />
+        <Preference android:layout="?android:preferenceLayoutChild" android:title="@string/pref_title_sdcard_ringtone" android:key="pref_sdcard_ringtone" android:summary="@string/pref_summary_sdcard_ringtone" android:ringtoneType="notification" />
+    </PreferenceCategory>
+</PreferenceScreen>

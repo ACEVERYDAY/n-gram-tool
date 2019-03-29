@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/small_window_layout" android:background="#ff43637e" android:layout_width="@dimen/dialogBase_width" android:layout_height="@dimen/dialogBase_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/textSize20sp" android:textColor="@color/color_bai" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/dialogTitle" android:layout_width="fill_parent" android:layout_height="@dimen/dialogBase_titleHeight" android:layout_marginLeft="@dimen/dialogBase_titleIconMargin" android:layout_marginRight="@dimen/dialogBase_titleIconMargin" android:text="@string/title" android:singleLine="true" />
+    <ImageView android:id="@id/dialogDivider" android:background="#66c2c8cd" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="1.0px" android:layout_marginRight="1.0px" android:layout_alignBottom="@id/dialogTitle" />
+    <LinearLayout android:orientation="vertical" android:id="@id/content_view_root" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dialogBase_btnArea_magrinLeft" android:layout_marginTop="@dimen/dialogBase_btnArea_magrinTop" android:layout_marginRight="@dimen/dialogBase_btnArea_magrinRight" android:layout_below="@id/dialogDivider">
+        <TextView android:textSize="@dimen/font_size_middle" android:textColor="@color/color_bai" android:id="@id/dialogText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/msg" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/btnLayout" android:background="#ff777777" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dialogBase_btnArea_magrinLeft" android:layout_marginRight="@dimen/dialogBase_btnArea_magrinRight" android:layout_marginBottom="10.0dip" android:layout_alignParentBottom="true">
+        <TextView android:textSize="@dimen/font_size_middle" android:textColor="@color/color_hei" android:gravity="center" android:id="@id/dialogLeftBtn" android:background="@drawable/common_dialog_btn_confirm" android:layout_width="fill_parent" android:layout_height="@dimen/dialogBase_btnHeight" android:text="@string/cancel" android:singleLine="true" android:layout_weight="1.0" />
+        <View android:layout_width="10.0dip" android:layout_height="0.0dip" />
+        <TextView android:textSize="@dimen/font_size_middle" android:textColor="@color/color_hei" android:gravity="center" android:id="@id/dialogRightBtn" android:background="@drawable/common_dialog_btn_confirm" android:layout_width="fill_parent" android:layout_height="@dimen/dialogBase_btnHeight" android:text="@string/ok" android:singleLine="true" android:layout_weight="1.0" />
+    </LinearLayout>
+</RelativeLayout>

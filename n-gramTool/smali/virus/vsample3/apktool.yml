@@ -1,0 +1,22 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: vsample3
+compressionType: false
+doNotCompress: null
+isFrameworkApk: false
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
+sdkInfo:
+  minSdkVersion: '8'
+sharedLibrary: false
+unknownFiles:
+  apkprotect.com/readme.txt: '8'
+  apkprotect.com/key.dat: '8'
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.3.1
+versionInfo:
+  versionCode: '1'
+  versionName: '1.0'

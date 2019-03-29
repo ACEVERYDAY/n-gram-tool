@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:scrollbarAlwaysDrawVerticalTrack="true" android:id="@id/log_scrollview1" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="10.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="13.0dip" android:textColor="#ffffffff" android:gravity="center_horizontal" android:id="@id/TextView01" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/scroll_down" />
+        <CheckBox android:textStyle="bold" android:textColor="#ffff0000" android:id="@id/keep_screen_on_cb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/keep_screen_on" />
+        <CheckBox android:id="@id/statusbar_notifications_enabled_cb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/statusbar_notifications_enabled" />
+        <TextView android:textSize="20.0dip" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/TextView01" android:paddingTop="7.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/support_label_text" />
+        <CheckBox android:id="@id/default_player_cb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/default_player" />
+        <CheckBox android:id="@id/default_player_hero_cb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/default_player_hero" />
+        <LinearLayout android:id="@id/LinearLayout04" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <CheckBox android:id="@id/mortplayer_cb" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/mortplayer" android:layout_weight="1.0" />
+            <Button android:id="@id/mortplayer_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/market_button" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/LinearLayout05" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <CheckBox android:id="@id/mixzingplayer_cb" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/mixzingplayer" android:layout_weight="1.0" />
+            <Button android:id="@id/mixzing_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/market_button" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/LinearLayout06" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <CheckBox android:enabled="true" android:id="@id/meridianplayer_cb" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/meridianplayer" android:layout_weight="1.0" />
+            <Button android:id="@id/meridian_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/market_button" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/LinearLayout08" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <CheckBox android:enabled="true" android:id="@id/andlessplayer_cb" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/andlessplayer" android:layout_weight="1.0" />
+            <Button android:id="@id/andless_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/market_button" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/LinearLayout11" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <CheckBox android:enabled="true" android:id="@id/rhapsodysplayer_cb" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/rhapsodyplayer" android:layout_weight="1.0" />
+            <Button android:id="@id/rhapsody_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/market_button" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/LinearLayout09" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <CheckBox android:enabled="false" android:id="@id/btunesplayer_cb" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/btunesplayer" android:layout_weight="1.0" />
+            <Button android:id="@id/btunes_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/market_button" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/LinearLayout10" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <CheckBox android:enabled="false" android:id="@id/btunes16player_cb" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/btunes16player" android:layout_weight="1.0" />
+            <Button android:id="@id/btunes16_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/market_button" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/LinearLayout15" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <CheckBox android:enabled="true" android:id="@id/lastfmplayer_cb" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/lastfmplayer" android:layout_weight="1.0" />
+            <Button android:id="@id/lastfm_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/market_button" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/LinearLayout16" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <CheckBox android:enabled="true" android:id="@id/doubletwistplayer_cb" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/doubletwistplayer" android:layout_weight="1.0" />
+            <Button android:id="@id/doubletwist_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/market_button" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/LinearLayout07" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <CheckBox android:enabled="true" android:id="@id/cubedplayer_cb" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/cubedplayer" android:layout_weight="1.0" />
+            <Button android:id="@id/cubed_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/market_button" android:layout_weight="1.0" />
+        </LinearLayout>
+        <TextView android:textSize="20.0dip" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/TextView04" android:paddingTop="7.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/media_button_support_label" />
+        <TextView android:textSize="13.0dip" android:textColor="#ffffffff" android:id="@id/TextView01" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/media_button_comments" />
+        <CheckBox android:enabled="true" android:id="@id/simkeydown_cb" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/simulate_keydown" android:layout_weight="1.0" />
+        <CheckBox android:enabled="true" android:id="@id/simkeyup_cb" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/simulate_keyup" android:layout_weight="1.0" />
+    </LinearLayout>
+</ScrollView>

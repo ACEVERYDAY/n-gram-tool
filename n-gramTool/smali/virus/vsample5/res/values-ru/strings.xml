@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Shake2PlayNext</string>
+    <string name="about_title">О программе</string>
+    <string name="version_info">Версия приложения</string>
+    <string name="about_text">Во избежание ложных срабатываний уделите внимание настройке чувствительности. К сожалению, на некоторых устройствах (обычно Моторола и некоторые HTC) есть ошибка внутри операционной системы, из-за чего программы не могут получать данные с акселерометра, если экран выключен или залочен. Обойти это возможности нет (исправлено в версии Андроида 2.2), но будем надеяться на лучшее! Работа приложения может показаться тормознутой, но это из-за особенностей удаленного управления сторонними программами</string>
+    <string name="starcomment_menu_label">Оценить</string>
+    <string name="about_menu_label">Важно</string>
+    <string name="exit_menu_label">Выход</string>
+    <string name="bugreport_menu_label">Сообщить об ошибке</string>
+    <string name="bugreport_send_intent_title">Отправить почту</string>
+    <string name="bugreport_mail_message">Пожалуйста, опишите ошибку как можно детальнее, чтобы мне было легче исправлять ее. Лучше всего использовать программу SendLog сразу после краха программы =)</string>
+    <string name="click_ad_text" formatted="false">Переключений встряхиванием сделано: %s1. Если программа полезна для Вас, пожалуйста, кликните по рекламе внизу еще %s2 и реклама исчезнет (данное окошко также не будет всплывать). Спасибо за поддержку!</string>
+    <string name="thanks_for_support">Спасибо за поддержку</string>
+    <string name="togglebutton_on_label">ВКЛЮЧЕНО</string>
+    <string name="togglebutton_off_label">ВЫКЛЮЧЕНО</string>
+    <string name="sensitivity_label_text">Настройка чувствительности</string>
+    <string name="read_about_label_text">"Сначала лучше запустить плейер, а потом эту программу и ее сервис
+Пожалуйста, прочтите разок информацию из пункта меню ВАЖНО"</string>
+    <string name="sensitivity_low_label_text">низкая</string>
+    <string name="sensitivity_high_label_text">высокая</string>
+    <string name="test_accel_button_text">Тестировать акселерометр</string>
+    <string name="testing_accel">Положите телефон в карман или другое обычное для него место и встряхните, хлопните по нему, или нажмите Назад для окончания тестирования. При каждом срабатывании акслерометра Вы услышите уведомляющий звук</string>
+    <string name="accel_level">Порог</string>
+    <string name="last_shake">Последняя встряска</string>
+    <string name="was_shaken">Вот так тряхнуло!</string>
+    <string name="service_started">сервис ВКЛЮЧЕН</string>
+    <string name="service_stopped">сервис ВЫКЛЮЧЕН</string>
+    <string name="other_apps_button">Другие мои проги</string>
+    <string name="adjust_settings">Выберите поддерживаемые плейеры</string>
+    <string name="settings_activity_label">Shake2PlayNext настройки</string>
+    <string name="settings_menu_label">Настройки</string>
+    <string name="support_label_text">Поддерживать следующие плейеры</string>
+    <string name="market_button">Найти на Маркете</string>
+    <string name="default_player">Встроенный плейер</string>
+    <string name="default_player_hero">Встроенный плейер HTC Sense</string>
+    <string name="mortplayer">MortPlayer</string>
+    <string name="cubedplayer">Roxon player (aka Cubed)</string>
+    <string name="mixzingplayer">MixZing</string>
+    <string name="meridianplayer">Meridian</string>
+    <string name="andlessplayer">andLess >=1.2.3</string>
+    <string name="btunesplayer">bTunes</string>
+    <string name="btunes16player">bTunes OS 1.6</string>
+    <string name="rhapsodyplayer">Rhapsody</string>
+    <string name="lastfmplayer">Last.fm</string>
+    <string name="doubletwistplayer">doubleTwist</string>
+    <string name="player_paused">плейер на паузе</string>
+    <string name="keep_screen_on">Держать экран включенным</string>
+    <string name="statusbar_notifications_enabled">Иконка в статус-баре</string>
+    <string name="alert_keep_screen_caption">Использование батареи</string>
+    <string name="alert_keep_screen_text">Эта опция для телефонов, в которых при выключенном экране не работает акселерометр (и, как следсвтие, не работает Shake2PlayNext). С помощью этой функции экран будет держаться включенным, ЧТО СИЛЬНО ВЛИЯЕТ НА РАСХОД БАТАРЕИ</string>
+    <string name="service_status_bar_title">Shake2PlayNext сервис включен</string>
+    <string name="service_status_bar_text">Отключите для сохранения заряда батареи</string>
+    <string name="command_sent">NEXT отправлен</string>
+    <string name="scroll_down">Прокрутите экран до конца, чтобы увидеть все опции</string>
+    <string name="media_button_support_label">Симуляция кнопки Play</string>
+    <string name="media_button_comments">"Это общий подход к плейерам, которые поддерживают получение сообщения MEDIA_BUTTON и не могут управляться по-хорошему =) (смотрите список плейеров выше). Особенно хорошо должно работать на Froyo. Более старые версии ОС могут запускать одновременно несколько плейеров (даже с задержкой более 15 секунд), поэтому ненужные плейеры, возможно, придется удалить. Если эта опция запускает родной встроенный плейер, то вряд ли она Вам подходит. В общем случае этот подход, возможно, будет запускать плейер даже если он стоит на паузе. Это не всегда хорошо, но лучше, чем ничего. 
+
+Протестировано с: TuneWiki, Vanilla Music и bTunes. 
+
+Для bTunes попробуйте включить ТОЛЬКО ОТПУСКАНИЕ КЛАВИШИ. Для TuneWiki и Vanilla попробуйте включить обе галочки, либо только нажатие клавиши. Для других плейеров необходимо самостоятельно подобрать какие галочки оставить включенными"</string>
+    <string name="simulate_keydown">Симулировать нажатие клавиши</string>
+    <string name="simulate_keyup">Симулировать отпускание клавиши</string>
+</resources>

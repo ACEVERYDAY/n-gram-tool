@@ -1,0 +1,24 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: vsample2
+compressionType: false
+doNotCompress:
+- assets/EsGJlBuU
+- assets/VlavkxEM
+- assets/WXhudYBP
+- assets/squCVwdz
+- so
+isFrameworkApk: false
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
+sdkInfo: null
+sharedLibrary: false
+unknownFiles: {}
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.3.1
+versionInfo:
+  versionCode: '1'
+  versionName: '1.0'

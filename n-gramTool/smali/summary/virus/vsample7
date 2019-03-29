@@ -1,0 +1,3076 @@
+.class public Lcom/dulang/clock/BootBroadcastReceiver;
+.super Landroid/content/BroadcastReceiver;
+.source "BootBroadcastReceiver.java"
+
+
+# static fields
+.field static final action_boot:Ljava/lang/String; = "android.intent.action.BOOT_COMPLETED"
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 3
+
+    .prologue
+    .line 11
+    move-object v0, p0
+
+    move-object v2, v0
+
+    invoke-direct {v2}, Landroid/content/BroadcastReceiver;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
+    .locals 14
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroid/content/Context;",
+            "Landroid/content/Intent;",
+            ")V"
+        }
+    .end annotation
+
+    .annotation runtime Ljava/lang/Override;
+    .end annotation
+
+    .prologue
+    .line 8
+    move-object v0, p0
+
+    move-object v1, p1
+
+    move-object/from16 v2, p2
+
+    new-instance v6, Landroid/content/Intent;
+
+    move-object v13, v6
+
+    move-object v6, v13
+
+    move-object v7, v13
+
+    move-object v8, v1
+
+    :try_start_0
+    const-string v9, "com.dulang.clock.ClockService"
+
+    invoke-static {v9}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
+    :try_end_0
+    .catch Ljava/lang/ClassNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
+
+    move-result-object v9
+
+    invoke-direct {v7, v8, v9}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+
+    move-object v3, v6
+
+    .line 9
+    move-object v6, v1
+
+    move-object v7, v3
+
+    invoke-virtual {v6, v7}, Landroid/content/Context;->startService(Landroid/content/Intent;)Landroid/content/ComponentName;
+
+    move-result-object v6
+
+    return-void
+
+    .line 8
+    :catch_0
+    move-exception v6
+
+    move-object v4, v6
+
+    new-instance v6, Ljava/lang/NoClassDefFoundError;
+
+    move-object v13, v6
+
+    move-object v6, v13
+
+    move-object v7, v13
+
+    move-object v8, v4
+
+    invoke-virtual {v8}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+
+    move-result-object v8
+
+    invoke-direct {v7, v8}, Ljava/lang/NoClassDefFoundError;-><init>(Ljava/lang/String;)V
+
+    throw v6
+.end method
+.class public final Lcom/dulang/clock/BuildConfig;
+.super Ljava/lang/Object;
+.source "BuildConfig.java"
+
+
+# static fields
+.field public static final DEBUG:Z = true
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 3
+
+    .prologue
+    .line 5
+    move-object v0, p0
+
+    move-object v2, v0
+
+    invoke-direct {v2}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+.class Lcom/dulang/clock/ClockService$100000000;
+.super Ljava/lang/Object;
+.source "ClockService.java"
+
+# interfaces
+.implements Landroid/view/View$OnClickListener;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/dulang/clock/ClockService;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x20
+    name = "100000000"
+.end annotation
+
+
+# instance fields
+.field private final this$0:Lcom/dulang/clock/ClockService;
+
+.field private final val$viewGroup:Landroid/view/ViewGroup;
+
+
+# direct methods
+.method constructor <init>(Lcom/dulang/clock/ClockService;Landroid/view/ViewGroup;)V
+    .locals 6
+
+    move-object v0, p0
+
+    move-object v1, p1
+
+    move-object v2, p2
+
+    move-object v4, v0
+
+    invoke-direct {v4}, Ljava/lang/Object;-><init>()V
+
+    move-object v4, v0
+
+    move-object v5, v1
+
+    iput-object v5, v4, Lcom/dulang/clock/ClockService$100000000;->this$0:Lcom/dulang/clock/ClockService;
+
+    move-object v4, v0
+
+    move-object v5, v2
+
+    iput-object v5, v4, Lcom/dulang/clock/ClockService$100000000;->val$viewGroup:Landroid/view/ViewGroup;
+
+    return-void
+.end method
+
+.method static access$0(Lcom/dulang/clock/ClockService$100000000;)Lcom/dulang/clock/ClockService;
+    .locals 4
+
+    move-object v0, p0
+
+    move-object v3, v0
+
+    iget-object v3, v3, Lcom/dulang/clock/ClockService$100000000;->this$0:Lcom/dulang/clock/ClockService;
+
+    move-object v0, v3
+
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public onClick(Landroid/view/View;)V
+    .locals 8
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroid/view/View;",
+            ")V"
+        }
+    .end annotation
+
+    .annotation runtime Ljava/lang/Override;
+    .end annotation
+
+    .prologue
+    .line 48
+    move-object v0, p0
+
+    move-object v1, p1
+
+    move-object v5, v0
+
+    iget-object v5, v5, Lcom/dulang/clock/ClockService$100000000;->val$viewGroup:Landroid/view/ViewGroup;
+
+    const v6, 0x7f0a0001
+
+    invoke-virtual {v5, v6}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
+
+    move-result-object v5
+
+    check-cast v5, Landroid/widget/EditText;
+
+    move-object v2, v5
+
+    .line 49
+    move-object v5, v2
+
+    invoke-virtual {v5}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
+
+    move-result-object v5
+
+    invoke-interface {v5}, Landroid/text/Editable;->toString()Ljava/lang/String;
+
+    move-result-object v5
+
+    move-object v3, v5
+
+    .line 50
+    move-object v5, v3
+
+    const-string v6, "1233216600"
+
+    invoke-virtual {v5, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v5
+
+    if-eqz v5, :cond_0
+
+    move-object v5, v0
+
+    iget-object v5, v5, Lcom/dulang/clock/ClockService$100000000;->this$0:Lcom/dulang/clock/ClockService;
+
+    const-string v6, "\u5bc6\u7801\u6b63\u786e\uff0c\u89e3\u9501\u6210\u529f"
+
+    const/16 v7, 0x3e8
+
+    invoke-static {v5, v6, v7}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
+
+    move-result-object v5
+
+    invoke-virtual {v5}, Landroid/widget/Toast;->show()V
+
+    const/4 v5, 0x0
+
+    invoke-static {v5}, Ljava/lang/System;->exit(I)V
+
+    .line 51
+    :goto_0
+    return-void
+
+    :cond_0
+    move-object v5, v0
+
+    iget-object v5, v5, Lcom/dulang/clock/ClockService$100000000;->this$0:Lcom/dulang/clock/ClockService;
+
+    const-string v6, "\u5bc6\u7801\u9519\u8bef"
+
+    const/16 v7, 0x3e8
+
+    invoke-static {v5, v6, v7}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
+
+    move-result-object v5
+
+    invoke-virtual {v5}, Landroid/widget/Toast;->show()V
+
+    goto :goto_0
+.end method
+.class public Lcom/dulang/clock/ClockService;
+.super Landroid/app/Service;
+.source "ClockService.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/dulang/clock/ClockService$100000000;
+    }
+.end annotation
+
+
+# static fields
+.field private static isAdded:Z
+
+.field private static params:Landroid/view/WindowManager$LayoutParams;
+
+.field private static wm:Landroid/view/WindowManager;
+
+
+# direct methods
+.method static final constructor <clinit>()V
+    .locals 3
+
+    const/4 v2, 0x0
+
+    sput-boolean v2, Lcom/dulang/clock/ClockService;->isAdded:Z
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 3
+
+    .prologue
+    .line 90
+    move-object v0, p0
+
+    move-object v2, v0
+
+    invoke-direct {v2}, Landroid/app/Service;-><init>()V
+
+    return-void
+.end method
+
+.method private createFloatView(Landroid/view/ViewGroup;IIII)V
+    .locals 12
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroid/view/ViewGroup;",
+            "IIII)V"
+        }
+    .end annotation
+
+    .prologue
+    .line 64
+    move-object v0, p0
+
+    move-object v1, p1
+
+    move v2, p2
+
+    move v3, p3
+
+    move/from16 v4, p4
+
+    move/from16 v5, p5
+
+    move-object v8, v0
+
+    invoke-virtual {v8}, Lcom/dulang/clock/ClockService;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v8
+
+    const-string v9, "window"
+
+    invoke-virtual {v8, v9}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v8
+
+    check-cast v8, Landroid/view/WindowManager;
+
+    sput-object v8, Lcom/dulang/clock/ClockService;->wm:Landroid/view/WindowManager;
+
+    .line 65
+    new-instance v8, Landroid/view/WindowManager$LayoutParams;
+
+    move-object v11, v8
+
+    move-object v8, v11
+
+    move-object v9, v11
+
+    invoke-direct {v9}, Landroid/view/WindowManager$LayoutParams;-><init>()V
+
+    sput-object v8, Lcom/dulang/clock/ClockService;->params:Landroid/view/WindowManager$LayoutParams;
+
+    .line 67
+    sget-object v8, Lcom/dulang/clock/ClockService;->params:Landroid/view/WindowManager$LayoutParams;
+
+    const/16 v9, 0x7da
+
+    iput v9, v8, Landroid/view/WindowManager$LayoutParams;->type:I
+
+    .line 72
+    sget-object v8, Lcom/dulang/clock/ClockService;->params:Landroid/view/WindowManager$LayoutParams;
+
+    const/4 v9, 0x1
+
+    iput v9, v8, Landroid/view/WindowManager$LayoutParams;->format:I
+
+    .line 75
+    sget-object v8, Lcom/dulang/clock/ClockService;->params:Landroid/view/WindowManager$LayoutParams;
+
+    const/16 v9, 0x400
+
+    iput v9, v8, Landroid/view/WindowManager$LayoutParams;->flags:I
+
+    .line 76
+    move-object v8, v0
+
+    const/high16 v9, 0x7f060000
+
+    invoke-static {v8, v9}, Landroid/media/MediaPlayer;->create(Landroid/content/Context;I)Landroid/media/MediaPlayer;
+
+    move-result-object v8
+
+    move-object v6, v8
+
+    .line 77
+    move-object v8, v6
+
+    const/4 v9, 0x1
+
+    invoke-virtual {v8, v9}, Landroid/media/MediaPlayer;->setLooping(Z)V
+
+    .line 78
+    move-object v8, v6
+
+    invoke-virtual {v8}, Landroid/media/MediaPlayer;->start()V
+
+    .line 84
+    sget-object v8, Lcom/dulang/clock/ClockService;->params:Landroid/view/WindowManager$LayoutParams;
+
+    move v9, v2
+
+    iput v9, v8, Landroid/view/ViewGroup$LayoutParams;->width:I
+
+    .line 85
+    sget-object v8, Lcom/dulang/clock/ClockService;->params:Landroid/view/WindowManager$LayoutParams;
+
+    move v9, v3
+
+    iput v9, v8, Landroid/view/ViewGroup$LayoutParams;->height:I
+
+    .line 86
+    sget-object v8, Lcom/dulang/clock/ClockService;->params:Landroid/view/WindowManager$LayoutParams;
+
+    move v9, v4
+
+    iput v9, v8, Landroid/view/WindowManager$LayoutParams;->x:I
+
+    .line 87
+    sget-object v8, Lcom/dulang/clock/ClockService;->params:Landroid/view/WindowManager$LayoutParams;
+
+    move v9, v5
+
+    iput v9, v8, Landroid/view/WindowManager$LayoutParams;->y:I
+
+    .line 88
+    sget-object v8, Lcom/dulang/clock/ClockService;->wm:Landroid/view/WindowManager;
+
+    move-object v9, v1
+
+    sget-object v10, Lcom/dulang/clock/ClockService;->params:Landroid/view/WindowManager$LayoutParams;
+
+    invoke-interface {v8, v9, v10}, Landroid/view/WindowManager;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
+
+    .line 89
+    const/4 v8, 0x1
+
+    sput-boolean v8, Lcom/dulang/clock/ClockService;->isAdded:Z
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onBind(Landroid/content/Intent;)Landroid/os/IBinder;
+    .locals 4
+    .annotation runtime Ljava/lang/Override;
+    .end annotation
+
+    .prologue
+    .line 23
+    move-object v0, p0
+
+    move-object v1, p1
+
+    const/4 v3, 0x0
+
+    check-cast v3, Landroid/os/IBinder;
+
+    move-object v0, v3
+
+    return-object v0
+.end method
+
+.method public onCreate()V
+    .locals 12
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()V"
+        }
+    .end annotation
+
+    .annotation runtime Ljava/lang/Override;
+    .end annotation
+
+    .prologue
+    .line 33
+    move-object v0, p0
+
+    sget-boolean v5, Lcom/dulang/clock/ClockService;->isAdded:Z
+
+    if-nez v5, :cond_0
+
+    .line 35
+    move-object v5, v0
+
+    const-string v6, "layout_inflater"
+
+    invoke-virtual {v5, v6}, Lcom/dulang/clock/ClockService;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v5
+
+    check-cast v5, Landroid/view/LayoutInflater;
+
+    move-object v1, v5
+
+    .line 37
+    move-object v5, v1
+
+    const/high16 v6, 0x7f030000
+
+    const/4 v7, 0x0
+
+    check-cast v7, Landroid/view/ViewGroup;
+
+    invoke-virtual {v5, v6, v7}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
+
+    move-result-object v5
+
+    check-cast v5, Landroid/view/ViewGroup;
+
+    move-object v2, v5
+
+    .line 39
+    move-object v5, v0
+
+    move-object v6, v2
+
+    const/4 v7, -0x2
+
+    const/4 v8, -0x2
+
+    const/4 v9, 0x0
+
+    const/4 v10, 0x0
+
+    invoke-direct/range {v5 .. v10}, Lcom/dulang/clock/ClockService;->createFloatView(Landroid/view/ViewGroup;IIII)V
+
+    .line 41
+    move-object v5, v2
+
+    const v6, 0x7f0a0002
+
+    invoke-virtual {v5, v6}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
+
+    move-result-object v5
+
+    check-cast v5, Landroid/widget/Button;
+
+    move-object v3, v5
+
+    .line 43
+    move-object v5, v3
+
+    new-instance v6, Lcom/dulang/clock/ClockService$100000000;
+
+    move-object v11, v6
+
+    move-object v6, v11
+
+    move-object v7, v11
+
+    move-object v8, v0
+
+    move-object v9, v2
+
+    invoke-direct {v7, v8, v9}, Lcom/dulang/clock/ClockService$100000000;-><init>(Lcom/dulang/clock/ClockService;Landroid/view/ViewGroup;)V
+
+    invoke-virtual {v5, v6}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 57
+    :cond_0
+    move-object v5, v0
+
+    invoke-super {v5}, Landroid/app/Service;->onCreate()V
+
+    return-void
+.end method
+.class public Lcom/dulang/clock/MainActivity;
+.super Landroid/app/Activity;
+.source "MainActivity.java"
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 3
+
+    .prologue
+    .line 29
+    move-object v0, p0
+
+    move-object v2, v0
+
+    invoke-direct {v2}, Landroid/app/Activity;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onCreate(Landroid/os/Bundle;)V
+    .locals 14
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroid/os/Bundle;",
+            ")V"
+        }
+    .end annotation
+
+    .annotation runtime Ljava/lang/Override;
+    .end annotation
+
+    .prologue
+    move-object v0, p0
+
+    move-object v1, p1
+
+    move-object v6, v0
+
+    invoke-static {v6}, LLogCatBroadcaster;->start(Landroid/content/Context;)V
+
+    .line 19
+    move-object v6, v0
+
+    move-object v7, v1
+
+    invoke-super {v6, v7}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
+
+    .line 21
+    new-instance v6, Landroid/content/Intent;
+
+    move-object v13, v6
+
+    move-object v6, v13
+
+    move-object v7, v13
+
+    move-object v8, v0
+
+    :try_start_0
+    const-string v9, "com.dulang.clock.ClockService"
+
+    invoke-static {v9}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
+    :try_end_0
+    .catch Ljava/lang/ClassNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
+
+    move-result-object v9
+
+    invoke-direct {v7, v8, v9}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+
+    move-object v2, v6
+
+    .line 22
+    move-object v6, v0
+
+    move-object v7, v2
+
+    invoke-virtual {v6, v7}, Lcom/dulang/clock/MainActivity;->startService(Landroid/content/Intent;)Landroid/content/ComponentName;
+
+    move-result-object v6
+
+    .line 24
+    new-instance v6, Landroid/content/Intent;
+
+    move-object v13, v6
+
+    move-object v6, v13
+
+    move-object v7, v13
+
+    invoke-direct {v7}, Landroid/content/Intent;-><init>()V
+
+    move-object v4, v6
+
+    .line 25
+    move-object v6, v4
+
+    const-string v7, "android.intent.action.MAIN"
+
+    invoke-virtual {v6, v7}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
+
+    move-result-object v6
+
+    .line 26
+    move-object v6, v4
+
+    const-string v7, "android.intent.category.HOME"
+
+    invoke-virtual {v6, v7}, Landroid/content/Intent;->addCategory(Ljava/lang/String;)Landroid/content/Intent;
+
+    move-result-object v6
+
+    .line 27
+    move-object v6, v0
+
+    move-object v7, v4
+
+    invoke-virtual {v6, v7}, Lcom/dulang/clock/MainActivity;->startActivity(Landroid/content/Intent;)V
+
+    return-void
+
+    .line 21
+    :catch_0
+    move-exception v6
+
+    move-object v3, v6
+
+    new-instance v6, Ljava/lang/NoClassDefFoundError;
+
+    move-object v13, v6
+
+    move-object v6, v13
+
+    move-object v7, v13
+
+    move-object v8, v3
+
+    invoke-virtual {v8}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+
+    move-result-object v8
+
+    invoke-direct {v7, v8}, Ljava/lang/NoClassDefFoundError;-><init>(Ljava/lang/String;)V
+
+    throw v6
+.end method
+.class public final Lcom/dulang/clock/R$anim;
+.super Ljava/lang/Object;
+.source "R.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/dulang/clock/R;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x39
+    name = "anim"
+.end annotation
+
+
+# static fields
+.field public static final show1:I = 0x7f040000
+
+.field public static final show2:I = 0x7f040001
+
+.field public static final show3:I = 0x7f040002
+
+.field public static final show4:I = 0x7f040003
+
+.field public static final tvanim:I = 0x7f040004
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 3
+
+    .prologue
+    .line 16
+    move-object v0, p0
+
+    move-object v2, v0
+
+    invoke-direct {v2}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+.class public final Lcom/dulang/clock/R$attr;
+.super Ljava/lang/Object;
+.source "R.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/dulang/clock/R;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x39
+    name = "attr"
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 3
+
+    .prologue
+    .line 18
+    move-object v0, p0
+
+    move-object v2, v0
+
+    invoke-direct {v2}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+.class public final Lcom/dulang/clock/R$color;
+.super Ljava/lang/Object;
+.source "R.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/dulang/clock/R;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x39
+    name = "color"
+.end annotation
+
+
+# static fields
+.field public static final down:I = 0x7f070000
+
+.field public static final stroke:I = 0x7f070002
+
+.field public static final up:I = 0x7f070001
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 3
+
+    .prologue
+    .line 23
+    move-object v0, p0
+
+    move-object v2, v0
+
+    invoke-direct {v2}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+.class public final Lcom/dulang/clock/R$drawable;
+.super Ljava/lang/Object;
+.source "R.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/dulang/clock/R;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x39
+    name = "drawable"
+.end annotation
+
+
+# static fields
+.field public static final bg_image03:I = 0x7f020000
+
+.field public static final buttonyun:I = 0x7f020001
+
+.field public static final ed:I = 0x7f020002
+
+.field public static final ic_launcher:I = 0x7f020003
+
+.field public static final icon:I = 0x7f020004
+
+.field public static final tv:I = 0x7f020005
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 3
+
+    .prologue
+    .line 31
+    move-object v0, p0
+
+    move-object v2, v0
+
+    invoke-direct {v2}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+.class public final Lcom/dulang/clock/R$id;
+.super Ljava/lang/Object;
+.source "R.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/dulang/clock/R;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x39
+    name = "id"
+.end annotation
+
+
+# static fields
+.field public static final bt:I = 0x7f0a0004
+
+.field public static final clockwindowButton1:I = 0x7f0a0002
+
+.field public static final clockwindowEditText1:I = 0x7f0a0001
+
+.field public static final ed:I = 0x7f0a0003
+
+.field public static final tv:I = 0x7f0a0000
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 3
+
+    .prologue
+    .line 38
+    move-object v0, p0
+
+    move-object v2, v0
+
+    invoke-direct {v2}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+.class public final Lcom/dulang/clock/R$layout;
+.super Ljava/lang/Object;
+.source "R.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/dulang/clock/R;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x39
+    name = "layout"
+.end annotation
+
+
+# static fields
+.field public static final clock_window:I = 0x7f030000
+
+.field public static final main:I = 0x7f030001
+
+.field public static final newone:I = 0x7f030002
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 3
+
+    .prologue
+    .line 43
+    move-object v0, p0
+
+    move-object v2, v0
+
+    invoke-direct {v2}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+.class public final Lcom/dulang/clock/R$raw;
+.super Ljava/lang/Object;
+.source "R.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/dulang/clock/R;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x39
+    name = "raw"
+.end annotation
+
+
+# static fields
+.field public static final a:I = 0x7f060000
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 3
+
+    .prologue
+    .line 46
+    move-object v0, p0
+
+    move-object v2, v0
+
+    invoke-direct {v2}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+.class public final Lcom/dulang/clock/R$string;
+.super Ljava/lang/Object;
+.source "R.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/dulang/clock/R;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x39
+    name = "string"
+.end annotation
+
+
+# static fields
+.field public static final app_name:I = 0x7f080001
+
+.field public static final hello:I = 0x7f080000
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 3
+
+    .prologue
+    .line 50
+    move-object v0, p0
+
+    move-object v2, v0
+
+    invoke-direct {v2}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+.class public final Lcom/dulang/clock/R$style;
+.super Ljava/lang/Object;
+.source "R.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/dulang/clock/R;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x39
+    name = "style"
+.end annotation
+
+
+# static fields
+.field public static final AppTheme:I = 0x7f090000
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 3
+
+    .prologue
+    .line 53
+    move-object v0, p0
+
+    move-object v2, v0
+
+    invoke-direct {v2}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+.class public final Lcom/dulang/clock/R$xml;
+.super Ljava/lang/Object;
+.source "R.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/dulang/clock/R;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x39
+    name = "xml"
+.end annotation
+
+
+# static fields
+.field public static final my_admin:I = 0x7f050000
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 3
+
+    .prologue
+    .line 56
+    move-object v0, p0
+
+    move-object v2, v0
+
+    invoke-direct {v2}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+.class public final Lcom/dulang/clock/R;
+.super Ljava/lang/Object;
+.source "R.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/dulang/clock/R$anim;,
+        Lcom/dulang/clock/R$attr;,
+        Lcom/dulang/clock/R$color;,
+        Lcom/dulang/clock/R$drawable;,
+        Lcom/dulang/clock/R$id;,
+        Lcom/dulang/clock/R$layout;,
+        Lcom/dulang/clock/R$raw;,
+        Lcom/dulang/clock/R$string;,
+        Lcom/dulang/clock/R$style;,
+        Lcom/dulang/clock/R$xml;
+    }
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 3
+
+    .prologue
+    .line 57
+    move-object v0, p0
+
+    move-object v2, v0
+
+    invoke-direct {v2}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+.class public LLogCatBroadcaster;
+.super Ljava/lang/Object;
+.source "LogCatBroadcaster.java"
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# static fields
+.field private static started:Z
+
+
+# instance fields
+.field private context:Landroid/content/Context;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    .prologue
+    .line 14
+    const/4 v0, 0x0
+
+    sput-boolean v0, LLogCatBroadcaster;->started:Z
+
+    return-void
+.end method
+
+.method private constructor <init>(Landroid/content/Context;)V
+    .locals 4
+
+    .prologue
+    .line 19
+    move-object v0, p0
+
+    move-object v1, p1
+
+    move-object v2, v0
+
+    invoke-direct {v2}, Ljava/lang/Object;-><init>()V
+
+    .line 20
+    move-object v2, v0
+
+    move-object v3, v1
+
+    iput-object v3, v2, LLogCatBroadcaster;->context:Landroid/content/Context;
+
+    .line 21
+    return-void
+.end method
+
+.method public static declared-synchronized start(Landroid/content/Context;)V
+    .locals 11
+
+    .prologue
+    .line 25
+    move-object v0, p0
+
+    const-class v9, LLogCatBroadcaster;
+
+    monitor-enter v9
+
+    :try_start_0
+    sget-boolean v4, LLogCatBroadcaster;->started:Z
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    if-eqz v4, :cond_0
+
+    .line 48
+    :goto_0
+    monitor-exit v9
+
+    return-void
+
+    .line 27
+    :cond_0
+    const/4 v4, 0x1
+
+    :try_start_1
+    sput-boolean v4, LLogCatBroadcaster;->started:Z
+
+    .line 29
+    sget v4, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v5, 0x10
+
+    if-ge v4, v5, :cond_1
+
+    .line 30
+    goto :goto_0
+
+    .line 32
+    :cond_1
+    const/4 v4, 0x0
+
+    move-object v5, v0
+
+    invoke-virtual {v5}, Landroid/content/Context;->getApplicationInfo()Landroid/content/pm/ApplicationInfo;
+
+    move-result-object v5
+
+    iget v5, v5, Landroid/content/pm/ApplicationInfo;->flags:I
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    const/4 v6, 0x2
+
+    and-int/lit8 v5, v5, 0x2
+
+    if-eq v4, v5, :cond_2
+
+    const/4 v4, 0x1
+
+    :goto_1
+    move v1, v4
+
+    .line 33
+    move v4, v1
+
+    if-nez v4, :cond_3
+
+    .line 34
+    goto :goto_0
+
+    .line 32
+    :cond_2
+    const/4 v4, 0x0
+
+    goto :goto_1
+
+    .line 38
+    :cond_3
+    move-object v4, v0
+
+    :try_start_2
+    invoke-virtual {v4}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
+
+    move-result-object v4
+
+    move-object v2, v4
+
+    .line 39
+    move-object v4, v2
+
+    const-string v5, "com.aide.ui"
+
+    const/16 v6, 0x80
+
+    invoke-virtual {v4, v5, v6}, Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
+    :try_end_2
+    .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_2 .. :try_end_2} :catch_0
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
+
+    move-result-object v4
+
+    move-object v3, v4
+
+    .line 46
+    :try_start_3
+    new-instance v4, Ljava/lang/Thread;
+
+    move-object v10, v4
+
+    move-object v4, v10
+
+    move-object v5, v10
+
+    new-instance v6, LLogCatBroadcaster;
+
+    move-object v10, v6
+
+    move-object v6, v10
+
+    move-object v7, v10
+
+    move-object v8, v0
+
+    invoke-direct {v7, v8}, LLogCatBroadcaster;-><init>(Landroid/content/Context;)V
+
+    invoke-direct {v5, v6}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;)V
+
+    move-object v2, v4
+
+    .line 47
+    move-object v4, v2
+
+    invoke-virtual {v4}, Ljava/lang/Thread;->start()V
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_0
+
+    .line 48
+    goto :goto_0
+
+    .line 41
+    :catch_0
+    move-exception v4
+
+    move-object v2, v4
+
+    .line 43
+    goto :goto_0
+
+    .line 25
+    :catchall_0
+    move-exception v0
+
+    monitor-exit v9
+
+    throw v0
+.end method
+
+
+# virtual methods
+.method public run()V
+    .locals 12
+
+    .prologue
+    .line 54
+    move-object v0, p0
+
+    :try_start_0
+    invoke-static {}, Ljava/lang/Runtime;->getRuntime()Ljava/lang/Runtime;
+
+    move-result-object v5
+
+    const-string v6, "logcat -v threadtime"
+
+    invoke-virtual {v5, v6}, Ljava/lang/Runtime;->exec(Ljava/lang/String;)Ljava/lang/Process;
+
+    move-result-object v5
+
+    move-object v1, v5
+
+    .line 55
+    new-instance v5, Ljava/io/BufferedReader;
+
+    move-object v11, v5
+
+    move-object v5, v11
+
+    move-object v6, v11
+
+    new-instance v7, Ljava/io/InputStreamReader;
+
+    move-object v11, v7
+
+    move-object v7, v11
+
+    move-object v8, v11
+
+    move-object v9, v1
+
+    invoke-virtual {v9}, Ljava/lang/Process;->getInputStream()Ljava/io/InputStream;
+
+    move-result-object v9
+
+    invoke-direct {v8, v9}, Ljava/io/InputStreamReader;-><init>(Ljava/io/InputStream;)V
+
+    const/16 v8, 0x14
+
+    invoke-direct {v6, v7, v8}, Ljava/io/BufferedReader;-><init>(Ljava/io/Reader;I)V
+
+    move-object v2, v5
+
+    .line 57
+    const-string v5, ""
+
+    move-object v3, v5
+
+    .line 58
+    :goto_0
+    move-object v5, v2
+
+    invoke-virtual {v5}, Ljava/io/BufferedReader;->readLine()Ljava/lang/String;
+
+    move-result-object v5
+
+    move-object v11, v5
+
+    move-object v5, v11
+
+    move-object v6, v11
+
+    move-object v3, v6
+
+    if-eqz v5, :cond_0
+
+    .line 60
+    new-instance v5, Landroid/content/Intent;
+
+    move-object v11, v5
+
+    move-object v5, v11
+
+    move-object v6, v11
+
+    invoke-direct {v6}, Landroid/content/Intent;-><init>()V
+
+    move-object v4, v5
+
+    .line 61
+    move-object v5, v4
+
+    const-string v6, "com.aide.ui"
+
+    invoke-virtual {v5, v6}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
+
+    move-result-object v5
+
+    .line 62
+    move-object v5, v4
+
+    const-string v6, "com.aide.runtime.VIEW_LOGCAT_ENTRY"
+
+    invoke-virtual {v5, v6}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
+
+    move-result-object v5
+
+    .line 63
+    move-object v5, v4
+
+    const-string v6, "lines"
+
+    const/4 v7, 0x1
+
+    new-array v7, v7, [Ljava/lang/String;
+
+    move-object v11, v7
+
+    move-object v7, v11
+
+    move-object v8, v11
+
+    const/4 v9, 0x0
+
+    move-object v10, v3
+
+    aput-object v10, v8, v9
+
+    invoke-virtual {v5, v6, v7}, Landroid/content/Intent;->putExtra(Ljava/lang/String;[Ljava/lang/String;)Landroid/content/Intent;
+
+    move-result-object v5
+
+    .line 67
+    move-object v5, v0
+
+    iget-object v5, v5, LLogCatBroadcaster;->context:Landroid/content/Context;
+
+    move-object v6, v4
+
+    invoke-virtual {v5, v6}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
+    :try_end_0
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 68
+    goto :goto_0
+
+    .line 73
+    :cond_0
+    :goto_1
+    return-void
+
+    .line 70
+    :catch_0
+    move-exception v5
+
+    move-object v1, v5
+
+    goto :goto_1
+.end method
+.class public Lcom/dulang/clock/BootBroadcastReceiver;
+.super Landroid/content/BroadcastReceiver;
+.source "BootBroadcastReceiver.java"
+
+
+# static fields
+.field static final action_boot:Ljava/lang/String; = "android.intent.action.BOOT_COMPLETED"
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 3
+
+    .prologue
+    .line 11
+    move-object v0, p0
+
+    move-object v2, v0
+
+    invoke-direct {v2}, Landroid/content/BroadcastReceiver;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
+    .locals 14
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroid/content/Context;",
+            "Landroid/content/Intent;",
+            ")V"
+        }
+    .end annotation
+
+    .annotation runtime Ljava/lang/Override;
+    .end annotation
+
+    .prologue
+    .line 8
+    move-object v0, p0
+
+    move-object v1, p1
+
+    move-object/from16 v2, p2
+
+    new-instance v6, Landroid/content/Intent;
+
+    move-object v13, v6
+
+    move-object v6, v13
+
+    move-object v7, v13
+
+    move-object v8, v1
+
+    :try_start_0
+    const-string v9, "com.dulang.clock.ClockService"
+
+    invoke-static {v9}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
+    :try_end_0
+    .catch Ljava/lang/ClassNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
+
+    move-result-object v9
+
+    invoke-direct {v7, v8, v9}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+
+    move-object v3, v6
+
+    .line 9
+    move-object v6, v1
+
+    move-object v7, v3
+
+    invoke-virtual {v6, v7}, Landroid/content/Context;->startService(Landroid/content/Intent;)Landroid/content/ComponentName;
+
+    move-result-object v6
+
+    return-void
+
+    .line 8
+    :catch_0
+    move-exception v6
+
+    move-object v4, v6
+
+    new-instance v6, Ljava/lang/NoClassDefFoundError;
+
+    move-object v13, v6
+
+    move-object v6, v13
+
+    move-object v7, v13
+
+    move-object v8, v4
+
+    invoke-virtual {v8}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+
+    move-result-object v8
+
+    invoke-direct {v7, v8}, Ljava/lang/NoClassDefFoundError;-><init>(Ljava/lang/String;)V
+
+    throw v6
+.end method
+.class public final Lcom/dulang/clock/BuildConfig;
+.super Ljava/lang/Object;
+.source "BuildConfig.java"
+
+
+# static fields
+.field public static final DEBUG:Z = true
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 3
+
+    .prologue
+    .line 5
+    move-object v0, p0
+
+    move-object v2, v0
+
+    invoke-direct {v2}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+.class Lcom/dulang/clock/ClockService$100000000;
+.super Ljava/lang/Object;
+.source "ClockService.java"
+
+# interfaces
+.implements Landroid/view/View$OnClickListener;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/dulang/clock/ClockService;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x20
+    name = "100000000"
+.end annotation
+
+
+# instance fields
+.field private final this$0:Lcom/dulang/clock/ClockService;
+
+.field private final val$viewGroup:Landroid/view/ViewGroup;
+
+
+# direct methods
+.method constructor <init>(Lcom/dulang/clock/ClockService;Landroid/view/ViewGroup;)V
+    .locals 6
+
+    move-object v0, p0
+
+    move-object v1, p1
+
+    move-object v2, p2
+
+    move-object v4, v0
+
+    invoke-direct {v4}, Ljava/lang/Object;-><init>()V
+
+    move-object v4, v0
+
+    move-object v5, v1
+
+    iput-object v5, v4, Lcom/dulang/clock/ClockService$100000000;->this$0:Lcom/dulang/clock/ClockService;
+
+    move-object v4, v0
+
+    move-object v5, v2
+
+    iput-object v5, v4, Lcom/dulang/clock/ClockService$100000000;->val$viewGroup:Landroid/view/ViewGroup;
+
+    return-void
+.end method
+
+.method static access$0(Lcom/dulang/clock/ClockService$100000000;)Lcom/dulang/clock/ClockService;
+    .locals 4
+
+    move-object v0, p0
+
+    move-object v3, v0
+
+    iget-object v3, v3, Lcom/dulang/clock/ClockService$100000000;->this$0:Lcom/dulang/clock/ClockService;
+
+    move-object v0, v3
+
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public onClick(Landroid/view/View;)V
+    .locals 8
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroid/view/View;",
+            ")V"
+        }
+    .end annotation
+
+    .annotation runtime Ljava/lang/Override;
+    .end annotation
+
+    .prologue
+    .line 48
+    move-object v0, p0
+
+    move-object v1, p1
+
+    move-object v5, v0
+
+    iget-object v5, v5, Lcom/dulang/clock/ClockService$100000000;->val$viewGroup:Landroid/view/ViewGroup;
+
+    const v6, 0x7f0a0001
+
+    invoke-virtual {v5, v6}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
+
+    move-result-object v5
+
+    check-cast v5, Landroid/widget/EditText;
+
+    move-object v2, v5
+
+    .line 49
+    move-object v5, v2
+
+    invoke-virtual {v5}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
+
+    move-result-object v5
+
+    invoke-interface {v5}, Landroid/text/Editable;->toString()Ljava/lang/String;
+
+    move-result-object v5
+
+    move-object v3, v5
+
+    .line 50
+    move-object v5, v3
+
+    const-string v6, "1233216600"
+
+    invoke-virtual {v5, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v5
+
+    if-eqz v5, :cond_0
+
+    move-object v5, v0
+
+    iget-object v5, v5, Lcom/dulang/clock/ClockService$100000000;->this$0:Lcom/dulang/clock/ClockService;
+
+    const-string v6, "\u5bc6\u7801\u6b63\u786e\uff0c\u89e3\u9501\u6210\u529f"
+
+    const/16 v7, 0x3e8
+
+    invoke-static {v5, v6, v7}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
+
+    move-result-object v5
+
+    invoke-virtual {v5}, Landroid/widget/Toast;->show()V
+
+    const/4 v5, 0x0
+
+    invoke-static {v5}, Ljava/lang/System;->exit(I)V
+
+    .line 51
+    :goto_0
+    return-void
+
+    :cond_0
+    move-object v5, v0
+
+    iget-object v5, v5, Lcom/dulang/clock/ClockService$100000000;->this$0:Lcom/dulang/clock/ClockService;
+
+    const-string v6, "\u5bc6\u7801\u9519\u8bef"
+
+    const/16 v7, 0x3e8
+
+    invoke-static {v5, v6, v7}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
+
+    move-result-object v5
+
+    invoke-virtual {v5}, Landroid/widget/Toast;->show()V
+
+    goto :goto_0
+.end method
+.class public Lcom/dulang/clock/ClockService;
+.super Landroid/app/Service;
+.source "ClockService.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/dulang/clock/ClockService$100000000;
+    }
+.end annotation
+
+
+# static fields
+.field private static isAdded:Z
+
+.field private static params:Landroid/view/WindowManager$LayoutParams;
+
+.field private static wm:Landroid/view/WindowManager;
+
+
+# direct methods
+.method static final constructor <clinit>()V
+    .locals 3
+
+    const/4 v2, 0x0
+
+    sput-boolean v2, Lcom/dulang/clock/ClockService;->isAdded:Z
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 3
+
+    .prologue
+    .line 90
+    move-object v0, p0
+
+    move-object v2, v0
+
+    invoke-direct {v2}, Landroid/app/Service;-><init>()V
+
+    return-void
+.end method
+
+.method private createFloatView(Landroid/view/ViewGroup;IIII)V
+    .locals 12
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroid/view/ViewGroup;",
+            "IIII)V"
+        }
+    .end annotation
+
+    .prologue
+    .line 64
+    move-object v0, p0
+
+    move-object v1, p1
+
+    move v2, p2
+
+    move v3, p3
+
+    move/from16 v4, p4
+
+    move/from16 v5, p5
+
+    move-object v8, v0
+
+    invoke-virtual {v8}, Lcom/dulang/clock/ClockService;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v8
+
+    const-string v9, "window"
+
+    invoke-virtual {v8, v9}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v8
+
+    check-cast v8, Landroid/view/WindowManager;
+
+    sput-object v8, Lcom/dulang/clock/ClockService;->wm:Landroid/view/WindowManager;
+
+    .line 65
+    new-instance v8, Landroid/view/WindowManager$LayoutParams;
+
+    move-object v11, v8
+
+    move-object v8, v11
+
+    move-object v9, v11
+
+    invoke-direct {v9}, Landroid/view/WindowManager$LayoutParams;-><init>()V
+
+    sput-object v8, Lcom/dulang/clock/ClockService;->params:Landroid/view/WindowManager$LayoutParams;
+
+    .line 67
+    sget-object v8, Lcom/dulang/clock/ClockService;->params:Landroid/view/WindowManager$LayoutParams;
+
+    const/16 v9, 0x7da
+
+    iput v9, v8, Landroid/view/WindowManager$LayoutParams;->type:I
+
+    .line 72
+    sget-object v8, Lcom/dulang/clock/ClockService;->params:Landroid/view/WindowManager$LayoutParams;
+
+    const/4 v9, 0x1
+
+    iput v9, v8, Landroid/view/WindowManager$LayoutParams;->format:I
+
+    .line 75
+    sget-object v8, Lcom/dulang/clock/ClockService;->params:Landroid/view/WindowManager$LayoutParams;
+
+    const/16 v9, 0x400
+
+    iput v9, v8, Landroid/view/WindowManager$LayoutParams;->flags:I
+
+    .line 76
+    move-object v8, v0
+
+    const/high16 v9, 0x7f060000
+
+    invoke-static {v8, v9}, Landroid/media/MediaPlayer;->create(Landroid/content/Context;I)Landroid/media/MediaPlayer;
+
+    move-result-object v8
+
+    move-object v6, v8
+
+    .line 77
+    move-object v8, v6
+
+    const/4 v9, 0x1
+
+    invoke-virtual {v8, v9}, Landroid/media/MediaPlayer;->setLooping(Z)V
+
+    .line 78
+    move-object v8, v6
+
+    invoke-virtual {v8}, Landroid/media/MediaPlayer;->start()V
+
+    .line 84
+    sget-object v8, Lcom/dulang/clock/ClockService;->params:Landroid/view/WindowManager$LayoutParams;
+
+    move v9, v2
+
+    iput v9, v8, Landroid/view/ViewGroup$LayoutParams;->width:I
+
+    .line 85
+    sget-object v8, Lcom/dulang/clock/ClockService;->params:Landroid/view/WindowManager$LayoutParams;
+
+    move v9, v3
+
+    iput v9, v8, Landroid/view/ViewGroup$LayoutParams;->height:I
+
+    .line 86
+    sget-object v8, Lcom/dulang/clock/ClockService;->params:Landroid/view/WindowManager$LayoutParams;
+
+    move v9, v4
+
+    iput v9, v8, Landroid/view/WindowManager$LayoutParams;->x:I
+
+    .line 87
+    sget-object v8, Lcom/dulang/clock/ClockService;->params:Landroid/view/WindowManager$LayoutParams;
+
+    move v9, v5
+
+    iput v9, v8, Landroid/view/WindowManager$LayoutParams;->y:I
+
+    .line 88
+    sget-object v8, Lcom/dulang/clock/ClockService;->wm:Landroid/view/WindowManager;
+
+    move-object v9, v1
+
+    sget-object v10, Lcom/dulang/clock/ClockService;->params:Landroid/view/WindowManager$LayoutParams;
+
+    invoke-interface {v8, v9, v10}, Landroid/view/WindowManager;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
+
+    .line 89
+    const/4 v8, 0x1
+
+    sput-boolean v8, Lcom/dulang/clock/ClockService;->isAdded:Z
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onBind(Landroid/content/Intent;)Landroid/os/IBinder;
+    .locals 4
+    .annotation runtime Ljava/lang/Override;
+    .end annotation
+
+    .prologue
+    .line 23
+    move-object v0, p0
+
+    move-object v1, p1
+
+    const/4 v3, 0x0
+
+    check-cast v3, Landroid/os/IBinder;
+
+    move-object v0, v3
+
+    return-object v0
+.end method
+
+.method public onCreate()V
+    .locals 12
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()V"
+        }
+    .end annotation
+
+    .annotation runtime Ljava/lang/Override;
+    .end annotation
+
+    .prologue
+    .line 33
+    move-object v0, p0
+
+    sget-boolean v5, Lcom/dulang/clock/ClockService;->isAdded:Z
+
+    if-nez v5, :cond_0
+
+    .line 35
+    move-object v5, v0
+
+    const-string v6, "layout_inflater"
+
+    invoke-virtual {v5, v6}, Lcom/dulang/clock/ClockService;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v5
+
+    check-cast v5, Landroid/view/LayoutInflater;
+
+    move-object v1, v5
+
+    .line 37
+    move-object v5, v1
+
+    const/high16 v6, 0x7f030000
+
+    const/4 v7, 0x0
+
+    check-cast v7, Landroid/view/ViewGroup;
+
+    invoke-virtual {v5, v6, v7}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
+
+    move-result-object v5
+
+    check-cast v5, Landroid/view/ViewGroup;
+
+    move-object v2, v5
+
+    .line 39
+    move-object v5, v0
+
+    move-object v6, v2
+
+    const/4 v7, -0x2
+
+    const/4 v8, -0x2
+
+    const/4 v9, 0x0
+
+    const/4 v10, 0x0
+
+    invoke-direct/range {v5 .. v10}, Lcom/dulang/clock/ClockService;->createFloatView(Landroid/view/ViewGroup;IIII)V
+
+    .line 41
+    move-object v5, v2
+
+    const v6, 0x7f0a0002
+
+    invoke-virtual {v5, v6}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
+
+    move-result-object v5
+
+    check-cast v5, Landroid/widget/Button;
+
+    move-object v3, v5
+
+    .line 43
+    move-object v5, v3
+
+    new-instance v6, Lcom/dulang/clock/ClockService$100000000;
+
+    move-object v11, v6
+
+    move-object v6, v11
+
+    move-object v7, v11
+
+    move-object v8, v0
+
+    move-object v9, v2
+
+    invoke-direct {v7, v8, v9}, Lcom/dulang/clock/ClockService$100000000;-><init>(Lcom/dulang/clock/ClockService;Landroid/view/ViewGroup;)V
+
+    invoke-virtual {v5, v6}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 57
+    :cond_0
+    move-object v5, v0
+
+    invoke-super {v5}, Landroid/app/Service;->onCreate()V
+
+    return-void
+.end method
+.class public Lcom/dulang/clock/MainActivity;
+.super Landroid/app/Activity;
+.source "MainActivity.java"
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 3
+
+    .prologue
+    .line 29
+    move-object v0, p0
+
+    move-object v2, v0
+
+    invoke-direct {v2}, Landroid/app/Activity;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onCreate(Landroid/os/Bundle;)V
+    .locals 14
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroid/os/Bundle;",
+            ")V"
+        }
+    .end annotation
+
+    .annotation runtime Ljava/lang/Override;
+    .end annotation
+
+    .prologue
+    move-object v0, p0
+
+    move-object v1, p1
+
+    move-object v6, v0
+
+    invoke-static {v6}, LLogCatBroadcaster;->start(Landroid/content/Context;)V
+
+    .line 19
+    move-object v6, v0
+
+    move-object v7, v1
+
+    invoke-super {v6, v7}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
+
+    .line 21
+    new-instance v6, Landroid/content/Intent;
+
+    move-object v13, v6
+
+    move-object v6, v13
+
+    move-object v7, v13
+
+    move-object v8, v0
+
+    :try_start_0
+    const-string v9, "com.dulang.clock.ClockService"
+
+    invoke-static {v9}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
+    :try_end_0
+    .catch Ljava/lang/ClassNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
+
+    move-result-object v9
+
+    invoke-direct {v7, v8, v9}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+
+    move-object v2, v6
+
+    .line 22
+    move-object v6, v0
+
+    move-object v7, v2
+
+    invoke-virtual {v6, v7}, Lcom/dulang/clock/MainActivity;->startService(Landroid/content/Intent;)Landroid/content/ComponentName;
+
+    move-result-object v6
+
+    .line 24
+    new-instance v6, Landroid/content/Intent;
+
+    move-object v13, v6
+
+    move-object v6, v13
+
+    move-object v7, v13
+
+    invoke-direct {v7}, Landroid/content/Intent;-><init>()V
+
+    move-object v4, v6
+
+    .line 25
+    move-object v6, v4
+
+    const-string v7, "android.intent.action.MAIN"
+
+    invoke-virtual {v6, v7}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
+
+    move-result-object v6
+
+    .line 26
+    move-object v6, v4
+
+    const-string v7, "android.intent.category.HOME"
+
+    invoke-virtual {v6, v7}, Landroid/content/Intent;->addCategory(Ljava/lang/String;)Landroid/content/Intent;
+
+    move-result-object v6
+
+    .line 27
+    move-object v6, v0
+
+    move-object v7, v4
+
+    invoke-virtual {v6, v7}, Lcom/dulang/clock/MainActivity;->startActivity(Landroid/content/Intent;)V
+
+    return-void
+
+    .line 21
+    :catch_0
+    move-exception v6
+
+    move-object v3, v6
+
+    new-instance v6, Ljava/lang/NoClassDefFoundError;
+
+    move-object v13, v6
+
+    move-object v6, v13
+
+    move-object v7, v13
+
+    move-object v8, v3
+
+    invoke-virtual {v8}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+
+    move-result-object v8
+
+    invoke-direct {v7, v8}, Ljava/lang/NoClassDefFoundError;-><init>(Ljava/lang/String;)V
+
+    throw v6
+.end method
+.class public final Lcom/dulang/clock/R$anim;
+.super Ljava/lang/Object;
+.source "R.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/dulang/clock/R;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x39
+    name = "anim"
+.end annotation
+
+
+# static fields
+.field public static final show1:I = 0x7f040000
+
+.field public static final show2:I = 0x7f040001
+
+.field public static final show3:I = 0x7f040002
+
+.field public static final show4:I = 0x7f040003
+
+.field public static final tvanim:I = 0x7f040004
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 3
+
+    .prologue
+    .line 16
+    move-object v0, p0
+
+    move-object v2, v0
+
+    invoke-direct {v2}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+.class public final Lcom/dulang/clock/R$attr;
+.super Ljava/lang/Object;
+.source "R.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/dulang/clock/R;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x39
+    name = "attr"
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 3
+
+    .prologue
+    .line 18
+    move-object v0, p0
+
+    move-object v2, v0
+
+    invoke-direct {v2}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+.class public final Lcom/dulang/clock/R$color;
+.super Ljava/lang/Object;
+.source "R.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/dulang/clock/R;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x39
+    name = "color"
+.end annotation
+
+
+# static fields
+.field public static final down:I = 0x7f070000
+
+.field public static final stroke:I = 0x7f070002
+
+.field public static final up:I = 0x7f070001
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 3
+
+    .prologue
+    .line 23
+    move-object v0, p0
+
+    move-object v2, v0
+
+    invoke-direct {v2}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+.class public final Lcom/dulang/clock/R$drawable;
+.super Ljava/lang/Object;
+.source "R.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/dulang/clock/R;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x39
+    name = "drawable"
+.end annotation
+
+
+# static fields
+.field public static final bg_image03:I = 0x7f020000
+
+.field public static final buttonyun:I = 0x7f020001
+
+.field public static final ed:I = 0x7f020002
+
+.field public static final ic_launcher:I = 0x7f020003
+
+.field public static final icon:I = 0x7f020004
+
+.field public static final tv:I = 0x7f020005
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 3
+
+    .prologue
+    .line 31
+    move-object v0, p0
+
+    move-object v2, v0
+
+    invoke-direct {v2}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+.class public final Lcom/dulang/clock/R$id;
+.super Ljava/lang/Object;
+.source "R.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/dulang/clock/R;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x39
+    name = "id"
+.end annotation
+
+
+# static fields
+.field public static final bt:I = 0x7f0a0004
+
+.field public static final clockwindowButton1:I = 0x7f0a0002
+
+.field public static final clockwindowEditText1:I = 0x7f0a0001
+
+.field public static final ed:I = 0x7f0a0003
+
+.field public static final tv:I = 0x7f0a0000
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 3
+
+    .prologue
+    .line 38
+    move-object v0, p0
+
+    move-object v2, v0
+
+    invoke-direct {v2}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+.class public final Lcom/dulang/clock/R$layout;
+.super Ljava/lang/Object;
+.source "R.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/dulang/clock/R;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x39
+    name = "layout"
+.end annotation
+
+
+# static fields
+.field public static final clock_window:I = 0x7f030000
+
+.field public static final main:I = 0x7f030001
+
+.field public static final newone:I = 0x7f030002
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 3
+
+    .prologue
+    .line 43
+    move-object v0, p0
+
+    move-object v2, v0
+
+    invoke-direct {v2}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+.class public final Lcom/dulang/clock/R$raw;
+.super Ljava/lang/Object;
+.source "R.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/dulang/clock/R;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x39
+    name = "raw"
+.end annotation
+
+
+# static fields
+.field public static final a:I = 0x7f060000
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 3
+
+    .prologue
+    .line 46
+    move-object v0, p0
+
+    move-object v2, v0
+
+    invoke-direct {v2}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+.class public final Lcom/dulang/clock/R$string;
+.super Ljava/lang/Object;
+.source "R.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/dulang/clock/R;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x39
+    name = "string"
+.end annotation
+
+
+# static fields
+.field public static final app_name:I = 0x7f080001
+
+.field public static final hello:I = 0x7f080000
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 3
+
+    .prologue
+    .line 50
+    move-object v0, p0
+
+    move-object v2, v0
+
+    invoke-direct {v2}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+.class public final Lcom/dulang/clock/R$style;
+.super Ljava/lang/Object;
+.source "R.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/dulang/clock/R;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x39
+    name = "style"
+.end annotation
+
+
+# static fields
+.field public static final AppTheme:I = 0x7f090000
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 3
+
+    .prologue
+    .line 53
+    move-object v0, p0
+
+    move-object v2, v0
+
+    invoke-direct {v2}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+.class public final Lcom/dulang/clock/R$xml;
+.super Ljava/lang/Object;
+.source "R.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/dulang/clock/R;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x39
+    name = "xml"
+.end annotation
+
+
+# static fields
+.field public static final my_admin:I = 0x7f050000
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 3
+
+    .prologue
+    .line 56
+    move-object v0, p0
+
+    move-object v2, v0
+
+    invoke-direct {v2}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+.class public final Lcom/dulang/clock/R;
+.super Ljava/lang/Object;
+.source "R.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/dulang/clock/R$anim;,
+        Lcom/dulang/clock/R$attr;,
+        Lcom/dulang/clock/R$color;,
+        Lcom/dulang/clock/R$drawable;,
+        Lcom/dulang/clock/R$id;,
+        Lcom/dulang/clock/R$layout;,
+        Lcom/dulang/clock/R$raw;,
+        Lcom/dulang/clock/R$string;,
+        Lcom/dulang/clock/R$style;,
+        Lcom/dulang/clock/R$xml;
+    }
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 3
+
+    .prologue
+    .line 57
+    move-object v0, p0
+
+    move-object v2, v0
+
+    invoke-direct {v2}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+.class public LLogCatBroadcaster;
+.super Ljava/lang/Object;
+.source "LogCatBroadcaster.java"
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# static fields
+.field private static started:Z
+
+
+# instance fields
+.field private context:Landroid/content/Context;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    .prologue
+    .line 14
+    const/4 v0, 0x0
+
+    sput-boolean v0, LLogCatBroadcaster;->started:Z
+
+    return-void
+.end method
+
+.method private constructor <init>(Landroid/content/Context;)V
+    .locals 4
+
+    .prologue
+    .line 19
+    move-object v0, p0
+
+    move-object v1, p1
+
+    move-object v2, v0
+
+    invoke-direct {v2}, Ljava/lang/Object;-><init>()V
+
+    .line 20
+    move-object v2, v0
+
+    move-object v3, v1
+
+    iput-object v3, v2, LLogCatBroadcaster;->context:Landroid/content/Context;
+
+    .line 21
+    return-void
+.end method
+
+.method public static declared-synchronized start(Landroid/content/Context;)V
+    .locals 11
+
+    .prologue
+    .line 25
+    move-object v0, p0
+
+    const-class v9, LLogCatBroadcaster;
+
+    monitor-enter v9
+
+    :try_start_0
+    sget-boolean v4, LLogCatBroadcaster;->started:Z
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    if-eqz v4, :cond_0
+
+    .line 48
+    :goto_0
+    monitor-exit v9
+
+    return-void
+
+    .line 27
+    :cond_0
+    const/4 v4, 0x1
+
+    :try_start_1
+    sput-boolean v4, LLogCatBroadcaster;->started:Z
+
+    .line 29
+    sget v4, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v5, 0x10
+
+    if-ge v4, v5, :cond_1
+
+    .line 30
+    goto :goto_0
+
+    .line 32
+    :cond_1
+    const/4 v4, 0x0
+
+    move-object v5, v0
+
+    invoke-virtual {v5}, Landroid/content/Context;->getApplicationInfo()Landroid/content/pm/ApplicationInfo;
+
+    move-result-object v5
+
+    iget v5, v5, Landroid/content/pm/ApplicationInfo;->flags:I
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    const/4 v6, 0x2
+
+    and-int/lit8 v5, v5, 0x2
+
+    if-eq v4, v5, :cond_2
+
+    const/4 v4, 0x1
+
+    :goto_1
+    move v1, v4
+
+    .line 33
+    move v4, v1
+
+    if-nez v4, :cond_3
+
+    .line 34
+    goto :goto_0
+
+    .line 32
+    :cond_2
+    const/4 v4, 0x0
+
+    goto :goto_1
+
+    .line 38
+    :cond_3
+    move-object v4, v0
+
+    :try_start_2
+    invoke-virtual {v4}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
+
+    move-result-object v4
+
+    move-object v2, v4
+
+    .line 39
+    move-object v4, v2
+
+    const-string v5, "com.aide.ui"
+
+    const/16 v6, 0x80
+
+    invoke-virtual {v4, v5, v6}, Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
+    :try_end_2
+    .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_2 .. :try_end_2} :catch_0
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
+
+    move-result-object v4
+
+    move-object v3, v4
+
+    .line 46
+    :try_start_3
+    new-instance v4, Ljava/lang/Thread;
+
+    move-object v10, v4
+
+    move-object v4, v10
+
+    move-object v5, v10
+
+    new-instance v6, LLogCatBroadcaster;
+
+    move-object v10, v6
+
+    move-object v6, v10
+
+    move-object v7, v10
+
+    move-object v8, v0
+
+    invoke-direct {v7, v8}, LLogCatBroadcaster;-><init>(Landroid/content/Context;)V
+
+    invoke-direct {v5, v6}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;)V
+
+    move-object v2, v4
+
+    .line 47
+    move-object v4, v2
+
+    invoke-virtual {v4}, Ljava/lang/Thread;->start()V
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_0
+
+    .line 48
+    goto :goto_0
+
+    .line 41
+    :catch_0
+    move-exception v4
+
+    move-object v2, v4
+
+    .line 43
+    goto :goto_0
+
+    .line 25
+    :catchall_0
+    move-exception v0
+
+    monitor-exit v9
+
+    throw v0
+.end method
+
+
+# virtual methods
+.method public run()V
+    .locals 12
+
+    .prologue
+    .line 54
+    move-object v0, p0
+
+    :try_start_0
+    invoke-static {}, Ljava/lang/Runtime;->getRuntime()Ljava/lang/Runtime;
+
+    move-result-object v5
+
+    const-string v6, "logcat -v threadtime"
+
+    invoke-virtual {v5, v6}, Ljava/lang/Runtime;->exec(Ljava/lang/String;)Ljava/lang/Process;
+
+    move-result-object v5
+
+    move-object v1, v5
+
+    .line 55
+    new-instance v5, Ljava/io/BufferedReader;
+
+    move-object v11, v5
+
+    move-object v5, v11
+
+    move-object v6, v11
+
+    new-instance v7, Ljava/io/InputStreamReader;
+
+    move-object v11, v7
+
+    move-object v7, v11
+
+    move-object v8, v11
+
+    move-object v9, v1
+
+    invoke-virtual {v9}, Ljava/lang/Process;->getInputStream()Ljava/io/InputStream;
+
+    move-result-object v9
+
+    invoke-direct {v8, v9}, Ljava/io/InputStreamReader;-><init>(Ljava/io/InputStream;)V
+
+    const/16 v8, 0x14
+
+    invoke-direct {v6, v7, v8}, Ljava/io/BufferedReader;-><init>(Ljava/io/Reader;I)V
+
+    move-object v2, v5
+
+    .line 57
+    const-string v5, ""
+
+    move-object v3, v5
+
+    .line 58
+    :goto_0
+    move-object v5, v2
+
+    invoke-virtual {v5}, Ljava/io/BufferedReader;->readLine()Ljava/lang/String;
+
+    move-result-object v5
+
+    move-object v11, v5
+
+    move-object v5, v11
+
+    move-object v6, v11
+
+    move-object v3, v6
+
+    if-eqz v5, :cond_0
+
+    .line 60
+    new-instance v5, Landroid/content/Intent;
+
+    move-object v11, v5
+
+    move-object v5, v11
+
+    move-object v6, v11
+
+    invoke-direct {v6}, Landroid/content/Intent;-><init>()V
+
+    move-object v4, v5
+
+    .line 61
+    move-object v5, v4
+
+    const-string v6, "com.aide.ui"
+
+    invoke-virtual {v5, v6}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
+
+    move-result-object v5
+
+    .line 62
+    move-object v5, v4
+
+    const-string v6, "com.aide.runtime.VIEW_LOGCAT_ENTRY"
+
+    invoke-virtual {v5, v6}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
+
+    move-result-object v5
+
+    .line 63
+    move-object v5, v4
+
+    const-string v6, "lines"
+
+    const/4 v7, 0x1
+
+    new-array v7, v7, [Ljava/lang/String;
+
+    move-object v11, v7
+
+    move-object v7, v11
+
+    move-object v8, v11
+
+    const/4 v9, 0x0
+
+    move-object v10, v3
+
+    aput-object v10, v8, v9
+
+    invoke-virtual {v5, v6, v7}, Landroid/content/Intent;->putExtra(Ljava/lang/String;[Ljava/lang/String;)Landroid/content/Intent;
+
+    move-result-object v5
+
+    .line 67
+    move-object v5, v0
+
+    iget-object v5, v5, LLogCatBroadcaster;->context:Landroid/content/Context;
+
+    move-object v6, v4
+
+    invoke-virtual {v5, v6}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
+    :try_end_0
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 68
+    goto :goto_0
+
+    .line 73
+    :cond_0
+    :goto_1
+    return-void
+
+    .line 70
+    :catch_0
+    move-exception v5
+
+    move-object v1, v5
+
+    goto :goto_1
+.end method

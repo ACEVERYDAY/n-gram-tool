@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="trans">@color/color_hei_8</item>
+    <item type="drawable" name="preview_btn_bg_press">#ff000000</item>
+</resources>

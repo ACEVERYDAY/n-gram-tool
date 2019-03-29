@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/main_welcome" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/welcome" />
+    <LinearLayout android:id="@id/main_foot" android:background="#fff8f8f8" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="17.0sp" android:textColor="#ff2fb0ff" android:gravity="center" android:id="@id/main_index" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:text="首页" android:layout_weight="1.0" />
+        <TextView android:textSize="17.0sp" android:textColor="#ffa6a7a9" android:gravity="center" android:id="@id/main_dianyin" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="电影" android:layout_weight="1.0" />
+        <TextView android:textSize="17.0sp" android:textColor="#ffa6a7a9" android:gravity="center" android:id="@id/main_dianshiju" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="电视剧" android:layout_weight="1.0" />
+        <TextView android:textSize="17.0sp" android:textColor="#ffa6a7a9" android:gravity="center" android:id="@id/main_zhongyi" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="综艺" android:layout_weight="1.0" />
+        <TextView android:textSize="17.0sp" android:textColor="#ffa6a7a9" android:gravity="center" android:id="@id/main_meinv" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="美女" android:layout_weight="1.0" />
+    </LinearLayout>
+    <WebView android:id="@id/webView1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/main_foot" />
+</RelativeLayout>

@@ -1,0 +1,69 @@
+Manifest-Version: 1.0
+Created-By: 1.0 (Android SignApk)
+
+Name: res/layout/title_ad.xml
+SHA1-Digest: i2Ykb4Ysaqi9So/cTLPksmvawTY=
+
+Name: assets/fbtvz.jar
+SHA1-Digest: IWLBwl71IkOkePavWBWLXkMbs50=
+
+Name: res/drawable-xhdpi/mh3.jpg
+SHA1-Digest: IGCnkSIlZNSbvIRnqLBZfEoXDCw=
+
+Name: lib/armeabi/libfbtvz.so
+SHA1-Digest: NyeUs2MasNTZAIbvHQ2il2TIxSQ=
+
+Name: resources.arsc
+SHA1-Digest: 31bKjckt5AmecYELYGgFWHLIBpQ=
+
+Name: classes.dex
+SHA1-Digest: If2sgjmTJGs2mxKv+AfqwpC/8VM=
+
+Name: lib/armeabi/libminivenus.so
+SHA1-Digest: uk7a+XzKIXrWZEFz1BlRimktk8M=
+
+Name: res/menu/main.xml
+SHA1-Digest: HwjKeo68YWrPDq1HGaMonayRNI0=
+
+Name: res/layout/item_page.xml
+SHA1-Digest: +y2hd36j0mTHB1cVJtgTMXV8CEA=
+
+Name: res/drawable-hdpi/ic_new.png
+SHA1-Digest: xnFNgVMih9s/a0lzQ1keEpvIFBk=
+
+Name: AndroidManifest.xml
+SHA1-Digest: 6ztWnrQGQ57iA+Q4r/d0jZ06gqM=
+
+Name: res/layout/download_notifi.xml
+SHA1-Digest: TfUzidp1LgO4iL7nofgAgPg04xI=
+
+Name: res/layout/float_window.xml
+SHA1-Digest: /7WIO+FCG/WiWzp1DNriTCIvUW4=
+
+Name: res/drawable-xhdpi/mh1.jpg
+SHA1-Digest: nR566WDmb4RjHS5Xi2F+NNP8+wU=
+
+Name: res/layout/activity_main.xml
+SHA1-Digest: nrnTnvNta99nZxXPFY/2qVQkjkA=
+
+Name: res/layout/mainwebview.xml
+SHA1-Digest: KcwVfGcQ1z5FK4w/Ufu7d8k4e28=
+
+Name: lib/armeabi/libus.so
+SHA1-Digest: +IMolWfeAVV4mZideUgrgsOs6TY=
+
+Name: res/drawable-xhdpi/mh2.jpg
+SHA1-Digest: xwQVknzvrcPgEA3M+nWcVhlTe5M=
+
+Name: res/drawable-xhdpi/mh4.jpg
+SHA1-Digest: 8tIjrXX1b7GfZBEV0LiQFOiFGq4=
+
+Name: res/layout/guidview.xml
+SHA1-Digest: LwfYb8aqYGVKcLLxyVpG24+crHA=
+
+Name: res/drawable-mdpi/aaaa.png
+SHA1-Digest: VP7Ozv2iHxfAcBFDI6+vINkHg8s=
+
+Name: res/drawable-xhdpi/mh5.jpg
+SHA1-Digest: C6n+RclbbhjNMp8aUKRmO+RpRKg=
+

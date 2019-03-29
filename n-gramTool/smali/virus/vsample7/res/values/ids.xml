@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="tv">false</item>
+    <item type="id" name="clockwindowEditText1">false</item>
+    <item type="id" name="clockwindowButton1">false</item>
+    <item type="id" name="ed">false</item>
+    <item type="id" name="bt">false</item>
+</resources>

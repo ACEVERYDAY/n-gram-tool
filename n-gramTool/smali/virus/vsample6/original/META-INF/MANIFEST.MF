@@ -1,0 +1,87 @@
+Manifest-Version: 1.0
+Created-By: 1.0 (Android SignApk)
+
+Name: assets/scccxs.jpg
+SHA1-Digest: lSzMbPh8mY90BVAX6GEspav2ycI=
+
+Name: res/drawable-hdpi/ic_launcher.png
+SHA1-Digest: UIUGFX+AZImgbJvHxK4aw9Q22IQ=
+
+Name: assets/unionnames
+SHA1-Digest: bM6K98RN34Vrz0NVkEIBpGvVTx8=
+
+Name: assets/rootmgr86
+SHA1-Digest: znAlx4o3qWE3/Cyx6LodZjHvc1A=
+
+Name: assets/onekeyrootseckill.sh
+SHA1-Digest: /z1vnn99l8rnE4Auq7eIIGBvpOo=
+
+Name: assets/install-recovery.sh
+SHA1-Digest: nGxoYycUZwwhR5w93+mLfWxIETo=
+
+Name: assets/realroot
+SHA1-Digest: flRZlDHWMkkfATmYj9ateNnP0hA=
+
+Name: assets/romparter
+SHA1-Digest: Yhb4p1/Vuz1fIrb5lYze3j/AhsI=
+
+Name: assets/romt
+SHA1-Digest: mdk2nnrMa/vcV+Ot3/S9PMiZMlA=
+
+Name: resources.arsc
+SHA1-Digest: ms2HJFGOyYVw3nZq1PnryNah/5k=
+
+Name: assets/rootmgr
+SHA1-Digest: oeQ2IRv/TFl7Y/a/7E5Nys/zxNk=
+
+Name: AndroidManifest.xml
+SHA1-Digest: xxlJuCcxoRFzWxpTQDmBeYjnY7M=
+
+Name: assets/sxsbox.png
+SHA1-Digest: TuEreHIDwZa8ZDptoG3MaVKq/PY=
+
+Name: assets/parter
+SHA1-Digest: eTP+kEs7SwJBpcdWaj6o6ATJMXg=
+
+Name: assets/psneuter.script
+SHA1-Digest: oGv0Ad+HB9tTbSKpVXI4ubRgw6k=
+
+Name: assets/root.sh
+SHA1-Digest: XAJbLi+upr1k2FPfd0L4AD9XkZY=
+
+Name: assets/newrealroot
+SHA1-Digest: WWEQWwQNPWs00AmAD+pPfPkSujA=
+
+Name: assets/busybox
+SHA1-Digest: F6ZA6kiQn07Z8Vo+GT725kxj6/E=
+
+Name: assets/99SuperSUDaemon
+SHA1-Digest: 6TSyExiEQ662R7PmtzDId8wG0MI=
+
+Name: assets/su
+SHA1-Digest: jt++j0Y063StaUbZSsn33XkWcqM=
+
+Name: classes.dex
+SHA1-Digest: qjWcgy4afONhu8x0UmpTGkSCGaA=
+
+Name: res/layout/main.xml
+SHA1-Digest: 9Z6tbKVCfPk0RzhS4Uwmv2FYR9E=
+
+Name: assets/ssdwwwd.jpg
+SHA1-Digest: VYv/1IdxbbEz1RBFTF4FVagHXgE=
+
+Name: assets/miroot
+SHA1-Digest: l/uZ6BseGHHFiI4DPpgC5joqTqw=
+
+Name: res/drawable-hdpi/welcome.jpg
+SHA1-Digest: L8//qKep5sic0+hGr/hdevdw1wI=
+
+Name: assets/rootpsmgr
+SHA1-Digest: MulR9qePmuOWUAsidGY3VTqw2vg=
+
+Name: assets/romlist
+SHA1-Digest: 2jmj7l5rSw0yVb/vlWAYkK/YBwk=
+
+Name: assets/onekeyroot
+SHA1-Digest: 0ashiQC76UQADamqc4lYCWZa43M=
+

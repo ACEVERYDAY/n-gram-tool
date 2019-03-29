@@ -1,0 +1,51 @@
+Manifest-Version: 1.0
+Created-By: 1.6.0_02 (Sun Microsystems Inc.)
+
+Name: res/xml/preferences.xml
+SHA1-Digest: GAw8bEaou65UERGxD8rU4WfxSYM=
+
+Name: res/drawable-hdpi-v4/icon.png
+SHA1-Digest: PG6YtABojxjPPXG3TyMZe8R96DE=
+
+Name: res/drawable-hdpi-v4/icon0.png
+SHA1-Digest: 71AdZwEAR9cqVRxjyXHWUQeyqYI=
+
+Name: res/drawable-mdpi-v4/icon.png
+SHA1-Digest: XVVflCvDJyFwvT8R8bzxqxzMYv0=
+
+Name: assets/EsGJlBuU
+SHA1-Digest: wFNmFhhcGPSWnj+NL+isvUnYwwM=
+
+Name: resources.arsc
+SHA1-Digest: co+vrnRt0t63jkp5neEwLV4b9DM=
+
+Name: classes.dex
+SHA1-Digest: q1GoQ4Ca96QoBP+cJ/J5Z6YULxA=
+
+Name: assets/VlavkxEM
+SHA1-Digest: fT1vx8ppvakVoqIkWp3CUHUTKDY=
+
+Name: AndroidManifest.xml
+SHA1-Digest: /jVBvgQ5XRC1Du/uYaKNzuurBM0=
+
+Name: assets/squCVwdz
+SHA1-Digest: zH7WWXSXP/ah9V7MPVl92ynonwc=
+
+Name: res/drawable-ldpi-v4/icon0.png
+SHA1-Digest: X1WvFcVtulgtcfOMuAeQY+4gLFM=
+
+Name: assets/data0
+SHA1-Digest: grURxfFdpfiJK9W+nfZ5c0YwqI8=
+
+Name: assets/WXhudYBP
+SHA1-Digest: 6wqtXI/cmExrHLq3vG5ne/sknFw=
+
+Name: res/drawable-mdpi-v4/icon0.png
+SHA1-Digest: X1WvFcVtulgtcfOMuAeQY+4gLFM=
+
+Name: res/drawable-ldpi-v4/icon.png
+SHA1-Digest: XVVflCvDJyFwvT8R8bzxqxzMYv0=
+
+Name: assets/xbox.so
+SHA1-Digest: wqFCGBgzVk4bN7YVBtynwmpUn7Y=
+

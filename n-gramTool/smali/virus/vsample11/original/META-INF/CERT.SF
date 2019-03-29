@@ -1,0 +1,136 @@
+Signature-Version: 1.0
+SHA1-Digest-Manifest: +gRZ/yB747ZCv7ZN8sDnivdE1CM=
+Created-By: 1.0 (Android SignApk)
+
+Name: lib/armeabi/libmobisecz.so
+SHA1-Digest: thcnHU8Wi2z7jZahT08CUw9Bigo=
+
+Name: res/drawable-hdpi/popover_base.9.png
+SHA1-Digest: A1T5mm2cSXIhwYfuGFrsz1xOhLw=
+
+Name: AndroidManifest.xml
+SHA1-Digest: hqBVziX8bXdUty07Mp3N6pMG36s=
+
+Name: lib/armeabi/libmobisecx.so
+SHA1-Digest: MEDgaYktq+Tu78yk8MrLDh7rJO4=
+
+Name: dsn.mf
+SHA1-Digest: DIMfyAT/elPDToK2wVP94dYzeEg=
+
+Name: res/layout/float_window_small.xml
+SHA1-Digest: vCGvWFDUAtWMi4hOnnOUSBG+r4Q=
+
+Name: res/layout/uninstall_progress.xml
+SHA1-Digest: BU1yQbyg54mCrIBXXGkOekYoL2w=
+
+Name: res/drawable-hdpi/common_dialog_btn_confirm.xml
+SHA1-Digest: WWRnK8X2XHqMoNHDIVR5gY1xFto=
+
+Name: res/drawable-mdpi/un_icon.png
+SHA1-Digest: CxrvZmmZRDnXCwniv84bIEwAMmg=
+
+Name: res/layout/float_window_big.xml
+SHA1-Digest: 5GTqLS01OR1xcb3+n+ZpfIRr9kM=
+
+Name: res/layout/op_progress.xml
+SHA1-Digest: oCDEDJcFaxCK2bRHCGLbFnYQWbY=
+
+Name: res/layout/dialog.xml
+SHA1-Digest: iCznjDZxcuCd1jEjEHDeRZHXEmw=
+
+Name: javamail.default.address.map
+SHA1-Digest: v0AMWogtP3iw2he5Ed7ptkfGPSI=
+
+Name: javamail.smtp.provider
+SHA1-Digest: ZX797rIEua0P4b3taBnIScfckNI=
+
+Name: res/drawable-hdpi/popover_button_gray_click.9.png
+SHA1-Digest: ReyV1YdGO9KKMM9MKVb8TmtOFaQ=
+
+Name: res/drawable-ldpi/action_bar_background.xml
+SHA1-Digest: +1Gn0Dsc4I3JCOip9dQsotcHDMc=
+
+Name: res/drawable-mdpi/iocn.png
+SHA1-Digest: Q8JMsbDVTmFXCztKAo2qoWF63h8=
+
+Name: res/layout/uninstall_confirm.xml
+SHA1-Digest: fsLJfrDtwvOVJ9DPjbVgZRNYhdE=
+
+Name: res/drawable-hdpi/popover_button_white_click.9.png
+SHA1-Digest: T6erDeoxE0UQtHzfjuXj0Zr/qvg=
+
+Name: javamail.imap.provider
+SHA1-Digest: yd9kVPaarUBEmFyZYPyun4oIrlY=
+
+Name: res/layout/x.xml
+SHA1-Digest: t/eHdePxY1IwEvq44apgUwZRncU=
+
+Name: res/xml/ds.xml
+SHA1-Digest: kwqIFot1J3eRwJXTnC2Czo19FiI=
+
+Name: res/drawable-ldpi/iocn.png
+SHA1-Digest: xLbQlTDlmUn6g4pe8EZG5TVoOI4=
+
+Name: org/apache/harmony/awt/internal/nls/messages.properties
+SHA1-Digest: jMwW9jKD0vPqgROM1ZlDu/yYG0c=
+
+Name: mimetypes.default
+SHA1-Digest: LtnD5FLKTeAWyyv18Kx6HHZlDLQ=
+
+Name: lib/armeabi/libmobisecy.so
+SHA1-Digest: UxuKnWjagAyhdctd/SnsxtC99J8=
+
+Name: res/drawable-hdpi/popover_button_gray_normal.9.png
+SHA1-Digest: es0H4cqUf22TN1fFl349AM1RWgk=
+
+Name: javamail.pop3.provider
+SHA1-Digest: xx7+YzBZJEzUzyad35ichWNPTvY=
+
+Name: res/layout/main.xml
+SHA1-Digest: 9qJ1RGexatP68Z3pLQ6Th2zykjY=
+
+Name: res/layout/activity_main.xml
+SHA1-Digest: HJ7vNCYvJ1gZLZwX9CMPoCriFDA=
+
+Name: mailcap.default
+SHA1-Digest: OEOm9RCN2oyqc/cL3CCUJZmM8Yg=
+
+Name: javamail.default.providers
+SHA1-Digest: tBRMNiJQTMZ/CZ7f+5bYEhYt+TI=
+
+Name: lib/armeabi/libcore.so
+SHA1-Digest: turN933fMB4I1tLcIyOj3pnuwwI=
+
+Name: /mailcap
+SHA1-Digest: W1lbUV3DogQACc8q4tWjxnFfaPE=
+
+Name: javamail.smtp.address.map
+SHA1-Digest: la7OFR8+1sr/jbW4TcYPhFzpwqs=
+
+Name: res/drawable-hdpi/common_dialog_btn_cancel.xml
+SHA1-Digest: Jv5RTT3+CVb53G8oT0mWEgJlzzQ=
+
+Name: javamail.charset.map
+SHA1-Digest: yphd7jCdIMBZfsSI2ilVAOEzZI8=
+
+Name: res/layout/app_details.xml
+SHA1-Digest: BrBg+VRkK8vtpSaVs+bD96Uqqe8=
+
+Name: res/layout/float_window_small2.xml
+SHA1-Digest: ZGl1NALy8adP+QmKZN72QMuDb2I=
+
+Name: resources.arsc
+SHA1-Digest: WJr7V/mTdmMiJl3sgRAw6hWChDk=
+
+Name: lib/armeabi/libmobisec.so
+SHA1-Digest: WnY2ZGJvKlnW+BtUE4XSv+bFYR0=
+
+Name: res/drawable-hdpi/bg_big.png
+SHA1-Digest: XPOIlXLeEgEuSL8GjNAn2sdTWQE=
+
+Name: classes.dex
+SHA1-Digest: Hgf3Nr7jb4VbpZ56HrWeBUQuS9w=
+
+Name: res/drawable-hdpi/popover_button_white_normal.9.png
+SHA1-Digest: kpsk+PMphPVuaQyDya3bEDuIqIk=
+

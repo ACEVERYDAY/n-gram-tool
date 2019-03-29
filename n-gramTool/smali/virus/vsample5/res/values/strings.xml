@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Shake2PlayNext</string>
+    <string name="about_title">About Shake2PlayNext</string>
+    <string name="version_info">App version</string>
+    <string name="about_text">"Please, put more attention to sensitivity adjusting to avoid false operations. Unfortunately there is an Android OS issue on some phones (usually Motorola and some HTC devices) that apps cannot receive accelerometer events while screen is off or locked. I can do nothing to workaround this (it has been fixed in Android 2.2). But let's hope for the best =) Work of this app may seem freezy, but that's because of indirect mechanisms of remote player controlling"</string>
+    <string name="starcomment_menu_label">Star and comment</string>
+    <string name="about_menu_label">Important info</string>
+    <string name="exit_menu_label">Exit</string>
+    <string name="bugreport_menu_label">Bug report</string>
+    <string name="bugreport_send_intent_title">Send email</string>
+    <string name="bugreport_mail_message">Please, describe the problem in details. More details - more help in the bugfix =) Use SendLog for the best bugreports</string>
+    <string name="click_ad_text" formatted="false">"Times the app played next song by shake: %s1. If you think it is useful, please, click the ad below %s2 more times and any ad will disappear (this window won't popup again, too). Thanks for your support!"</string>
+    <string name="thanks_for_support">Thanks for your support</string>
+    <string name="togglebutton_on_label">Service ON</string>
+    <string name="togglebutton_off_label">Service OFF</string>
+    <string name="sensitivity_label_text">Adjust sensitivity</string>
+    <string name="read_about_label_text">"First start music player, then start this app and it's service
+Please, read Important info from the menu once, to know some important notes"</string>
+    <string name="sensitivity_low_label_text">low</string>
+    <string name="sensitivity_high_label_text">high</string>
+    <string name="test_accel_button_text">Test accelerometer</string>
+    <string name="testing_accel">"Put the phone in your pocket or another usual place and shake it or press BACK to finish testing. You'll hear notification sound, when shake event occurs"</string>
+    <string name="accel_level">Accel level</string>
+    <string name="last_shake">Last shake level</string>
+    <string name="was_shaken">Got it! Shake again!</string>
+    <string name="service_started">service ON</string>
+    <string name="service_stopped">service OFF</string>
+    <string name="other_apps_button">My other apps</string>
+    <string name="adjust_settings">Choose supported players first</string>
+    <string name="settings_activity_label">Shake2PlayNext Settings</string>
+    <string name="settings_menu_label">Settings</string>
+    <string name="support_label_text">Support for</string>
+    <string name="market_button">Find on Market</string>
+    <string name="default_player">Default android player</string>
+    <string name="default_player_hero">Default player HTC Sense</string>
+    <string name="mortplayer">MortPlayer</string>
+    <string name="cubedplayer">Roxon player (aka Cubed)</string>
+    <string name="mixzingplayer">MixZing</string>
+    <string name="meridianplayer">Meridian</string>
+    <string name="andlessplayer">andLess >=1.2.3</string>
+    <string name="btunesplayer">bTunes</string>
+    <string name="btunes16player">bTunes OS 1.6</string>
+    <string name="rhapsodyplayer">Rhapsody</string>
+    <string name="lastfmplayer">Last.fm</string>
+    <string name="doubletwistplayer">doubleTwist</string>
+    <string name="player_paused">player paused</string>
+    <string name="keep_screen_on">Keep screen on</string>
+    <string name="statusbar_notifications_enabled">Status bar notifications</string>
+    <string name="alert_keep_screen_caption">Heavy battery usage</string>
+    <string name="alert_keep_screen_text">"This option is for phones, which cannot connect to accelerometer while screen is off (and that is why Shake2PlayNext doesn't work on these phones). This option will keep your screen on while Shake2PlayNext's service is running. IT REQUIRES MUCH POWER FROM YOUR BATTERY"</string>
+    <string name="service_status_bar_title">Shake2PlayNext service enabled</string>
+    <string name="service_status_bar_text">Disable it to save battery</string>
+    <string name="command_sent">NEXT was sent</string>
+    <string name="scroll_down">Scroll this screen down to see all available options</string>
+    <string name="media_button_support_label">Media button simulation</string>
+    <string name="media_button_comments">"It is a generic way to support players, which can receive MEDIA_BUTTON intent and which can not be controlled in a good (see list above =) way. This should work quite well with Froyo. Older OS versions may launch several players simultaneously (even with >15 sec delay), so you may have to uninstall unused players. If it starts Android Music app, than this option is not for you, I think. Generally this option will start playing even if player is paused. This behavior is not always suitable, but better, than nothing. 
+
+Tested with: TuneWiki, Vanilla Music and bTunes. 
+
+To control bTunes try to check ONLY KEY-UP CHECKBOX. For TuneWiki and Vanilla try to check both checkboxes or only key-down one. For other players you should investigate which checkboxes to check"</string>
+    <string name="simulate_keydown">Simulate key down</string>
+    <string name="simulate_keyup">Simulate key up</string>
+</resources>

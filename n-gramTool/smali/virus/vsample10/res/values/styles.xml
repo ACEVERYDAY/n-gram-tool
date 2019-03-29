@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppBaseTheme" parent="@android:style/Theme.Light" />
+    <style name="AppTheme" parent="@style/AppBaseTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="font_16_9A9A9A">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/wp_c8</item>
+    </style>
+    <style name="font_14_9A9A9A">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/wp_c8</item>
+    </style>
+    <style name="font_16_000000">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/wp_c4</item>
+    </style>
+    <style name="font_14_FF7E2C">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/wp_c6</item>
+    </style>
+    <style name="font_16_FF7E2C">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/wp_c6</item>
+    </style>
+    <style name="text_16_B8B8B8">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textColor">#ffb8b8b8</item>
+    </style>
+    <style name="text_13_666666">
+        <item name="android:textSize">13.0dip</item>
+        <item name="android:textColor">#ff666666</item>
+    </style>
+    <style name="text_16_000000">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textColor">#ff000000</item>
+    </style>
+    <style name="text_16_666666">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textColor">#ff666666</item>
+    </style>
+    <style name="text_15_FF9326">
+        <item name="android:textSize">15.0dip</item>
+        <item name="android:textColor">#ffff9326</item>
+    </style>
+    <style name="FullDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="Float" parent="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+</resources>

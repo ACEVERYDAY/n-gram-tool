@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/wp_c1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/bt_v_titlebar" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/wp_c1" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bt_t14" style="@style/font_16_9A9A9A" />
+        <TextView android:gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bt_t15" style="@style/text_13_666666" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@color/bt_c2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="3.0dip" android:layout_marginRight="3.0dip" android:layout_marginBottom="20.0dip" android:layout_weight="1.0">
+        <TableRow android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/bt_t1" android:layout_weight="3.0" style="@style/text_16_000000" />
+            <EditText android:textColorHint="@color/bt_c6" android:id="@id/bt_t0" android:background="@null" android:layout_height="fill_parent" android:hint="@string/bt_t2" android:maxLines="1" android:maxLength="10" android:layout_weight="1.0" android:inputType="textPersonName" style="@style/text_16_666666" />
+        </TableRow>
+        <LinearLayout android:background="@color/bt_c1" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_weight="0.0" />
+        <TableRow android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/bt_t5" android:layout_weight="3.0" style="@style/text_16_000000" />
+            <EditText android:textColorHint="@color/bt_c6" android:id="@id/bt_t2" android:background="@null" android:layout_height="fill_parent" android:hint="@string/bt_t6" android:maxLines="1" android:maxLength="18" android:layout_weight="1.0" android:inputType="textEmailAddress" style="@style/text_16_666666" />
+        </TableRow>
+        <LinearLayout android:background="@color/bt_c1" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_weight="0.0" />
+        <TableRow android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/bt_t7" android:layout_weight="3.0" style="@style/text_16_000000" />
+            <EditText android:textColorHint="@color/bt_c6" android:id="@id/bt_t3" android:background="@null" android:layout_height="fill_parent" android:hint="@string/bt_t8" android:maxLines="1" android:maxLength="25" android:layout_weight="1.0" android:inputType="number" style="@style/text_16_666666" />
+        </TableRow>
+        <LinearLayout android:background="@color/bt_c1" android:layout_width="fill_parent" android:layout_height="8.0dip" android:layout_weight="0.0" />
+        <TableRow android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/bt_t3" android:layout_weight="3.0" style="@style/text_16_000000" />
+            <EditText android:textColorHint="@color/bt_c6" android:id="@id/bt_t1" android:background="@null" android:layout_height="fill_parent" android:hint="@string/bt_t4" android:maxLines="1" android:maxLength="11" android:layout_weight="1.0" android:inputType="phone" style="@style/text_16_666666" />
+        </TableRow>
+        <LinearLayout android:background="@color/bt_c1" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_weight="0.0" />
+        <TableRow android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <EditText android:textColorHint="@color/bt_c6" android:id="@id/bt_t4" android:background="@null" android:paddingLeft="5.0dip" android:paddingRight="40.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="@string/bt_t9" android:maxLines="1" android:maxLength="10" android:layout_weight="1.0" android:inputType="text" style="@style/text_16_666666" />
+            <Button android:textSize="14.0sp" android:textColor="@color/bt_c2" android:gravity="center" android:id="@id/bt_b1" android:background="@drawable/wp_bir" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_marginRight="5.0dip" android:text="@string/bt_t10" android:layout_weight="3.0" />
+        </TableRow>
+        <LinearLayout android:background="@color/bt_c1" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_weight="0.0" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="-20.0dip" android:layout_weight="2.0">
+        <Button android:textSize="20.0sp" android:textColor="@color/bt_c2" android:id="@id/bt_b0" android:background="@drawable/wp_bir" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:text="@string/bt_t11" />
+        <TextView android:textSize="13.0sp" android:id="@id/bt_tx0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bt_t12" style="@style/text_16_666666" />
+    </LinearLayout>
+</LinearLayout>

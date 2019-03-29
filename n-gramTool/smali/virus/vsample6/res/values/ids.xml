@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="main_welcome">false</item>
+    <item type="id" name="main_foot">false</item>
+    <item type="id" name="main_index">false</item>
+    <item type="id" name="main_dianyin">false</item>
+    <item type="id" name="main_dianshiju">false</item>
+    <item type="id" name="main_zhongyi">false</item>
+    <item type="id" name="main_meinv">false</item>
+    <item type="id" name="webView1">false</item>
+</resources>

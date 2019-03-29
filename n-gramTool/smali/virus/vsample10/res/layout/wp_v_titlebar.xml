@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/wp_c0" android:layout_width="fill_parent" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/wp_t_exit" android:background="@drawable/wp_i_bc" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/wp_c6" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="WO PAY " />
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/wp_c4" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="支付" />
+    </LinearLayout>
+    <Button android:id="@id/wp_t_menu" android:background="@drawable/wp_i_bm" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_weight="0.0" />
+</LinearLayout>

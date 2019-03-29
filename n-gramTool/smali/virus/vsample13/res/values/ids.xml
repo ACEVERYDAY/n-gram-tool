@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="mainback">false</item>
+    <item type="id" name="mianzetitle">false</item>
+    <item type="id" name="mianzebtn">false</item>
+    <item type="id" name="mianzebtn00">false</item>
+    <item type="id" name="mianzebtnmid">false</item>
+    <item type="id" name="mianzebtncancle">false</item>
+    <item type="id" name="scollview">false</item>
+    <item type="id" name="shengming">false</item>
+    <item type="id" name="pb">false</item>
+    <item type="id" name="downing">false</item>
+    <item type="id" name="floatwindowcolse">false</item>
+    <item type="id" name="floatwindowimage">false</item>
+    <item type="id" name="floatwindowcolse1">false</item>
+    <item type="id" name="gallery1">false</item>
+    <item type="id" name="imageView1">false</item>
+    <item type="id" name="baoyue">false</item>
+    <item type="id" name="bottomad">false</item>
+    <item type="id" name="bottomadhide">false</item>
+    <item type="id" name="bottomadhide2">false</item>
+    <item type="id" name="search_viewpager">false</item>
+    <item type="id" name="mainwebview">false</item>
+    <item type="id" name="processdiv">false</item>
+    <item type="id" name="process_div">false</item>
+    <item type="id" name="processBar">false</item>
+    <item type="id" name="numprocess">false</item>
+    <item type="id" name="bottomaddiv">false</item>
+    <item type="id" name="bottomad_close">false</item>
+    <item type="id" name="titlead">false</item>
+    <item type="id" name="action_settings">false</item>
+</resources>

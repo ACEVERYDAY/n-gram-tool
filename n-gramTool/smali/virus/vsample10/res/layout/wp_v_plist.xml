@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/wp_c1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/wp_v_titlebar" />
+    <LinearLayout android:orientation="vertical" android:background="@color/wp_c0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="3.0dip" android:layout_marginBottom="8.0dip" android:minHeight="140.0dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="10.0dip" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wp_pay_t5" style="@style/font_16_000000" />
+            <TextView android:id="@id/wp_pl_t3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" style="@style/font_16_9A9A9A" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="10.0dip" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wp_pay_t0" style="@style/font_16_000000" />
+            <TextView android:id="@id/wp_pl_t0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" style="@style/font_16_9A9A9A" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="10.0dip" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wp_pay_t1" style="@style/font_16_000000" />
+            <TextView android:id="@id/wp_pl_t1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" style="@style/font_16_9A9A9A" />
+        </LinearLayout>
+        <LinearLayout android:background="@color/wp_c1" android:paddingTop="1.0dip" android:paddingBottom="1.0dip" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="10.0dip" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wp_pay_t2" style="@style/font_16_000000" />
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/wp_c6" android:id="@id/wp_pl_t2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:background="@color/wp_c0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginRight="3.0dip" android:layout_marginBottom="8.0dip" android:layout_weight="1.0">
+        <ListView android:id="@id/wp_l_l0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@color/wp_c2" android:dividerHeight="1.0dip" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/wp_c0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="50.0dip" android:layout_weight="0.0">
+        <ImageView android:background="@drawable/wp_i_l0" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

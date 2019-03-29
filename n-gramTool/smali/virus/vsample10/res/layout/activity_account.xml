@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:background="@drawable/top_bg" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <TextView android:textSize="17.0dip" android:textColor="@color/white" android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="个人账户" />
+    </LinearLayout>
+    <View android:layout_width="fill_parent" android:layout_height="30.0dip" />
+    <View android:background="#ffd1d1d1" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/llo_key" android:background="@color/white" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:weightSum="1.0">
+        <TextView android:layout_width="1.0dip" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:text="个人账号：596541647456358" android:layout_weight="1.0" />
+        <ImageView android:background="@drawable/right" android:layout_width="9.0dip" android:layout_height="15.0dip" />
+    </LinearLayout>
+    <View android:background="#ffd1d1d1" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <View android:layout_width="fill_parent" android:layout_height="10.0dip" />
+    <View android:background="#ffd1d1d1" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/llo_key" android:background="@color/white" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:weightSum="1.0">
+        <TextView android:id="@id/tv_vipstate" android:layout_width="1.0dip" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:text="包年会员状态：未激活" android:layout_weight="1.0" />
+        <ImageView android:background="@drawable/right" android:layout_width="9.0dip" android:layout_height="15.0dip" />
+    </LinearLayout>
+    <View android:background="#ffd1d1d1" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

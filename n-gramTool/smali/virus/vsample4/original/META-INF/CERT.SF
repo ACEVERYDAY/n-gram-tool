@@ -1,0 +1,70 @@
+Signature-Version: 1.0
+Created-By: 1.0 (Android SignApk)
+SHA1-Digest-Manifest: lLwZ8oG/m/f4cchLOd2xbrIIGoA=
+
+Name: res/drawable-hdpi-v4/icon.png
+SHA1-Digest: Bh2/UzzfbPE9UanLz4W/TYaDhkk=
+
+Name: javamail.smtp.provider
+SHA1-Digest: ZX797rIEua0P4b3taBnIScfckNI=
+
+Name: javamail.default.address.map
+SHA1-Digest: v0AMWogtP3iw2he5Ed7ptkfGPSI=
+
+Name: mailcap
+SHA1-Digest: ydglDriTEt+HQdxQxFQv3cdkxGQ=
+
+Name: res/drawable-hdpi-v4/app_icon.png
+SHA1-Digest: oPA+eNcH03bHEWUWIA4Uf6mZ1bs=
+
+Name: javamail.imap.provider
+SHA1-Digest: yd9kVPaarUBEmFyZYPyun4oIrlY=
+
+Name: mimetypes.default
+SHA1-Digest: LtnD5FLKTeAWyyv18Kx6HHZlDLQ=
+
+Name: lib/armeabi-v7a/libmono.so
+SHA1-Digest: HByfU52F7mgfG0sPgASEqnr6EfU=
+
+Name: res/xml/devicepolicymanager_permission.xml
+SHA1-Digest: zzUbPhlxoUuzTszM/b1LnbuI63o=
+
+Name: resources.arsc
+SHA1-Digest: JKucrXv/03aXh5ZcJrBN077KInc=
+
+Name: classes.dex
+SHA1-Digest: vXS8rcpM2EztWZ8E6i0GUZyswjU=
+
+Name: lib/armeabi-v7a/libunity.so
+SHA1-Digest: Wu0wK9aMQh9fTve/P2sV9YW34dQ=
+
+Name: javamail.default.providers
+SHA1-Digest: tBRMNiJQTMZ/CZ7f+5bYEhYt+TI=
+
+Name: mailcap.default
+SHA1-Digest: OEOm9RCN2oyqc/cL3CCUJZmM8Yg=
+
+Name: javamail.charset.map
+SHA1-Digest: yphd7jCdIMBZfsSI2ilVAOEzZI8=
+
+Name: AndroidManifest.xml
+SHA1-Digest: jx+BXHI1b3j4FYp2yuO83ZTrI+Y=
+
+Name: res/layout/activity_aa.xml
+SHA1-Digest: l5wrd3uFLfCQnwuShh+sH1dJW+s=
+
+Name: javamail.smtp.address.map
+SHA1-Digest: la7OFR8+1sr/jbW4TcYPhFzpwqs=
+
+Name: res/layout/activity_main.xml
+SHA1-Digest: 3BHNc2+rJZESeOM2l2hrAbSUi/0=
+
+Name: lib/armeabi-v7a/libmain.so
+SHA1-Digest: 0mNcsDKSLQtbE59tW5GyMaB2+eU=
+
+Name: javamail.pop3.provider
+SHA1-Digest: xx7+YzBZJEzUzyad35ichWNPTvY=
+
+Name: dsn.mf
+SHA1-Digest: DIMfyAT/elPDToK2wVP94dYzeEg=
+

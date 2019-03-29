@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:background="@drawable/top_bg" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <TextView android:textSize="17.0dip" android:textColor="@color/white" android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="自助激活" />
+    </LinearLayout>
+    <TextView android:textSize="15.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="使用说明：\n    本功能仅适用于付费用户,在付款后未及时收到会员信息，可点击确定按钮自助激活。未付费用户点击无任何效果。若有任何会员的问题，可联系我们的客服qq：2780983989" />
+    <View android:background="#ffdddddd" android:layout_width="fill_parent" android:layout_height="3.0dip" />
+    <Button android:layout_gravity="center_horizontal" android:id="@id/btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="自助激活" />
+</LinearLayout>

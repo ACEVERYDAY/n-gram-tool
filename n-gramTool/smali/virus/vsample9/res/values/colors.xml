@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="cradient_background_start">#fff9f9f9</color>
+    <color name="cradient_background_end">#ffeeeeee</color>
+    <color name="button_background_start">#fff3ae1b</color>
+    <color name="button_background_end">#ffbb6008</color>
+    <color name="button_select_background_start">#ff449def</color>
+    <color name="button_select_background_end">#ff2f6699</color>
+    <color name="button_text_color">#ffffffff</color>
+    <color name="button_stroke_color">#ffbb6008</color>
+    <color name="button_stroke2_color">#ff2f6699</color>
+    <color name="button2_background_start">#ffbe7105</color>
+    <color name="button2_background_end">#ffcd8d05</color>
+    <color name="button2_select_background_start">#ffcd8d05</color>
+    <color name="button2_select_background_end">#ffbe7105</color>
+    <color name="button2_text_color">#ffffffff</color>
+    <color name="button2_stroke_color">#ffcd8d05</color>
+    <color name="button2_stroke2_color">#ffbe7105</color>
+    <color name="button3_background_start">#fffe4d4d</color>
+    <color name="button3_background_end">#ffa40706</color>
+    <color name="button3_select_background_start">#fffe4d4d</color>
+    <color name="button3_select_background_end">#ffa40706</color>
+    <color name="button3_text_color">#ffffffff</color>
+    <color name="button3_stroke_color">#ffa40706</color>
+    <color name="button3_stroke2_color">#fffe4d4d</color>
+</resources>
