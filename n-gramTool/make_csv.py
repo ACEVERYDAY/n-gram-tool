@@ -34,7 +34,7 @@ class MakeCsv(object):
                     feature += '|'
                     temp = ""
                 else:
-                    t = get_line.split()[0]
+                    t = get_line.split()[0]  # 匹配遇到的每行第一个串
                     if t in mp.bytecode_map:  # 特征提取
                         temp += mp.bytecode_map[t]
             file.close()

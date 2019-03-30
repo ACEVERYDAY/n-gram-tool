@@ -10,7 +10,7 @@ print("n = ", n_gram)
 
 class smali2feature(object):
 
-    single_feature = []  # 记录单个sample的特征，用于后续的生成字典
+    single_feature = []  # 记录每个sample的特征，用于后续的生成字典
 
     @classmethod
     def mark_each(cls, feature):  # 追加单个sample的特征
@@ -18,18 +18,19 @@ class smali2feature(object):
 
     def __init__(self, gram):
         self.name = ""
-        self.feature = ""
+        # self.feature = ""
+        # self.feature = []
         self.all = []  # 存放整体的特征
         self.isVirus = ""
         self.n_gram = gram
 
     def select_feature(self, feature):
-        al = ""
+        al = []
         temp = feature.split('|')
         for tt in temp:
             if len(tt) < self.n_gram:  # 筛除method内容小于n_gram的n的
                 continue
-            al += tt
+            al.append(tt)
         return al
 
     def read_csv(self):
@@ -42,14 +43,16 @@ class smali2feature(object):
                 continue
             if not get_line:
                 break
-            name, feature, isVirus = get_line.split(',')  # 这里的feature是单个sample的特征
-            select = self.select_feature(feature)
+            name, feature, isVirus = get_line.split(',')  # 这里的feature是单个sample的特征，用'|'分隔
+            select = self.select_feature(feature)  # ['11', '345']
+
             s = ef.EachFeature(select, n_gram)
-            temp = s.create()
-            smali2feature.mark_each(temp)
-            self.feature += select # 生成n_gram的特征
-        t = ef.EachFeature(self.feature, self.n_gram)
-        self.all = t.create()  # 特征汇总完毕，存放于self.all
+            temp = s.create()  # ['121', '234']  一个sample的全部n-gram特征
+
+            smali2feature.mark_each(temp)  # [['12','32'],['56', '78']]
+            self.all.extend(temp)
+
+        self.all = list(set(self.all))
         self.write2csv()
         md.MyDic.my_ls = self.all
         k = md.MyDic(self.n_gram)
@@ -61,7 +64,7 @@ class smali2feature(object):
         tt = os.path.join(data_base, name)
         file = open(tt, 'a')
         flag = False
-        for i in self.all:
+        for i in self.all:  # 将整体n-gram特征作为表头
             if flag:
                 file.write(r','+i)
                 continue
