@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/gray_light" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="48.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="7.0dip" android:layout_marginTop="7.0dip" android:layout_marginRight="7.0dip">
+        <ImageView android:id="@id/icon" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_margin="8.0dip" android:layout_centerVertical="true" android:contentDescription="@null" />
+        <CheckBox android:id="@id/check" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:button="@drawable/checkbox" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textStyle="bold" android:textColor="@color/gray_dark" android:ellipsize="end" android:id="@id/label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="4.0dip" android:singleLine="true" android:layout_toLeftOf="@id/check" android:layout_toRightOf="@id/icon" />
+        <TextView android:textColor="@color/red" android:ellipsize="end" android:id="@id/mem" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="4.0dip" android:singleLine="true" android:layout_toRightOf="@id/icon" android:layout_below="@id/label" />
+    </RelativeLayout>
+</FrameLayout>

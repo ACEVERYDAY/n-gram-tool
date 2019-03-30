@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:id="@id/footer" android:background="@color/gray_light" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true">
+        <Button android:textSize="18.0sp" android:textColor="@android:color/white" android:id="@id/clean" android:background="@drawable/btn_green" android:layout_width="0.0dip" android:layout_height="36.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:text="@string/clean_selected" android:layout_weight="1.0" />
+    </LinearLayout>
+    <View android:id="@id/divider" android:background="@drawable/divider" android:layout_width="fill_parent" android:layout_height="1.1999817dip" android:layout_above="@id/footer" />
+    <ListView android:id="@id/history" android:background="@android:color/white" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:cacheColorHint="@android:color/transparent" android:divider="@drawable/divider" android:dividerHeight="1.0dip" android:layout_above="@id/divider" style="@style/list_plus" />
+    <include layout="@layout/common_loading" />
+</RelativeLayout>

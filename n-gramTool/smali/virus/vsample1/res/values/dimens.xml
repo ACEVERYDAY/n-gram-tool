@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_full_size">50.0sp</dimen>
+    <dimen name="text_general_size">60.0sp</dimen>
+    <dimen name="pie_radius">100.0dip</dimen>
+    <dimen name="pie_width">4.0dip</dimen>
+</resources>

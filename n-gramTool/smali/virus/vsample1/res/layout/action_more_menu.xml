@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/settings" android:background="@drawable/menu_top_bg" android:text="@string/item_settings" android:drawableLeft="@drawable/dev" style="@style/popup_menu_item" />
+    <View style="@style/popup_menu_split" />
+    <Button android:id="@id/rate_this_app" android:background="@drawable/menu_item_bg" android:text="@string/item_rate_this_app" android:drawableLeft="@drawable/rate" style="@style/popup_menu_item" />
+    <View style="@style/popup_menu_split" />
+    <Button android:id="@id/more_apps" android:background="@drawable/menu_bottom_bg" android:text="@string/item_more_apps" android:drawableLeft="@drawable/more_apps" style="@style/popup_menu_item" />
+</LinearLayout>

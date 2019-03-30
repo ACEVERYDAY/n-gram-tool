@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/header_bg" android:layout_width="fill_parent" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/back" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/ignore_list" android:drawableLeft="@drawable/ic_back" style="@style/header" />
+    <ImageView android:id="@id/info" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ic_detail" android:layout_alignParentRight="true" android:contentDescription="@null" style="@style/header_right" />
+</RelativeLayout>

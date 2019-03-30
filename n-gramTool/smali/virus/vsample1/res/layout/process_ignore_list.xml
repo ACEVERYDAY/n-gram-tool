@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/process_ignore_list_header" />
+    <ListView android:id="@id/ignore_list" android:background="@android:color/white" android:layout_width="wrap_content" android:layout_height="fill_parent" android:cacheColorHint="@android:color/transparent" android:divider="@drawable/divider" android:dividerHeight="1.0dip" style="list_plus" />
+    <include layout="@layout/common_empty" />
+</LinearLayout>

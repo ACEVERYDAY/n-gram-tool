@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/result" android:padding="8.0dip" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/reporting_bg" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:paddingLeft="6.0dip" android:paddingRight="2.0dip" android:layout_width="fill_parent" android:layout_height="54.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@color/gray_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/reporting_app_cache" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/cache_optimized" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="18.0dip" android:layout_marginRight="6.0dip" android:src="@drawable/optimized" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/orange" android:id="@id/cache_optimizing" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View android:background="@drawable/dashed_line" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+            <RelativeLayout android:paddingLeft="6.0dip" android:paddingRight="2.0dip" android:layout_width="fill_parent" android:layout_height="54.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@color/gray_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/reporting_running_processes" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/memory_optimized" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="18.0dip" android:layout_marginRight="6.0dip" android:src="@drawable/optimized" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/orange" android:id="@id/memory_optimizing" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/reporting_bg" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip">
+            <RelativeLayout android:paddingLeft="6.0dip" android:paddingRight="2.0dip" android:layout_width="fill_parent" android:layout_height="54.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@color/gray_dark" android:id="@id/reporting_privacy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/reporting_privacy_data" android:layout_centerVertical="true" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/orange" android:id="@id/privacy_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/reporting_privacy" android:layout_centerVertical="true" />
+                <Button android:textColor="@android:color/white" android:id="@id/manual" android:background="@drawable/btn_round" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:text="@string/manual" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@id/close" android:background="@drawable/btn_green" android:padding="10.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+            <ProgressBar android:layout_gravity="center_vertical" android:id="@id/processing" android:visibility="gone" android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginRight="10.0dip" android:indeterminateDrawable="@drawable/loading" />
+            <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:id="@id/status" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

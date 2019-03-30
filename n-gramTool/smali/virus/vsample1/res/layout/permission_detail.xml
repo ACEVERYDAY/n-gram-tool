@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="300.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:background="@color/header" android:layout_width="fill_parent" android:layout_height="3.0dip" />
+    <ListView android:id="@id/permission" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:cacheColorHint="@android:color/transparent" android:divider="@drawable/divider" android:dividerHeight="1.0dip" style="@style/list_plus" />
+    <LinearLayout android:gravity="center_vertical" android:id="@id/footer" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <Button android:textSize="18.0dip" android:textColor="@color/gray_dark" android:id="@id/close" android:background="@drawable/btn_white" android:layout_width="0.0dip" android:layout_height="36.0dip" android:layout_marginLeft="6.0dip" android:text="@string/close" android:layout_weight="1.0" />
+        <Button android:textSize="18.0dip" android:textColor="@android:color/white" android:id="@id/google_play" android:background="@drawable/play" android:layout_width="0.0dip" android:layout_height="36.0dip" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" android:text="@string/google_play" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/error" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:gravity="center" android:id="@id/reason" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/connection_timeout" android:drawableTop="@drawable/ic_error" android:drawablePadding="20.0dip" android:layout_centerInParent="true" />
+    <TextView android:textSize="18.0sp" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/connection_timeout_extra" android:layout_below="@id/reason" android:layout_centerHorizontal="true" />
+</RelativeLayout>

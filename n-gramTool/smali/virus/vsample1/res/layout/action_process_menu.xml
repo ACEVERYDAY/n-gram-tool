@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/label" android:background="@drawable/menu_top_bg" android:text="@string/none" style="@style/popup_menu_title" />
+    <TextView android:background="@color/header" android:layout_width="fill_parent" android:layout_height="3.0dip" />
+    <Button android:id="@id/end_task" android:background="@drawable/menu_item_bg" android:text="@string/item_end_task" android:drawableLeft="@drawable/exit" style="@style/popup_menu_item_large" />
+    <View style="@style/popup_menu_split" />
+    <Button android:id="@id/switch_to" android:background="@drawable/menu_item_bg" android:text="@string/item_switch_to" android:drawableLeft="@drawable/open" style="@style/popup_menu_item_large" />
+    <View style="@style/popup_menu_split" />
+    <Button android:id="@id/ignore" android:background="@drawable/menu_item_bg" android:text="@string/item_add_to_ignorelist" android:drawableLeft="@drawable/ignore" style="@style/popup_menu_item_large" />
+    <View style="@style/popup_menu_split" />
+    <Button android:id="@id/detail" android:background="@drawable/menu_bottom_bg" android:text="@string/item_detail" android:drawableLeft="@drawable/detail" style="@style/popup_menu_item_large" />
+</LinearLayout>

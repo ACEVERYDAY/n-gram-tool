@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/icon" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginLeft="8.0dip" android:layout_centerVertical="true" android:contentDescription="@null" />
+    <ImageView android:textSize="15.0sp" android:textColor="@color/gray" android:id="@id/delete" android:background="@drawable/delete_selector" android:focusable="false" android:clickable="true" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/ic_delete" android:scaleType="center" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/gray_dark" android:ellipsize="end" android:id="@id/label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:singleLine="true" android:layout_toLeftOf="@id/delete" android:layout_toRightOf="@id/icon" android:layout_centerVertical="true" />
+</RelativeLayout>

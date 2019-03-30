@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="300.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:background="@color/header" android:layout_width="fill_parent" android:layout_height="3.0dip" />
+    <ImageView android:id="@id/tips_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@null" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/gray" android:id="@id/tips_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginRight="14.0dip" android:text="@string/app_info_tips" />
+    <CheckBox android:textColor="@color/green" android:id="@id/disable_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:button="@drawable/checkbox" android:text="@string/disable_tips" />
+    <LinearLayout android:gravity="center_vertical" android:id="@id/footer" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <Button android:textSize="18.0dip" android:textColor="@color/gray_dark" android:id="@id/cancel" android:background="@drawable/btn_white" android:layout_width="0.0dip" android:layout_height="36.0dip" android:layout_marginLeft="6.0dip" android:text="@string/cancel" android:layout_weight="1.0" />
+        <Button android:textSize="18.0dip" android:textColor="@android:color/white" android:id="@id/clean" android:background="@drawable/btn_green" android:layout_width="0.0dip" android:layout_height="36.0dip" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip" android:text="@string/clean" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/header_bg" android:layout_width="wrap_content" android:layout_height="210.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/circle" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" android:src="@drawable/circular" android:layout_centerHorizontal="true" android:contentDescription="@null" />
+    <ImageView android:id="@id/fill" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="44.0dip" android:src="@drawable/fill" android:layout_centerHorizontal="true" android:contentDescription="@null" />
+    <ImageView android:id="@id/rotator" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="35.0dip" android:src="@drawable/rotator" android:layout_centerHorizontal="true" android:contentDescription="@null" />
+    <TextView android:textStyle="bold" android:textColor="#ff588a11" android:id="@id/score" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="55.0dip" android:layout_centerHorizontal="true" android:contentDescription="@null" />
+    <TextView android:textSize="14.0sp" android:textColor="#ff588a11" android:id="@id/msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="124.0dip" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="14.0sp" android:textColor="@android:color/white" android:id="@id/detail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="186.0dip" android:shadowColor="#19000000" android:shadowDx="3.0" android:shadowDy="3.0" android:layout_centerHorizontal="true" />
+    <ProgressBar android:id="@id/horizontal_progressbar" android:layout_width="fill_parent" android:layout_height="4.0dip" android:progressDrawable="@drawable/progressbar" android:layout_alignParentBottom="true" style="?android:attr/progressBarStyleHorizontal" />
+</RelativeLayout>
